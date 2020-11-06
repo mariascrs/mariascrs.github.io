@@ -80,7 +80,7 @@ We denote this ring by $End(E)$.
 
 ### j-Invariants
 
-For our purposes, we let $p \equiv 3 \mod 4$ be a prime and we consider the finite field $\mathbb{F}_{p^2}$. To get some intuition as to what this field *looks like* we note that $\mathbb{F}_{p^2} = \mathbb{F}(i)$, where $i^2 + 1 = 0$ and so the elements in this finite field are of the form $u + iv$ where $u, v \in \mathbb{F}_p$. Unless stated otherwise, we now assume all elliptic curves are over this finite field.
+For our purposes, we let $p \equiv 3 \mod 4$ be a prime and we consider the finite field $\mathbb{F}_{p^2}$. To get some intuition as to what this field looks like we note that $\mathbb{F}_{p^2} = \mathbb{F}(i)$, where $i^2 + 1 = 0$ and so the elements in this finite field are of the form $u + iv$ where $u, v \in \mathbb{F}_p$. Unless stated otherwise, we now assume all elliptic curves are over this finite field.
 
 Instead of considering each individual elliptic curve, what we actually want to do is consider $E_1$ and $E_2$ to be the 'same' elliptic curves **if and only if** they are isomorphic. More precisely, we consider the equivalence classes of elliptic curves, where $E_1$ and $E_2$ are equivalence **if and only if** they are isomorphic.  To do this we need some sort of invariant that will be the same for $E_1$ and $E_2$ **if and only if** they are isomorphic to allow us to label each equivalence class. So, we introduce the **$j$-invariant**! 
 
