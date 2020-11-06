@@ -140,3 +140,9 @@ $$
 $$
 
 where $[d]: E_1 \longrightarrow E_2$ is the multiplication by $d$ map.
+
+## References
+
+[1] **Supersingular Isogeny Key Exchange for Beginners**, by Craig Costello (https://eprint.iacr.org/2019/1321.pdf)
+
+[2] **Arithmetic of Elliptic Curves**, by Joseph H. Silverman
