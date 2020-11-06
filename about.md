@@ -28,7 +28,7 @@ key: page-about
 
 Orignally from Portugal, I completed my Undergraduate and Master's degree in Mathematics at the University of Cambridge, spealiasing in Alegbraic Number Theory and Elliptic Curves. 
 
-During my second year as an undergraduate student, I did a research project on 'Ethics in Maths' and studied in depth the Logjam attacks and the Cambridge Analytica scandal. This made me increasingly interested in cyber security and I decided to shift subjects and currently now a PhD student at the CDT for Cyber Security at University College London. 
+During my second year as an undergraduate student, I did a research project on 'Ethics in Maths' and studied in depth the Logjam attacks and the Cambridge Analytica scandal. This experience made me increasingly interested in cyber security, so I decided to switch subjects and am currently a PhD student at the CDT for Cyber Security at University College London. 
 
 Currently, my main interests are post-quantum cryptography, specifically isogeny-based protocols and applications.
 
