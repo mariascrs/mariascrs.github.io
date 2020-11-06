@@ -6,7 +6,7 @@ mathjax: true
 aside:
   toc: true
 ---
-
+<div align="justify">
 On July 22, 2020, the [Round 3 finalists](https://csrc.nist.gov/projects/post-quantum-cryptography/round-3-submissions) for the NIST Post-quantum Cryptography Standardization effort were announced. One of the alternate candidates for public-key encryption and key-establishement algorithms is **SIKE**, a key encapsulation mechanism (KEM) based on *isogenies*. A non-specialist wanting a basic understanding of the schemes may find that SIKE protocol has one of the highest barriers of entry due to the sheer amount of mathematical background you need to understand before getting to the cryptography part. This post is aimed at providing a *hopefully* short introduction to isogenies and other related concepts. In a future post I'll apply this to cryptography and indroduce SIDH (the key exchange protocol that SIKE is based on). 
 
 Assumed knowledge:
@@ -143,3 +143,5 @@ where $[d]: E_1 \longrightarrow E_2$ is the multiplication by $d$ map.
 [1] **Supersingular Isogeny Key Exchange for Beginners**, by Craig Costello (https://eprint.iacr.org/2019/1321.pdf)
 
 [2] **Arithmetic of Elliptic Curves**, by Joseph H. Silverman
+
+<\div>
