@@ -138,7 +138,7 @@ $$
 
 where $[d]: E_1 \longrightarrow E_2$ is the multiplication by $d$ map.
 
-## References
+## Further Reading
 
 [1] **Supersingular Isogeny Key Exchange for Beginners**, by Craig Costello (https://eprint.iacr.org/2019/1321.pdf)
 
