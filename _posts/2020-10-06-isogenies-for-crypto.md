@@ -88,7 +88,7 @@ For our purposes, we let $p \equiv 3 \mod 4$ be a prime and we consider the fini
 
 Instead of considering each individual elliptic curve, what we actually want to do is consider $E_1$ and $E_2$ to be 'equivalent' elliptic curves **if and only if** they are isomorphic. To do this we need some sort of invariant that will be the same for $E_1$ and $E_2$ **if and only if** they are isomorphic. So, we introduce the **$j$-Invariant**! 
 
-Writing the elliptic curve $E$ $\mathbb{F}_{p^2}) in *Weierstrauss Form**, namely 
+Writing the elliptic curve $E$ in *Weierstrass Form*, namely 
 
 $$
 y^2 = x^3 +ax^2 +bx + c
