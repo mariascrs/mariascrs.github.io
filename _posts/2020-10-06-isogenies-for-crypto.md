@@ -7,7 +7,7 @@ aside:
   toc: true
 ---
 
-On July 22, 2020, the [Round 3 NIST finalists](https://csrc.nist.gov/projects/post-quantum-cryptography/round-3-submissions) for their Post-quantum Cryptograph Standardization effort were announced. One of the alternate candidates for public-key encryption and key-establishement algorithms is **SIKE**, a key encapsulation mechanism (KEM) based on *isogenies*. A non-specialist wanting a basic understanding of the schemes may find that SIKE protocol has one of the highest barriers of entry due to the sheer amount of mathematical background you need to understand before getting to the cryptography part. This post is aimed at providing a *hopefully* short introduction to isogenies and other related concepts. In a future post I'll apply this to cryptography and indroduce SIDH (the key exchange protocol that SIKE is based on). 
+On July 22, 2020, the [Round 3 finalists](https://csrc.nist.gov/projects/post-quantum-cryptography/round-3-submissions) for the NIST Post-quantum Cryptograph Standardization effort were announced. One of the alternate candidates for public-key encryption and key-establishement algorithms is **SIKE**, a key encapsulation mechanism (KEM) based on *isogenies*. A non-specialist wanting a basic understanding of the schemes may find that SIKE protocol has one of the highest barriers of entry due to the sheer amount of mathematical background you need to understand before getting to the cryptography part. This post is aimed at providing a *hopefully* short introduction to isogenies and other related concepts. In a future post I'll apply this to cryptography and indroduce SIDH (the key exchange protocol that SIKE is based on). 
 
 Assumed knowledge:
 * Elliptic Curves (over Finite Fields)  
@@ -54,9 +54,7 @@ If we label the identity of the group $E_i$ as $\mathcal{O}_i$ we can make the f
 
 **Definition:** A rational map $\phi: E_1 \longrightarrow E_2$ is called an *isogeny* if $\phi(\mathcal{O}_1) = \mathcal{O}_2$.
 
-It turns out that a map being *rational* and *sending the identity to itself* automatically makes the isogeny a **group homomorphism**! 
-
-Also, the isogeny is either the identity map (it is a constant map that sends the identity to itself) OR it must be surjective. 
+It turns out that a map being *rational* and *sending the identity to itself* automatically makes the isogeny a **group homomorphism**, which is one of the propoerties we wanted. Also, the isogeny is either the identity map (it is a constant map that sends the identity to itself) OR it must be surjective. 
 
 A really famous example of an isogeny when we're working over a finite field $\mathbb{F_q}$ is the **Frobenius Map**. If $P = (x, y)$, this map is given by 
 
@@ -66,15 +64,13 @@ $$
 
 It's an easy check to see that this is in fact an isogeny so I encourage you to try show this to make sure you understand the definition!
 
-There are various properties of isogenies that will be important to us. 
-
 ## Endomorphisms
 
 **Definition:** If $E_1 = E_2$ then $\phi$ is called an *endomorphism*. 
 
-**Definition**: $\phi$ is an *isomorphism* if it is bijective. Remember that  $\phi$ is either the identity or surjective, so we only need to check if $\phi$ is injective.
+**Definition**: An endomorphism $\phi$ is an *isomorphism* if it is bijective. Remember that  $\phi$ is either the identity or surjective, so we only need to check if $\phi$ is injective.
 
-These endomorphisms are really cool because the set of endomorphisms of an elliptic curve $E$ together with the zero map actually forms a *ring* under the operations of pointwise addition and multiplication. Intuitively, being a ring means that the addition and multiplication behave nicely and interact well with each other. More precisely, a ring means that: 
+These endomorphisms are really cool because the set of endomorphisms of an elliptic curve $E$ together with the zero map actually forms a *ring* under the operations of pointwise addition and multiplication. Intuitively, being a ring means that the addition and multiplication behave nicely and interact well with each other. More precisely, being a ring means that: 
 * it is a group under the addition
 * the mulitplication is   associative and has an identity
 * multiplication is distributive with respect to addition 
@@ -84,23 +80,23 @@ We denote this ring by $End(E)$.
 
 ### j-Invariants
 
-For our purposes, we let $p \equiv 3 \mod 4$ be a prime and we consider the finite field to be $\mathbb{F}_{p^2} = \mathbb{F}(i)$, where $i^2 + 1 = 0$ and so the elements in this finite field are of the form $u + iv$ where $u, v \in \mathbb{F}_p$. Unless stated otherwise, we now assume all elliptic curves are over this finite field.
+For our purposes, we let $p \equiv 3 \mod 4$ be a prime and we consider the finite field $\mathbb{F}_{p^2}$. To get some intuition as to what this field *looks like* we note that $\mathbb{F}_{p^2} = \mathbb{F}(i)$, where $i^2 + 1 = 0$ and so the elements in this finite field are of the form $u + iv$ where $u, v \in \mathbb{F}_p$. Unless stated otherwise, we now assume all elliptic curves are over this finite field.
 
-Instead of considering each individual elliptic curve, what we actually want to do is consider $E_1$ and $E_2$ to be 'equivalent' elliptic curves **if and only if** they are isomorphic. To do this we need some sort of invariant that will be the same for $E_1$ and $E_2$ **if and only if** they are isomorphic. So, we introduce the **$j$-Invariant**! 
+Instead of considering each individual elliptic curve, what we actually want to do is consider $E_1$ and $E_2$ to be the 'same' elliptic curves **if and only if** they are isomorphic. More precisely, we consider the equivalence classes of elliptic curves, where $E_1$ and $E_2$ are equivalence **if and only if** they are isomorphic.  To do this we need some sort of invariant that will be the same for $E_1$ and $E_2$ **if and only if** they are isomorphic to allow us to label each equivalence class. So, we introduce the **$j$-invariant**! 
 
 Writing the elliptic curve $E$ in *Weierstrass Form*, namely 
 
 $$
-y^2 = x^3 +ax^2 +bx + c
+y^2 = x^3 +ax^2 +bx + c \text{ where } a, b, c \in \mathbb{F}_{p^2},
 $$
 
-where $a, b, c \in \mathbb{F}_{p^2}$ we have
+we have
 
 $$
 j(E) = 1728 \frac{4a^3}{4a^3 + 27b^2}
 $$
 
-We have that, over $\mathbb{F}_{p^2}$, two elliptic curves are isomorphic **if and only if** they have the same $j$-invaraint, which is exactly the property we were looking for!
+Then, over $\mathbb{F}_{p^2}$, two elliptic curves are isomorphic **if and only if** they have the same $j$-invaraint, which is exactly the property we were looking for. 
 
 ## Properties of Isogenies 
 
@@ -114,9 +110,9 @@ This is made explicit by Velu's formulas: given an elliptic curve $E_1: y^2 = x^
 
 ### Degree
 
-**Definition:** The *degree* of a non-zero sepearable isogeny is the number of elements in the kernel. Equivalently, though less importantly, it is the degree of the isogeny as a rational map (if you want a precise definition of what this means see page 21 Silverman's 'Arithmetic of Elliptic Curves').
+**Definition:** The *degree* of a non-zero sepearable isogeny is the number of elements in the kernel. Equivalently, though less importantly for our purposes, it is the degree of the isogeny as a rational map (if you want a precise definition of what this means see page 21 Silverman's 'Arithmetic of Elliptic Curves').
 
-We can view isomorphisms as being special isogenies whose kernel is just $\{\mathcal{O}\}$ i.e. an isogeny of degree 1. 
+We can view isomorphisms as being special isogenies whose kernel is just $\{\mathcal{O}\}$, i.e. an isogeny of degree 1. 
 
 Degree interacts really nicely with composition of isogenies in the sense that 
 
@@ -128,13 +124,13 @@ $$
 
 We know that isomorphisms have an inverse and that composing them together gives us the identity map. But what about isogenies? Is there an analogue?
 
-In general, isogenies doe not have an inverse, however every isogeny $\phi$ has a unique *dual* isogeny, which we denote as $\hat{\phi}$. Rather than composing to give the identity, if 
+In general, isogenies do not have an inverse, however every isogeny $\phi$ has a unique *dual* isogeny, which we denote as $\hat{\phi}$. Rather than composing to give the identity, if 
 
 $$
 \phi: E_1 \longrightarrow E_2
 $$
 
-is an isogeny of degree $d$, then the composition gives us 
+is an isogeny of degree $d$, then $\hat{\phi}$ is an isogeny of degree $d$ and the composition gives us 
 
 $$
 \phi \circ \hat{\phi} = [d], 
