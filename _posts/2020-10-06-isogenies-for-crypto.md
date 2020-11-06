@@ -6,7 +6,7 @@ aside:
   toc: true
 ---
 
-On July 22, 2020, the [Round 3 NIST finalists](https://csrc.nist.gov/projects/post-quantum-cryptography/round-3-submissions) for their Post-quantum Cryptograph Standardization effort were announced. One of the alternate candidates for public-key encryption and key-establishement algorithms is **SIKE**, a key encapsulation mechanism (KEM) based on *isogenies*. A non-specialist wanting a basic understanding of the schemes may find that SIKE protocol has one of the highest barriers of entry due to the sheer amount of mathematical background you need to understand before getting to the cryptography part. This post is aimed at providing a *hopefully* short introduction to isogenies and other related concepts. In the next post I'll apply this to cryptography and indroduce SIDH (the key exchange protocol that SIKE is based on). 
+On July 22, 2020, the [Round 3 NIST finalists](https://csrc.nist.gov/projects/post-quantum-cryptography/round-3-submissions) for their Post-quantum Cryptograph Standardization effort were announced. One of the alternate candidates for public-key encryption and key-establishement algorithms is **SIKE**, a key encapsulation mechanism (KEM) based on *isogenies*. A non-specialist wanting a basic understanding of the schemes may find that SIKE protocol has one of the highest barriers of entry due to the sheer amount of mathematical background you need to understand before getting to the cryptography part. This post is aimed at providing a *hopefully* short introduction to isogenies and other related concepts. In a future post I'll apply this to cryptography and indroduce SIDH (the key exchange protocol that SIKE is based on). 
 
 Assumed knowledge:
 * Elliptic Curves (over Finite Fields)  
@@ -81,7 +81,7 @@ These endomorphisms are really cool because the set of endomorphisms of an ellip
 We denote this ring by $End(E)$.
 
 
-## j-Invariants
+### j-Invariants
 
 For our purposes, we let $p \equiv 3 \mod 4$ be a prime and we consider the finite field to be $\mathbb{F}_{p^2} = \mathbb{F}(i)$, where $i^2 + 1 = 0$ and so the elements in this finite field are of the form $u + iv$ where $u, v \in \mathbb{F}_p$. Unless stated otherwise, we now assume all elliptic curves are over this finite field.
 
@@ -103,12 +103,15 @@ We have that, over $\mathbb{F}_{p^2}$, two elliptic curves are isomorphic **if a
 
 ## Properties of Isogenies 
 
+### Seperable vs. Inseperable 
 
 A word that is used a lot in papers on isogeny cryptography is *seperable*. In general, an isogeny can be either *seperable* or *inseperable*. The definitions aren't really that important, but for the maths to work out and be nice, we want the isogenies to be *seperable*. 
 
 The most important thing about seperable isogenies is that fact that they are in one-to-one correspondence with finite subgroups. *What does this mean?* Basically, every subgroup $G$ of the points on an elliptic curve $E_1$ gives rise to a unique isogeny $\phi: E_1 \longrightarrow E_2$ whose kernel is $G$ (recall that a kernel of $\phi$ is the set of points in $E$ that get mapped to the identity $\mathcal{O}_1$), and vice versa. If this is the case, the codomain is sometimes written as $E_1/G$ rather than $E_2$. 
 
 This is made explicit by Velu's formulas: given an elliptic curve $E_1: y^2 = x^3 +ax^2 +bx + c$,  these formulas output an elliptic curve $E_2 = E_1/G$ and the explicit maps for $\phi$. In a furture blog post I will go into more detail on these formulas. 
+
+### Degree
 
 **Definition:** The *degree* of a non-zero sepearable isogeny is the number of elements in the kernel. Equivalently, though less importantly, it is the degree of the isogeny as a rational map (if you want a precise definition of what this means see page 21 Silverman's 'Arithmetic of Elliptic Curves').
 
@@ -137,6 +140,3 @@ $$
 $$
 
 where $[d]: E_1 \longrightarrow E_2$ is the multiplication by $d$ map.
-
-
-
