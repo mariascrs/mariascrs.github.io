@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Page - Aside
+title: Isogenies for Cryptography
 aside:
   toc: true
 ---
