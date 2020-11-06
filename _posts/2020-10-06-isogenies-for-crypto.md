@@ -110,7 +110,7 @@ This is made explicit by Velu's formulas: given an elliptic curve $E_1: y^2 = x^
 
 ### Degree
 
-**Definition:** The *degree* of a non-zero sepearable isogeny is the number of elements in the kernel. Equivalently, though less importantly for our purposes, it is the degree of the isogeny as a rational map (if you want a precise definition of what this means see page 21 Silverman's 'Arithmetic of Elliptic Curves').
+**Definition:** The *degree* of a non-zero separable isogeny is the number of elements in the kernel. Equivalently, though less importantly for our purposes, it is the degree of the isogeny as a rational map (if you want a precise definition of what this means see page 21 Silverman's 'Arithmetic of Elliptic Curves').
 
 We can view isomorphisms as being special isogenies whose kernel is just $\{\mathcal{O}\}$, i.e. an isogeny of degree 1. 
 
