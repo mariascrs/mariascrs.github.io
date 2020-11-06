@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Isogenies for Cryptography
-tags: maths; isogeny; cryptography; post-quantum
+tags: maths isogeny cryptography post-quantum
 mathjax: true
 aside:
   toc: true
