@@ -36,6 +36,7 @@ which is isomorphic to a curve in Weierstrass form over $\mathbb{F}_{p^2}$, via 
 $$
 \phi(x, y) = (\frac{x}{b}, \frac{y}{b^2})
 $$
+
 Don't worry about the details of the isomorphism as it won't be necessary for the SIDH protocol.
 
 Remembering that what we are interested in for cryptography is the *isomorphism class* of the elliptic curves, the main takeaway is that for the SIDH protocol we will use elliptic curves in a form that will allow us to use Vélu's formulas. 
@@ -46,6 +47,7 @@ I will now explain the steps proposed by Vélu to compute the isogeny and codoma
 $$
 E_1: y^2 + axy + by = x^3 + cx^2 + dx + e
 $$ 
+
 and a finite set of points $G$.
 
 For those not interested in implementing these formulas, the details are not that important. However, it is worth noting that these formulas are just rational functions of the inputs mentioned above, and the degrees of these functions are the same size as the size of $G$. Therefore, they are quite *nice* and *easy to implement*. Without these formulas it would be hard to implement any cryptography scheme based on isogenies.  
