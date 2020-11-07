@@ -140,7 +140,7 @@ where $[d]: E_1 \longrightarrow E_2$ is the multiplication by $d$ map.
 
 ## Torsion Points
 
-Consider the multiplication-by-$d$ map. Then the group of all points $P$ on $E_1$ such that $[d]P = \mathcal{O}_1$ is denoted by $E_1[d]$. In other words, these are the points that are in the *kernel* of (are sent zero by) the multiplication-by-$d$ map. 
+Consider the multiplication-by-$d$ map. Then the group of all points $P$ on $E_1$ such that $[d]P = \mathcal{O}_1$ is denoted by $E_1[d]$ and are called the *$d$-torsion points*. In other words, these are the points that are in the *kernel* of (are sent zero by) the multiplication-by-$d$ map. 
 
 A useful fact to remember is that if **$d$ is coprime to $q$** (recall this is the size of the finite field we are working over), then 
 
