@@ -22,7 +22,7 @@ Let $E_1$ and $E_2$ be elliptic curves defined over a finite field $\mathbb{F}_q
 
 **Note:** Normally in maths papers, to specify the field $K$ which the elliptic curve is defined over, we write $E_i(K)$. I'll drop this notation because we will only be considering the elliptic curves over a finite field.  
 
-Say we now want to consider map between these two elliptic curves:
+Say we now want to consider a map between these two elliptic curves:
 
 $$ 
 \phi: E_1 \longrightarrow E_2 
@@ -70,9 +70,9 @@ It's an easy check to see that this is in fact an isogeny so I encourage you to 
 
 **Definition**: An endomorphism $\phi$ is an *isomorphism* if it is bijective. Remember that  $\phi$ is either the identity or surjective, so we only need to check if $\phi$ is injective.
 
-These endomorphisms are really cool because the set of endomorphisms of an elliptic curve $E$ together with the zero map actually forms a *ring* under the operations of pointwise addition and multiplication. Intuitively, being a ring means that the addition and multiplication behave nicely and interact well with each other. More precisely, being a ring means that: 
+These endomorphisms are really cool because the set of endomorphisms of an elliptic curve $E$ together with the zero map (that map that sends everything to zero) actually forms a *ring* under the operations of pointwise addition and 'multiplication' given by composing the endomorphisms (i.e. $(f \times g) = f(g(x))$. Intuitively, being a ring means that the addition and multiplication behave nicely and interact well with each other. More precisely, being a ring means that: 
 * it is a group under the addition
-* the mulitplication is   associative and has an identity
+* the multiplication is associative and has an identity
 * multiplication is distributive with respect to addition 
 
 We denote this ring by $End(E)$.
@@ -80,9 +80,11 @@ We denote this ring by $End(E)$.
 
 ### j-Invariants
 
-For our purposes, we let $p \equiv 3 \mod 4$ be a prime and we consider the finite field $\mathbb{F}\_{p^2}$. To get some intuition as to what this field looks like we note that $\mathbb{F}\_{p^2} = \mathbb{F}(i)$, where $i^2 + 1 = 0$ and so the elements in this finite field are of the form $u + iv$ where $u, v \in \mathbb{F}\_p$. Unless stated otherwise, we now assume all elliptic curves are over this finite field.
+For our purposes, we let $p \equiv 3 \mod 4$ be a prime and we consider the finite field $\mathbb{F}\_{p^2}$. 
 
-Instead of considering each individual elliptic curve, what we actually want to do is consider $E_1$ and $E_2$ to be the 'same' elliptic curves **if and only if** they are isomorphic. More precisely, we consider the equivalence classes of elliptic curves, where $E_1$ and $E_2$ are equivalence **if and only if** they are isomorphic.  To do this we need some sort of invariant that will be the same for $E_1$ and $E_2$ **if and only if** they are isomorphic to allow us to label each equivalence class. So, we introduce the **$j$-invariant**! 
+Note: To get some intuition as to what this field looks like we can show that $\mathbb{F}\_{p^2}$ is equivalent adjoining $i$ to $\mathbb{F}\_{p}$, where $i^2 + 1 = 0$, which we write as $\mathbb{F}\_{p}(i)$. This means that we can view elements of $\mathbb{F}\_{p^2}$ as being of the form $u + iv$ where $u, v \in \mathbb{F}\_p$. Unless stated otherwise, we now assume all elliptic curves are over this finite field.
+
+Instead of considering each individual elliptic curve, what we actually want to do is consider $E_1$ and $E_2$ to be the 'same' elliptic curves **if and only if** they are isomorphic. More precisely, we consider the equivalence classes of elliptic curves, where $E_1$ and $E_2$ are equivalent **if and only if** they are isomorphic.  To do this we need some sort of invariant that will be the same for $E_1$ and $E_2$ **if and only if** they are isomorphic to allow us to label each equivalence class. So, we introduce the **$j$-invariant**! 
 
 Writing the elliptic curve $E$ in *Weierstrass Form*, namely 
 
@@ -100,13 +102,13 @@ Then, over $\mathbb{F}_{p^2}$, two elliptic curves are isomorphic **if and only 
 
 ## Properties of Isogenies 
 
-### Seperable vs. Inseperable 
+### Separable vs. Inseparable 
 
-A word that is used a lot in papers on isogeny cryptography is *seperable*. In general, an isogeny can be either *seperable* or *inseperable*. The definitions aren't really that important, but for the maths to work out and be nice, we want the isogenies to be *seperable*. 
+A word that is used a lot in papers on isogeny cryptography is *separable*. In general, an isogeny can be either *separable* or *inseparable*. The definitions aren't really that important, but for the maths to work out and be nice, we want the isogenies to be *separable*. 
 
-The most important thing about seperable isogenies is that fact that they are in one-to-one correspondence with finite subgroups. *What does this mean?* Basically, every subgroup $G$ of the points on an elliptic curve $E_1$ gives rise to a unique isogeny $\phi: E_1 \longrightarrow E_2$ whose kernel is $G$ (recall that a kernel of $\phi$ is the set of points in $E$ that get mapped to the identity $\mathcal{O}_1$), and vice versa. If this is the case, the codomain is sometimes written as $E_1/G$ rather than $E_2$. 
+The most important thing about separable isogenies is the fact that they are in one-to-one correspondence with finite subgroups. *What does this mean?* Basically, every subgroup $G$ of the points on an elliptic curve $E_1$ gives rise to a unique isogeny $\phi: E_1 \longrightarrow E_2$ whose kernel is $G$ (recall that a kernel of $\phi$ is the set of points in $E$ that get mapped to the identity $\mathcal{O}_1$), and vice versa. If this is the case, the codomain is sometimes written as $E_1/G$ rather than $E_2$. 
 
-This is made explicit by Velu's formulas: given an elliptic curve $E_1: y^2 = x^3 +ax^2 +bx + c$,  these formulas output an elliptic curve $E_2 = E_1/G$ and the explicit maps for $\phi$. In a furture blog post I will go into more detail on these formulas. 
+This is made explicit by Velu's formulas: given an elliptic curve $E_1: y^2 = x^3 +ax^2 +bx + c$,  these formulas output an elliptic curve $E_2 = E_1/G$ and the explicit maps for $\phi$. In a future blog post I will go into more detail on these formulas. 
 
 ### Degree
 
@@ -140,7 +142,7 @@ where $[d]: E_1 \longrightarrow E_2$ is the multiplication by $d$ map.
 
 ## Torsion Points
 
-Consider the multiplication-by-$d$ map. Then the group of all points $P$ on $E_1$ such that $[d]P = \mathcal{O}_1$ is denoted by $E_1[d]$ and are called the *$d$-torsion points*. In other words, these are the points that are in the *kernel* of (are sent zero by) the multiplication-by-$d$ map. 
+Consider the multiplication-by-$d$ map. Then the group of all points $P$ on $E_1$ such that $[d]P = \mathcal{O}_1$ is denoted by $E_1[d]$ and are called the *$d$-torsion points*. In other words, these are the points that are in the *kernel* of (are sent zero by) the multiplication-by-$d$ map. In essence, $d$-torsion points are just *elements of order $d$*, however in most papers they are referred to as $d$-torsion points so I thought I would introduce this terminology now. 
 
 A useful fact to remember is that if **$d$ is coprime to $q$** (recall this is the size of the finite field we are working over), then 
 
