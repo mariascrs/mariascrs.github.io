@@ -123,7 +123,7 @@ For the proof of the correctness of these formulas, see Washington's treatment i
 
 ## Concluding Thoughts
 
-Though the details of these formulas are not that important, it helps us bridge the gap between theory and implementation. In theory, a cryptography scheme based on isogenies can be found to be secure and sound, but if it cannot be implemented then it is of little practical use. 
+Though the details of these formulas are not that important, it helps us bridge the gap between theory and implementation. In theory, a cryptographic scheme based on isogenies can be found to be secure and sound, but if it cannot be implemented then it is of little practical use. 
 
 
 
