@@ -20,7 +20,7 @@ Assumed knowledge:
 
 Let $E_1$ and $E_2$ be elliptic curves defined over a finite field $\mathbb{F}_q$. Here, $q$ is some prime power. We note that $E_1$ and $E_2$ form groups under the addition of points and as $\mathbb{F}_q$ is finite, so are these groups. 
 
-**Note:** Normally in maths papers, to specify the field $K$ which the elliptic curve is defined over, we write $E_i(K)$. I'll drop this notation because we will only be considering the elliptic curves over a finite field.  
+**Note:** Normally in maths papers,we write $E_i(K)$ to specify we are talking about $K$-valued points. I'll drop this notation because we will only be considering the elliptic curves over a finite field.  
 
 Say we now want to consider a map between these two elliptic curves:
 
