@@ -160,5 +160,7 @@ $$
 
 [1] **Supersingular Isogeny Key Exchange for Beginners**, by Craig Costello (https://eprint.iacr.org/2019/1321.pdf)
 
-[2] **Arithmetic of Elliptic Curves**, by Joseph H. Silverman
+[2] **Rational Points on Elliptic Curves**, by Joseph H. Silverman and John Tate
+
+[3] **Arithmetic of Elliptic Curves**, by Joseph H. Silverman
 
