@@ -23,7 +23,7 @@ $$
 E_1: y^2 + axy + by = x^3 + cx^2 + dx + e
 $$
 
-where $a, b, c, d, e \in \mathbb{F}_{p^2}$.
+where $a, b, c, d, e \in \mathbb{F}\_{p^2}$ and the discriminant (a polynomial in $a, b, c, d, e$) is non-zero. This second condition ensures that the ellitpic curve is non-singular, which geometrically means the curve has no cusps or self-intersections.
 
 When we consider the SIDH protocol, we will use elliptic curves in Montgomery form, namely
 
@@ -31,7 +31,7 @@ $$
 by^2 = x^3 + ax^2 + x
 $$
 
-which is isomorphic to a curve in Weierstrass form over $\mathbb{F}_{p^2}$, via the isomorphism
+which is isomorphic to a curve in Weierstrass form over $\mathbb{F}\_{p^2}$, via the isomorphism
 
 $$
 \phi(x, y) = (\frac{x}{b}, \frac{y}{b^2})
