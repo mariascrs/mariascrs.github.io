@@ -4,6 +4,4 @@
 {%- include snippets/get-locale-string.html key='SUBSCRIBE' -%}
 {%- assign _locale_nav_subscribe = __return -%}
 
-<form  style=padding:3px;text-align:left;" action="https://feedburner.google.com/fb/a/mailverify?uri=github/YIZL&amp;loc=en_US">
-    <button type="submit" value="Subscribe" />
-</form>
+<div class="subscribe"><i class="fas fa-rss"></i> <a type="application/rss+xml" href="https://feedburner.google.com/fb/a/mailverify?uri=github/YIZL&amp;loc=en_US">{{ _locale_nav_subscribe }}</a></div>
