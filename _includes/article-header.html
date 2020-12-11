@@ -13,8 +13,6 @@
     source0=layout.show_edit_on_github source1=include.article.show_edit_on_github -%}
   {%- assign _show_edit_on_github = __return -%}
 
-{%- include article/header/subscribe.html -%}
-
   {%- if _show_title or _show_edit_on_github -%}
     <div class="article__header">
       {%- if _show_title -%}
@@ -45,9 +43,6 @@
     <header style="display:none;"><h1>{{ _article_title }}</h1></header>
   {%- endif -%}
 {%- endif -%}
-
-
-  
 
 {%- if include.semantic != false -%}
   <meta itemprop="headline" content="{{ _article_title }}">
