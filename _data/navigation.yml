@@ -49,6 +49,3 @@ header:
       # @end locale config
     url: /about.html
     
-    - title: Subscribe
-        url: /subscribe.html
-    
