@@ -44,6 +44,11 @@
   {%- endif -%}
 {%- endif -%}
 
+
+  {%- if _show_subscribe -%}
+    <div class="article__subscribe">{%- include article/footer/subscribe.html -%}</div>
+  {%- endif -%}
+
 {%- if include.semantic != false -%}
   <meta itemprop="headline" content="{{ _article_title }}">
 {%- endif -%}
