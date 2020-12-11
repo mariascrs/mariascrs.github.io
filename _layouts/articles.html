@@ -82,12 +82,12 @@ layout: page
         show_readmore=_show_readmore show_info=_show_info -%}
 
     {%- endif -%}
+    
+      <div class="d-print-none">
+    {%- include articles-footer.html -%}
+  </div>
 
   </div>
 {%- endif -%}
-
-  {%- if _show_subscribe -%}
-    <div class="article__subscribe">{%- include /_includes/article/footer/subscribe.html -%}</div>
-  {%- endif -%}
 
 {{ content }}
