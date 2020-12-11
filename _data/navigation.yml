@@ -1,4 +1,6 @@
 header:
+  - title:      Subscribe
+    url:        /subscribe.html
   - titles:
       # @start locale config
       en      : &EN       Archive
