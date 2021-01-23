@@ -43,7 +43,7 @@ The need for this trusted setup has been highlighted by the following two constr
 
 Though this is not ideal we must note that protocols with trusted setups have seen practical applications. Indeed, Ethereum is considering standardizing the verifiable delay function based on RSA, which needs a trusted setup. 
 
-## Removing Trusted Setup 
+### Removing Trusted Setup 
 
 Removing the trusted setup in isogeny-based cryptography schemes is an active area of research and is achieved by finding a way to 'hash' into a supersingular isogeny graph without revealing a path to a known base curve. This later condition is needed as it has been shown that knowing the path on the isogeny graph allows us to compute the endomorphism ring of the supersingular elliptic curve in polynomial time [^3] [^4].
 
@@ -51,11 +51,11 @@ Charles, Goren and Lauter (CGL) introduced a hash function [^5] that can be used
 
 Besides the CGL approach, an efficient algorithm used to construct elliptic curves for cryptographic schemes is the complex-multiplication (CM) method (see for example [this website](https://crypto.stanford.edu/pbc/notes/ep/cm.html)). It is natural to ask whether this can instead be used to hash into the supersingular isogeny graph. In 'Rational Isogenies from Irrational Endomorphisms', however, Castryck, Panny and Vercauteren show it can't by proving curves constructed using the CM method can be located in the graph in a "suprisingly explicit manner" [^6]. In addition, Love and Boneh proved that another class of supersingular elliptic curves, which they call '$M$-small', cannot be used to construct such a hash function [^7].
 
-# Conclusion 
+## Conclusion 
 
 Currently, finding a way to hash into the supersingular isogeny graph without leaking the path taken is an open problem and so trusted setups are still needed. There is currently no reason to believe that removing this trusted setup is not possible, but one thing is certain: any advances in this area of research would be pivotal and allow many interesting schemes to be built from isogeny-based cryptography.
 
-# References and Further Reading
+## References and Further Reading
 
 [^1]: Luca De Feo, Simon Masson, Christophe Petit and Antonio Sanso. "Verifiable delay functions from supersingular isogenies and pairings." In International Conference on the Theory and Application of Cryptology and Information Security, pp. 248-277. Springer, Cham, 2019.
 
