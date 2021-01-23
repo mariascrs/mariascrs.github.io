@@ -11,8 +11,6 @@ Trusted parties are fundamental in seting up secure communication among parties.
 
 The risk with placing trust on a third party can be seen when they misbehave, causing the security of the scheme to be compromised. For example, if the trusted certificate authority of a PKI is corrupted and issues certificates for users without verifying their identities, there is no longer a guarentee on the privacy and authenticity of the communication. 
 
-# Trusted Setups with Isogenies
-
 ## Supersingular Isogeny Graph
 
 Before discussing trusted setups in isogeny-based cryptography, we will take a slight detour and talk about the supersingular isogeny graph. For a more in depth discussion on isogenies for cryptography see my previous blogpost [here](https://mariascrs.github.io/2020/11/06/isogenies-for-crypto.html). 
