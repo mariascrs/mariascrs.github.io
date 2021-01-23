@@ -1,20 +1,19 @@
 ---
 layout: article
-title: Trusted Setup in Isogeny-Based Cryptography
+title: Trusted Setup with Isogenies
 tags: maths isogeny cryptography post-quantum  
 mathjax: true
 aside:
   toc: true
 ---
 
-
-# The Need for a Trusted Setup
-
 Trusted parties are fundamental in seting up secure communication among parties. For instance, a trusted setup is needed when establishing a trusted relationship between users and certain public information in a public-key infrastructure (PKI) for public-key encryption and signature schemes. 
 
 The risk with placing trust on a third party can be seen when they misbehave, causing the security of the scheme to be compromised. For example, if the trusted certificate authority of a PKI is corrupted and issues certificates for users without verifying their identities, there is no longer a guarentee on the privacy and authenticity of the communication. 
 
-# Supersingular Isogeny Graph
+# Trusted Setups with Isogenies
+
+## Supersingular Isogeny Graph
 
 Before discussing trusted setups in isogeny-based cryptography, we will take a slight detour and talk about the supersingular isogeny graph. For a more in depth discussion on isogenies for cryptography see my previous blogpost [here](https://mariascrs.github.io/2020/11/06/isogenies-for-crypto.html). 
 
@@ -34,9 +33,9 @@ In fact, letting $p = l_A^{e_A}l_B^{e_B}\cdot f \pm 1$ as in my [previous blogpo
 
 If this seems very abstract, click [here](https://isogenies.enricflorit.com/visualizations/index.html) to see some wonderful visualisations of this graph and how it's used in the SIDH key exchange, created by Enric Florit and Gerard Finol. 
 
-# Trusted Setups in Isogeny-based Cryptography
+## The Need for a Trusted Setup
 
-In many isogeny-based protocols, the setup involves generating a supersingular elliptic curve whose endomorphism ring is unknown.Currently, the only way this can be done is by using a trusted third party that performs a random walk on the isogeny graph from a base curve and then forgets it. 
+In many isogeny-based protocols, the setup involves generating a supersingular elliptic curve whose endomorphism ring is unknown. Currently, the only way this can be done is by using a trusted third party that performs a random walk on the isogeny graph from a base curve and then forgets it. 
 
 The need for this trusted setup has been highlighted by the following two constructions:
 
@@ -46,7 +45,7 @@ The need for this trusted setup has been highlighted by the following two constr
 
 Though this is not ideal we must note that protocols with trusted setups have seen practical applications. Indeed, Ethereum is considering standardizing the verifiable delay function based on RSA, which needs a trusted setup. 
 
-# Removing Trusted Setup 
+## Removing Trusted Setup 
 
 Removing the trusted setup in isogeny-based cryptography schemes is an active area of research and is achieved by finding a way to 'hash' into a supersingular isogeny graph without revealing a path to a known base curve. This later condition is needed as it has been shown that knowing the path on the isogeny graph allows us to compute the endomorphism ring of the supersingular elliptic curve in polynomial time [^3] [^4].
 
