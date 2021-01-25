@@ -45,11 +45,13 @@ Though this is not ideal we must note that protocols with trusted setups have se
 
 ### Removing Trusted Setup 
 
-Removing the trusted setup in isogeny-based cryptography schemes is an active area of research and is achieved by finding a way to 'hash' into a supersingular isogeny graph without revealing a path to a known base curve. This later condition is needed as it has been shown that knowing the path on the isogeny graph allows us to compute the endomorphism ring of the supersingular elliptic curve in polynomial time [^3] [^4].
+Removing the trusted setup in isogeny-based cryptography schemes is an active area of research and can be achieved by finding a way to 'hash' into a supersingular isogeny graph without revealing a path to a known base curve. This later condition is needed as it has been shown that knowing the path on the isogeny graph allows us to compute the endomorphism ring of the supersingular elliptic curve in polynomial time [^3] [^4].
 
 Charles, Goren and Lauter (CGL) introduced a hash function [^5] that can be used to hash any string into the supersingular isogeny graph. However, by contruction, this hash function leaks the isogeny path from a base elliptic curve and so cannot be used to remove the trusted setup.
 
 Besides the CGL approach, an efficient algorithm used to construct elliptic curves for cryptographic schemes is the complex-multiplication (CM) method (see for example [this website](https://crypto.stanford.edu/pbc/notes/ep/cm.html)). It is natural to ask whether this can instead be used to hash into the supersingular isogeny graph. In 'Rational Isogenies from Irrational Endomorphisms', however, Castryck, Panny and Vercauteren show it can't by proving curves constructed using the CM method can be located in the graph in a "suprisingly explicit manner" [^6]. In addition, Love and Boneh proved that another class of supersingular elliptic curves, which they call '$M$-small', cannot be used to construct such a hash function [^7].
+
+Though hashing to a supersingular curve directly is preferable, another way to remove the trusted setup is by doing distributed parameter generation, as described in the paper 'Delay Encryption' [^2]. The proposed setup is secure if at least one participant is honest and is updateable. However, the computation scales linearly with the number of participants.
 
 ## Conclusion 
 
