@@ -7,7 +7,7 @@ aside:
   toc: true
 ---
 
-Trusted parties are fundamental in seting up secure communication among parties. For instance, a trusted setup is needed when establishing a trusted relationship between users and certain public information in a public-key infrastructure (PKI) for public-key encryption and signature schemes. 
+Trusted parties are fundamental in setting up secure communication among parties. For instance, a trusted setup is needed when establishing a trusted relationship between users and certain public information in a public-key infrastructure (PKI) for public-key encryption and signature schemes. 
 
 The risk with placing trust on a third party can be seen when they misbehave, causing the security of the scheme to be compromised. For example, if the trusted certificate authority of a PKI is corrupted and issues certificates for users without verifying their identities, there is no longer a guarantee on the privacy and authenticity of the communication. 
 
