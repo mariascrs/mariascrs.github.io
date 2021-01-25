@@ -24,7 +24,7 @@ We note that due to the existence of a dual isogeny $\hat{\phi}: E' \rightarrow 
 
 * we can walk efficiently on these graphs;
 * the graph has fast mixing, which intuitively means that there is a *short* path to *almost* all nodes;
-* given the end point of a path on the graph, there is no classical or quantum efficient algorithm to recover this path;
+* given the end point of a path on the graph, there is no known classical or quantum efficient algorithm to recover this path;
 * we can navigate the graphs as they have enough structure.
 
 In fact, letting $p = l_A^{e_A}l_B^{e_B}\cdot f \pm 1$ as in my [previous blogpost](https://mariascrs.github.io/2020/12/04/sidh.html) on SIDH, this key exchange can be rephrased as Alice and Bob constructing paths from $e_A$ and $e_B$ edges on the supersingular $l_A$- and $l_B$-isogeny graph, respectively.
