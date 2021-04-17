@@ -6,7 +6,9 @@ titles:
   # @end locale config
 ---
  
-# Talks
+---
+Talks
+---
 
 # Outreach
 
