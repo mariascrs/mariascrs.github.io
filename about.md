@@ -25,7 +25,7 @@ titles:
   # @end locale config
 key: page-about
 ---
-<img align="left" width="100" height="100" src="../images/profile.jpg">
+<img align="left" src="../images/profile.jpg">
 
 Originally from Portugal, I completed my Undergraduate and Master's degree in Mathematics at the University of Cambridge, specialising in Algebraic Number Theory and Elliptic Curves. 
 
