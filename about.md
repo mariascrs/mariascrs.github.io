@@ -30,3 +30,7 @@ key: page-about
 Originally from Portugal, I completed my Undergraduate and Master's degree in Mathematics at the University of Cambridge, specialising in Algebraic Number Theory and Elliptic Curves. 
 
 I am now a first year PhD student the CDT for Cyber Security at University College London. My main interests are post-quantum cryptography, specifically isogeny-based protocols and applications.
+
+**CV:** available upon request
+
+**Contact:** maria.santos.20@ucl.ac.uk
