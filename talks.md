@@ -1,5 +1,6 @@
 ---
 layout: article
+title: Talks
 ---
 
 Outreach
