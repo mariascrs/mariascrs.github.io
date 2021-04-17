@@ -33,4 +33,4 @@ I am now a first year PhD student, part of the [CDT for Cybersecurity](https://w
 
 **CV:** available upon request
 
-**Contact:** use email link below
+**Contact:** maria [dot] santos [dot] 20 [at] ucl [dot] ac [dot] uk
