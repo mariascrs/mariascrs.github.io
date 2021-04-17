@@ -26,11 +26,10 @@ titles:
 ---
 
 
-Talks
----
+# Talks
 
-Outreach
----
+
+# Outreach
 
 * 17 April, 2021\
 **Year 12 Taster Lecture - Pembroke College, Cambridge**\
