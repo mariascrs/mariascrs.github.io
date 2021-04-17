@@ -2,10 +2,12 @@
 layout: article
 titles:
   # @start locale config
-  en      : &EN     Talks      
+  en      : &EN   
   # @end locale config
 ---
+Here are a collection of talks that I've given.
 
+# Talks
 
 # Outreach
 
