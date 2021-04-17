@@ -2,10 +2,6 @@
 layout: article
 ---
 
-Talks
----
-
-
 Outreach
 ---
 
