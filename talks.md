@@ -1,12 +1,12 @@
 ---
 layout: article
-titles:
-  # @start locale config
-  en      : &EN       Talks
-  # @end locale config
 ---
 
-## Outreach
+Talks
+---
+
+Outreach
+---
 
 * 17 April, 2021\
 **Year 12 Taster Lecture - Pembroke College, Cambridge**\
