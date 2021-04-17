@@ -5,7 +5,7 @@ titles:
   en      : &EN   
   # @end locale config
 ---
-Here are a collection of talks that I've given.
+Here are a collection of academic and outreach talks that I've given.
 
 # Talks
 
@@ -18,7 +18,7 @@ Delivered a Maths Taster Lecture on Cryptography to Year 12 students. [Slides](h
 
 * 17 February, 2021\
 **Women in STEM - Selwyn College, Cambridge**\
-Delivered a lecture on Cryptography to hundreds of Year 10 students in a taster day for Women in STEM.[Slides](https://docs.google.com/presentation/d/1IXgY7_xpQinM_ZPfvubV5d6tQVn2XnNI6V6CuPp7Sfc/edit?usp=sharing)\
+Delivered a lecture on Cryptography to hundreds of Year 10 students in a taster day for Women in STEM. [Slides](https://docs.google.com/presentation/d/1IXgY7_xpQinM_ZPfvubV5d6tQVn2XnNI6V6CuPp7Sfc/edit?usp=sharing)\
 *Virtual*
 
 
