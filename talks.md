@@ -2,7 +2,8 @@
 layout: article
 title: Talks
 ---
- 
+
+Here is a collection of my academic and outreach talks.
 
 Academic
 ---
