@@ -3,7 +3,7 @@ layout: article
 ---
  
 
-Talks
+Academic
 ---
 
 Outreach
