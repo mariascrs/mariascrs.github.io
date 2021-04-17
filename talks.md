@@ -1,5 +1,5 @@
 ---
-layout: Page - Single
+layout: article
 ---
  
 
