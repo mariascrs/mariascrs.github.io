@@ -5,11 +5,11 @@ title: Talks
 
 Here is a collection of my academic and outreach talks.
 
-Academic
----
+### Academic
 
-Outreach
----
+
+### Outreach
+
 
 * 17 April, 2021\
 **Year 12 Taster Lecture - Pembroke College, Cambridge**\
