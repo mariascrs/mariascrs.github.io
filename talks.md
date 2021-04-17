@@ -1,13 +1,5 @@
 ---
 layout: article
-titles:
-  # @start locale config
-  en      : &EN       Talks
-  en-GB   : *EN
-  en-US   : *EN
-  en-CA   : *EN
-  en-AU   : *EN
-  # @end locale config
 ---
 
 Talks
