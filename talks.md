@@ -1,15 +1,10 @@
 ---
-layout: article
-titles:
-  # @start locale config
-  en      : &EN   
-  # @end locale config
+layout: Page - Single
 ---
  
----
+
 Talks
 ---
-
 
 Outreach
 ---
