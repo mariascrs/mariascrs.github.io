@@ -5,8 +5,7 @@ titles:
   en      : &EN   
   # @end locale config
 ---
-Here are a collection of academic and outreach talks that I've given.
-
+ 
 # Talks
 
 # Outreach
