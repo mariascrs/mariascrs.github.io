@@ -16,7 +16,7 @@ Delivered a Maths Taster Lecture on Cryptography to Year 12 students. <a href="h
 
 * 17 February, 2021\
 **Women in STEM - Selwyn College, Cambridge**\
-Delivered a lecture on Cryptography to hundreds of Year 10 students in a taster day for Women in STEM. [Slides](https://docs.google.com/presentation/d/1IXgY7_xpQinM_ZPfvubV5d6tQVn2XnNI6V6CuPp7Sfc/edit?usp=sharing)\
+Delivered a lecture on Cryptography to hundreds of Year 10 students in a taster day for Women in STEM. <a href="https://docs.google.com/presentation/d/1IXgY7_xpQinM_ZPfvubV5d6tQVn2XnNI6V6CuPp7Sfc/edit?usp=sharing" target="_blank">Slides</a>\
 *Virtual*
 
 
