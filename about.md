@@ -32,5 +32,3 @@ Originally from Portugal, I completed my Undergraduate and Master's degree in Ma
 I am now a first year PhD student the CDT for Cyber Security at University College London. My main interests are post-quantum cryptography, specifically isogeny-based protocols and applications.
 
 **CV:** available upon request
-
-**Contact:** maria.santos.20@ucl.ac.uk
