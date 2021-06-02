@@ -10,6 +10,10 @@ Here is a collection of my academic and outreach talks.
 
 ### Outreach
 
+* 1 June, 2021\
+**Year 11 Women in STEM - Pembroke College, Cambridge**\
+Delivered a Maths Taster Lecture on Cryptography to Year 11 students. <a href="https://docs.google.com/presentation/d/1zQ4DeP92EbOGP0jrzs4C9zfBw-xLbrR4HIpYEEItwFQ/edit?usp=sharing" target="_blank">Slides</a>\
+*Virtual*
 
 * 17 April, 2021\
 **Year 12 Taster Lecture - Pembroke College, Cambridge**\
