@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Teaching
+title: Teaching and Talks
 ---
 
 ## Teaching 
