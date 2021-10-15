@@ -2,14 +2,16 @@
 layout: article
 titles:
   # @start locale config
-  en      : &EN       
+  en      : &EN About 
   en-GB   : *EN
   en-US   : *EN
   en-CA   : *EN
   en-AU   : *EN
 
   # @end locale config
+show_title: false
 key: page-about
+
 ---
 <img align="left" width="217" height="295" hspace="25" src="../images/profile.jpg">
 
