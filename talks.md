@@ -4,7 +4,7 @@ title: Teaching and Talks
 ---
 
 ## Teaching 
-* Term 1, 2021: Teaching assistant for Introduction to Cryptography (COMP0025) at UCL
+* Term 1, 2021: Teaching assistant for <a href="https://www.ucl.ac.uk/module-catalogue/modules/introduction-to-cryptography/COMP0025" target="_blank">Introduction to Crpytography (COMP0025)</a> at UCL
 
 
 ## Talks 
