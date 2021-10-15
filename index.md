@@ -12,7 +12,7 @@ titles:
 key: page-about
 
 ---
-<img align="left" width="227" height="305" hspace="25" src="../images/profile.jpg">
+<img align="left" width="227" height="305" hspace="20" src="../images/profile.jpg">
 
 
 I am currently a second year PhD student, part of the [CDT for Cybersecurity](https://www.ucl.ac.uk/cybersecurity-cdt/) and the [Information Security group](https://sec.cs.ucl.ac.uk/) at University College London. My main interests are post-quantum cryptography, specifically isogeny-based protocols and applications.
