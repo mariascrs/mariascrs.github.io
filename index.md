@@ -22,5 +22,3 @@ Before starting my PhD I completed my Undergraduate and Master's degree in Mathe
 
 **CV:** available upon request
 
-**Contact:** maria [dot] santos [dot] 20 [at] ucl [dot] ac [dot] uk
-
