@@ -2,7 +2,7 @@
 layout: article
 titles:
   # @start locale config
-  en      : &EN  
+  en      : &EN  Maria Corte-Real Santos
   en-GB   : *EN
   en-US   : *EN
   en-CA   : *EN
@@ -16,7 +16,7 @@ key: page-about
 
 Originally from Portugal, I completed my Undergraduate and Master's degree in Mathematics at the University of Cambridge, specialising in Algebraic Number Theory and Elliptic Curves. 
 
-I am now a first year PhD student, part of the [CDT for Cybersecurity](https://www.ucl.ac.uk/cybersecurity-cdt/) and the [Information Security group](https://sec.cs.ucl.ac.uk/) at University College London. My main interests are post-quantum cryptography, specifically isogeny-based protocols and applications.
+I am now a second year PhD student, part of the [CDT for Cybersecurity](https://www.ucl.ac.uk/cybersecurity-cdt/) and the [Information Security group](https://sec.cs.ucl.ac.uk/) at University College London. My main interests are post-quantum cryptography, specifically isogeny-based protocols and applications.
 
 **CV:** available upon request
 
