@@ -28,4 +28,6 @@ Delivered a Maths Taster Lecture on Cryptography to Year 12 students. <a href="h
 Delivered a lecture on Cryptography to hundreds of Year 10 students in a taster day for Women in STEM. <a href="https://docs.google.com/presentation/d/1IXgY7_xpQinM_ZPfvubV5d6tQVn2XnNI6V6CuPp7Sfc/edit?usp=sharing" target="_blank">Slides</a>\
 *Virtual*
 
+## Conferences Attended
+* [Eurocrypt 2021](https://eurocrypt.iacr.org/2021/)
 
