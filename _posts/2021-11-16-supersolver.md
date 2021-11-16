@@ -7,7 +7,7 @@ aside:
   toc: true
 ---
 
-This blogpost aims to give a general overview of our new paper *"SuperSolver: accelerating the Delfs-Galbraith algorithm with fast subfield root detection"* (link here). This is joint work with my amazing coauthors Craig Costello and Jia Shi.
+This blogpost aims to give a general overview of our new paper *"SuperSolver: accelerating the Delfs-Galbraith algorithm with fast subfield root detection"* ([link](https://eprint.iacr.org/2021/1488)). This is joint work with my amazing coauthors Craig Costello and Jia Shi.
 
 ## The supersingular isogeny problem and the Delfs-Galbraith algorithm
 
