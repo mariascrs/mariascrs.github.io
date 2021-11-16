@@ -63,7 +63,7 @@ with $0.75 \leq c \leq 1.05$.
 
 ## SuperSolver: accelerating the Delfs-Galbraith algorithm
 
-The other contribution of our paper is an new attack, called **SuperSolver**, against the supersingular isogeny problem that vastly improves on the concrete complexity of the Delfs-Galbraith algorithm. The core difference of **SuperSolver** lies in Step 1: at each step of the random walk, **SuperSolver** inspects the $\ell$-isogeny graph for $\ell$ in a carefully chosen set of *optimal* $\ell > 2$, to efficiently detect whether $j_c$ has an $\ell$-isogenous neighbour in $\mathbb{F}\_p$, where $j_c$ is the current node. Traditionally, conducting this inspection requires fully factorizing a degree-$(N_\ell-1)$ polynomial and determining whether any of the roots lie in $\mathbb{F}\_{p}$. However, this is prohibitively costly for $\ell > 2$, especially as $p$ grows large. In the paper, we introduce a novel method of conducting this inspection in $\ell$-isogeny graphs, which requires $O(\ell^2)$ multiplications in $\mathbb{F}\_p$. Crucially, this is no longer dependent on $p$, meaning that as $p$ grows large, the set of $\ell$'s that are optimal to use also grows, and the more profitable (relatively speaking) **SuperSolver** becomes. 
+The other contribution of our paper is an new attack, called **SuperSolver**, against the supersingular isogeny problem that improves on the concrete complexity of the Delfs-Galbraith algorithm. The core difference of **SuperSolver** lies in Step 1. Here, at each step of the random walk, **SuperSolver** inspects the $\ell$-isogeny graph for $\ell$ in a carefully chosen set, to efficiently detect whether $j_c$ has an $\ell$-isogenous neighbour in $\mathbb{F}\_p$ ($j_c$ is the current node). We will describe how this set of *optimal* $\ell > 2$ is chosen below.  Traditionally, conducting this inspection requires fully factorizing a degree-$(N_\ell-1)$ polynomial and determining whether any of the roots lie in $\mathbb{F}\_{p}$. However, this is prohibitively costly for $\ell > 2$, especially as $p$ grows large. In the paper, we introduce a novel method of conducting this inspection in $\ell$-isogeny graphs, which requires $O(\ell^2)$ multiplications in $\mathbb{F}\_p$. Crucially, this is no longer dependent on $p$, meaning that as $p$ grows large, the set of $\ell$'s that are optimal to use also grows, and the more profitable (relatively speaking) **SuperSolver** becomes. 
 
 We now describe 
 
@@ -83,15 +83,8 @@ We can extend this to polynomials as follows: if $f(X) = a_nX^n + \dots + a_1X +
 $$
 \pi(f) = \pi(a_n)X^n + \dots + \pi(a_1)X + \pi(a_0).
 $$
-Writing $f$ as 
-$$
-f = \prod_{i=1}^{n} (X - \alpha_i)
-$$
-where $\alpha_i$ are the roots of $f$ (not necessarily distinct), we have
-$$
-\pi(f) = \prod_{i=1}^{n} (X - \pi(\alpha_i)).
-$$
-From this we can see that a polynomial $f \in \mathbb{F}\_{p^2}[X]$ will have a root in $\mathbb{F}\_p$ if and only if $f$ and $\pi(f)$ have a common root, i.e., their greatest common divisor is non-constant. Indeed, $f$ and $\pi(f)$ have a common root, say $\alpha$, if and only if $\alpha = \pi(\alpha)$. This is equivalent to $\alpha \in \mathbb{F}\_p$.
+
+A polynomial $f \in \mathbb{F}\_{p^2}[X]$ will have a root in $\mathbb{F}\_p$ if and only if $f$ and $\pi(f)$ have a common root, i.e., their greatest common divisor is non-constant.  Indeed, $f$ and $\pi(f)$ have a common root, say $\alpha$, if and only if $\alpha = \pi(\alpha)$. This is equivalent to $\alpha \in \mathbb{F}\_p$.
 
 The problem is that $f$ and $\pi(f)$ are, in general, defined over $\mathbb{F}\_{p^2}$. To avoid costly multiplications in $\mathbb{F}\_{p^2}$, we want to, in some way, transform these into polynomials defined over $\mathbb{F}\_p$.
 
@@ -117,7 +110,9 @@ $$
 Then, the linear transformation is invertible and $g_1, g_2 \in \mathbb{F}\_{p}[X]$. Note that the second statement is clear in the $d=2$ case, but for $d>2$ we need Theorem 2.24 in [^3] to easily show the resulting polynomials are defined over the base field. 
 
 Concluding, we have
+
 $$\gcd(f, \pi(f)) = \gcd(f + \pi(f), \beta(f - \pi(f))$$
+
 and so $f\in \mathbb{F}\_{p^2}[X]$ has a root in $\mathbb{F}\_{p}$ if and only if $\gcd(f + \pi(f), \beta(f - \pi(f))$ is non-constant, where this $\gcd$ calculation can be done over $\mathbb{F}\_p$.
 
 
@@ -125,10 +120,12 @@ and so $f\in \mathbb{F}\_{p^2}[X]$ has a root in $\mathbb{F}\_{p}$ if and only i
 
 Though the inspection of the neighbours of $j_c$ in the $\ell$-isogeny graph increases the total number of $\mathbb{F}\_p$ multiplications at each step, more nodes are checked. We therefore choose the list of $\ell$'s to minimise the number of $\mathbb{F}_p$ multiplications *per node inspected*. 
 
-To do this, we first determine the cost per node inspected of taking a step in the $2$-isogeny graph, as described above. Call this $\text{cost}_2$. We then determine a list of $\ell > 2$ such that inspecting the $\ell$-isogeny graph (using the fast subfield root detection) has a lower cost per node inspected than $\text{cost}_2$. Once we have this list of $\ell$'s, we find the subset of this list which minimises the total cost of each step, calculated as:
+To do this, we first determine the cost per node inspected of taking a step in the $2$-isogeny graph, as described above. Denote this cost by $\text{cost}\_2$. We then determine a list of $\ell > 2$ such that inspecting the $\ell$-isogeny graph (using the fast subfield root detection) has a lower cost per node inspected than $\text{cost}\_2$. Once we have this list of $\ell$'s, we find the subset of this list which minimises the total cost of each step, calculated as:
+
 $$
 \text{cost} = \frac{\text{total \# of } \mathbb{F}\_p \text{ multiplications}}{\text{total \# of nodes revealed}}.
 $$
+
 This subset will be the list of *optimal $\ell$'s* used in **SuperSolver**. 
 
 Calculating $\text{cost}_2$ depends only on the prime $p$, and the cost of inspecting the $\ell$-isogeny graph depends only on $\ell$. Therefore, this set of optimal $\ell$'s can be determined in the precomputation. 
