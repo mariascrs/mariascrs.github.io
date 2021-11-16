@@ -55,9 +55,11 @@ Note here that the first step is an exception as we do not know $j_p$, so we mus
 Using **Solver**, for each bitlength between 21 and 40, we solved 10,000 instances of the subfield search. In each of these, we chose 100 random primes and, for each prime, 100 pseudo-random $j$-invariants in $\mathbb{F}\_{p^2}$. 
 
 For all bitlengths, we find the number of $\mathbb{F}\_{p}$ multiplications to be:
+
 $$
-\#(\mathbb{F}\_{p} \text{ muls.}) = c \cdot \sqrt{p} \cdot \log_2 p
+\#(\mathbb{F}_{p} \text{ muls.}) = c \cdot \sqrt{p} \cdot \log_2 p
 $$
+
 with $0.75 \leq c \leq 1.05$.
 
 
@@ -72,7 +74,7 @@ We now describe
 
 ### Fast Subfield Root Detection
 
-In Section 4 of the paper, we derive a method for determining whether a polynomial $f(X) = a_nX^n + \dots + a_1X + a_0 \in \mathbb{F}\_{q^d}[X]$ has a root in the subfield $\mathbb{F}\_q$, where $q$ is the power of a prime $p$. Here, for simplicity, I will describe it as needed for **SuperSolver**, i.e., where $q = p$ and $d=2$. 
+In Section 4 of the paper, we derive a method for determining whether a polynomial $f(X) = a_nX^n + \dots + a_1X + a_0 \in \mathbb{F}\_{q^d}[X]$ has a root in the subfield $\mathbb{F}\_{q}$, where $q$ is the power of a prime $p$. Here, for simplicity, I will describe it as needed for **SuperSolver**, i.e., where $q = p$ and $d=2$. 
 
 
 We first introduce the $p$-power Frobenius map $\pi$, which for $\alpha \in \mathbb{F}\_{p^2}$ acts as
@@ -89,10 +91,13 @@ A polynomial $f \in \mathbb{F}\_{p^2}[X]$ will have a root in $\mathbb{F}\_p$ if
 The problem is that $f$ and $\pi(f)$ are, in general, defined over $\mathbb{F}\_{p^2}$. To avoid costly multiplications in $\mathbb{F}\_{p^2}$, we want to, in some way, transform these into polynomials defined over $\mathbb{F}\_p$.
 
 A key observation is that the GCD of two polynomials is invariant under an invertible linear transformation. Consider $f_1,f_2 \in \mathbb{F}\_{p^2}[X]$ and define
+
 $$
 g_1 = af_1 + bf_2, \ \ g_2 = cf_1 + df_2
 $$
+
 such that $ad-bc \neq 0$, i.e., $g_1, g_2$ are given by applying an invertible linear transformation to $f_1, f_2$. Then if $h \in  \mathbb{F}\_{p^2}[X]$ divides $f_1$ and $f_2$, it must divide $g_1, g_2$. As the linear transformation is invertible, by swapping the roles of $f_i$ and $g_i$ we show that if $h \in  \mathbb{F}\_{p^2}[X]$ divides $g_1, g_2$, it must divide $f_1, f_2$. Therefore,
+
 $$
 \gcd(f_1, f_2) = \gcd(g_1, g_2).
 $$
@@ -101,12 +106,15 @@ This means that if we can find some invertible linear transformation that sends 
 $$
 \gcd(f, \pi(f)) = \gcd(g_1, g_2).
 $$
+
 This means that we can determine whether $f \in \mathbb{F}\_{p^2}[X]$ has a root in $\mathbb{F}\_p$ by simply computing a $\gcd$ in $\mathbb{F}\_p$.
 
 To find this linear transformation, consider $\beta$ such that $\mathbb{F}\_{p^2} = \mathbb{F}\_{p}(\beta)$ (i.e. $\beta$ is a primitive element of the extension $\mathbb{F}\_{p^2}/\mathbb{F}\_p$), and define
+
 $$
 g_1 = f + \pi(f) \ \ \text{ and } \ \ g_2 = \beta(f - \pi(f)).
 $$
+
 Then, the linear transformation is invertible and $g_1, g_2 \in \mathbb{F}\_{p}[X]$. Note that the second statement is clear in the $d=2$ case, but for $d>2$ we need Theorem 2.24 in [^3] to easily show the resulting polynomials are defined over the base field. 
 
 Concluding, we have
@@ -123,7 +131,7 @@ Though the inspection of the neighbours of $j_c$ in the $\ell$-isogeny graph inc
 To do this, we first determine the cost per node inspected of taking a step in the $2$-isogeny graph, as described above. Denote this cost by $\text{cost}\_2$. We then determine a list of $\ell > 2$ such that inspecting the $\ell$-isogeny graph (using the fast subfield root detection) has a lower cost per node inspected than $\text{cost}\_2$. Once we have this list of $\ell$'s, we find the subset of this list which minimises the total cost of each step, calculated as:
 
 $$
-\text{cost} = \frac{\text{total \# of } \mathbb{F}\_p \text{ multiplications}}{\text{total \# of nodes revealed}}.
+\text{cost} = \frac{\text{total # of } \mathbb{F}_p \text{ multiplications}}{\text{total # of nodes revealed}}.
 $$
 
 This subset will be the list of *optimal $\ell$'s* used in **SuperSolver**. 
