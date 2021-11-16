@@ -11,15 +11,15 @@ This blogpost aims to give a general overview of our new paper *"SuperSolver: ac
 
 ## The supersingular isogeny problem and the Delfs-Galbraith algorithm
 
-The *supersingular isogeny problem* asks to find an isogeny 
+The *supersingular isogeny problem* asks the following: given two supersingular curves $E_0/\bar{\mathbb{F}}\_p$ and $E_1/\bar{\mathbb{F}}\_p$, find an isogeny 
 
 $$
-\phi: E_0 \rightarrow E_1
+\phi: E_0 \rightarrow E_1.
 $$
 
-between two supersingular curves $E_0/\bar{\mathbb{F}}\_p$ and $E_1/\bar{\mathbb{F}}\_p$. The best known classical attack against it is the Delfs-Galbraith algorithm [^1]. In the general case, where $E_0, E_1$ are defined over $\mathbb{F}\_{p^2}$, the Delfs-Galbraith algorithm has 2 steps:
+The best known classical attack against it is the Delfs-Galbraith algorithm [^1]. In the general case, where $E_0, E_1$ are defined over $\mathbb{F}\_{p^2}$, the Delfs-Galbraith algorithm has 2 steps:
 
-* **Step 1:** Compute simple self-avoiding random walks in the $\ell$-isogeny graph (for some choice of $\ell$) to find isogenies $\phi_0: E_0 \rightarrow E_0'$ and $\phi_1: E_1 \rightarrow E_1'$, such that $E_0'/\mathbb{F}\_p$ and $E_1'/\mathbb{F}\_p$ are *subfield curves*. There are approximately $\lfloor p/12 \rfloor$ supersingular curves up to isomorphism and $O(p^{1/2})$ of them are subfield curves. This step, therefore, runs in $\tilde{O}(p^{1/2})$ bit operations. 
+* **Step 1:** Compute simple self-avoiding random walks in the $\ell$-isogeny graph (for some choice of $\ell$) to find isogenies $\phi_0: E_0 \rightarrow E_0'$ and $\phi_1: E_1 \rightarrow E_1'$, such that $E_0'/\mathbb{F}\_p$ and $E_1'/\mathbb{F}\_p$ are *subfield curves*. You may be asking, what exactly is a subfield curve? In general the $j$-invariant of an elliptic curve $E$ lies in $\mathbb{F}\_{p^2}$. If $j \in \mathbb{F}\_p$, we say $E$ is a subfield curve. There are approximately $\lfloor p/12 \rfloor$ supersingular curves up to isomorphism and $O(p^{1/2})$ of them are subfield curves. This step, therefore, runs in $\tilde{O}(p^{1/2})$ bit operations. 
 
 * **Step 2:** Search for a subfield isogeny $\phi': E_0' \rightarrow E_1'$ that connects $\phi_0$ and $\phi_1$. This step requires $\tilde{O}(p^{1/4})$ bit operations. 
 
@@ -33,7 +33,7 @@ The entire Delfs-Galbraith algorithm runs in $\tilde{O}(p^{1/2})$ operations on 
 
 ## Determining the Concrete Complexity of Delfs-Galbraith
 
-In this paper, one of our contributions is an optimised implementation of the Delfs-Galbraith algorithm, called **Solver**. This allows us to remove the $\tilde{O}$'s above and determine the concrete complexity of this algorithm. 
+One of our contributions is an optimised implementation of the Delfs-Galbraith algorithm, called **Solver**. This allows us to remove the $\tilde{O}$'s above and determine the concrete complexity of this algorithm. 
 
 In the paper, we focus on the optimisation and complexity of the bottleneck step: finding subfield curves (step 1 above). These optimisations are as follows.
 
@@ -41,7 +41,7 @@ In the paper, we focus on the optimisation and complexity of the bottleneck step
 $$
 N_\ell = \prod_{i=1}^n (l_i + 1)l_i^{e_i -1 }.
 $$
-If $\ell$ is prime, then the polynomial is degree $\ell$. We, therefore, chose $\ell = 2$, as it is the simplest and most efficient choice. 
+If $\ell$ is prime, then the polynomial $\Phi_{\ell, p}(X,j_c)/(X-j_p)$ is of degree $\ell$. We chose $\ell = 2$, as it is the simplest and most efficient choice. 
 Note here that the first step is an exception as we do not know $j_p$, so we must instead factor an $N_\ell$-degree polynomial to find a neighbouring node. 
 
 
