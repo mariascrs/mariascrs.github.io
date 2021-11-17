@@ -48,7 +48,7 @@ Note here that the first step is an exception as we do not know $j_p$, so we mus
 
 **Fast square root finding in $\mathbb{F}\_{p^2}$**. We use techniques presented in Michael Scott's *Tricks of the Trade* paper [^2] to construct an optimised algorithm for finding square roots in $\mathbb{F}\_{p^2}$. Our algorithm requires only two $\mathbb{F}\_p$ exponentiations and a few $\mathbb{F}\_p$ multiplications and additions. 
 
-**Random walks in the $2$-isogeny graph**. We use a depth-first search to find subfield nodes in the 2-isogeny graph. For more detials on this, see Section 3 of the paper. 
+**Random walks in the $2$-isogeny graph**. We use a depth-first search to find subfield nodes in the 2-isogeny graph. We bound the depth at $c*\log(p)$ to reuse computations. This process parallelizes perfectly: for $P$ processors we can (pre)compute the leaves of a binary tree of depth $\lceil log(P)\rceil$ and assign each processor one of those as its root node.
 
 ### Concrete Complexity of Delfs-Galbraith
 
