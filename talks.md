@@ -10,6 +10,9 @@ title: Teaching and Talks
 ## Talks 
 ### Academic
 
+* 24 November, 2021\
+**Cybersecurity Industry Evening for the UCL CDT in Cybersecurity**
+In a group, presented a cybersecurity scenario and how our research would aid in solving the problems. Joint winners for best presentation. 
 
 ### Outreach
 
