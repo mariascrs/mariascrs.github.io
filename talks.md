@@ -1,11 +1,7 @@
 ---
 layout: article
-title: Teaching and Talks
+title: Talks and Teaching
 ---
-
-## Teaching 
-* Term 1, 2021: Teaching assistant for <a href="https://www.ucl.ac.uk/module-catalogue/modules/introduction-to-cryptography/COMP0025" target="_blank">Introduction to Cryptography (COMP0025)</a> at UCL
-
 
 ## Talks 
 ### Academic
@@ -31,6 +27,12 @@ Delivered a Maths Taster Lecture on Cryptography to Year 12 students. <a href="h
 Delivered a lecture on Cryptography to hundreds of Year 10 students in a taster day for Women in STEM. <a href="https://docs.google.com/presentation/d/1IXgY7_xpQinM_ZPfvubV5d6tQVn2XnNI6V6CuPp7Sfc/edit?usp=sharing" target="_blank">Slides</a>\
 *Virtual*
 
+
+## Teaching 
+* Term 1, 2021: Teaching assistant for <a href="https://www.ucl.ac.uk/module-catalogue/modules/introduction-to-cryptography/COMP0025" target="_blank">Introduction to Cryptography (COMP0025)</a> at UCL
+* 
+
 ## Conferences Attended
 * [Eurocrypt 2021](https://eurocrypt.iacr.org/2021/)
+
 
