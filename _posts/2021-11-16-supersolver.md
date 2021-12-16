@@ -86,9 +86,9 @@ $$
 \pi(f) = \pi(a_n)X^n + \dots + \pi(a_1)X + \pi(a_0).
 $$
 
-A polynomial $f \in \mathbb{F}\_{p^2}[X]$ will have a root in $\mathbb{F}\_p$ if and only if $f$ and $\pi(f)$ have a common root, i.e., their greatest common divisor is non-constant.  Indeed, $f$ and $\pi(f)$ have a common root, say $\alpha$, if and only if $\alpha = \pi(\alpha)$. This is equivalent to $\alpha \in \mathbb{F}\_p$.
+The greatest common divisor of $f$ and $\pi(f)$ is the largest divisor of $f$ defined over $\mathbb{F}\_p$. If this divisor is of degree one, $f$ has a root in $\mathbb{F}\_p$. If this divisor is a constant, $f$ does not have a root in $\mathbb{F}\_p$ In our target application, with overwhleming high probability, $\gcd(f, \pi(f))$ will have degree 0 or 1. Therefore, calculating $\gcd(f, \pi(f))$ will reveal whether or not $f$ has a root defined over $\mathbb{F}\_p$.
 
-The problem is that $f$ and $\pi(f)$ are, in general, defined over $\mathbb{F}\_{p^2}$. To avoid costly multiplications in $\mathbb{F}\_{p^2}$, we want to, in some way, transform these into polynomials defined over $\mathbb{F}\_p$.
+The problem with caluclating this $\gcd$ is that $f$ and $\pi(f)$ are, in general, defined over $\mathbb{F}\_{p^2}$. To avoid costly multiplications in $\mathbb{F}\_{p^2}$, we want to, in some way, transform these into polynomials defined over $\mathbb{F}\_p$.
 
 A key observation is that the GCD of two polynomials is invariant under an invertible linear transformation. Consider $f_1,f_2 \in \mathbb{F}\_{p^2}[X]$ and define
 
@@ -104,10 +104,10 @@ $$
 
 This means that if we can find some invertible linear transformation that sends $f, \pi(f)$ to related polynomials, say $g_1, g_2$ defined over $\mathbb{F}\_p$, then we will have  
 $$
-\gcd(f, \pi(f)) = \gcd(g_1, g_2).
+\gcd(f, \pi(f)) = \gcd(g_1, g_2),
 $$
 
-This means that we can determine whether $f \in \mathbb{F}\_{p^2}[X]$ has a root in $\mathbb{F}\_p$ by simply computing a $\gcd$ in $\mathbb{F}\_p$.
+and will only have to compute the $\gcd$ in $\mathbb{F}\_p$.
 
 To find this linear transformation, consider $\beta$ such that $\mathbb{F}\_{p^2} = \mathbb{F}\_{p}(\beta)$ (i.e. $\beta$ is a primitive element of the extension $\mathbb{F}\_{p^2}/\mathbb{F}\_p$), and define
 
@@ -119,9 +119,9 @@ Then, the linear transformation is invertible and $g_1, g_2 \in \mathbb{F}\_{p}[
 
 Concluding, we have
 
-$$\gcd(f, \pi(f)) = \gcd(f + \pi(f), \beta(f - \pi(f))$$
+$$\gcd(f, \pi(f)) = \gcd(f + \pi(f), \beta(f - \pi(f)),$$
 
-and so $f\in \mathbb{F}\_{p^2}[X]$ has a root in $\mathbb{F}\_{p}$ if and only if $\gcd(f + \pi(f), \beta(f - \pi(f))$ is non-constant, where this $\gcd$ calculation can be done over $\mathbb{F}\_p$.
+which will give us the largest divisor of $f$ defined over $\mathbb{F}\_p$. We reiterate that, in our setting, this reveals with overwhleming probability whether $f$ has a root in $\mathbb{F}\_p$. 
 
 
 ### Choosing the set of optimal $\ell$'s
