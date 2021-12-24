@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Posts
+title: Papers
 ---
 
 ## 2021
