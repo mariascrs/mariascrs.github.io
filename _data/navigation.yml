@@ -8,8 +8,11 @@ header:
       en-AU   : *EN
       # @end locale config
     url: /posts.html
+  - title:      Paper
+    url: /papers.html
   - title:      Talks
     url:        /talks.html
   - title:      Subscribe
     url:        /subscribe.html
+  
 
