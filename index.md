@@ -1,19 +1,11 @@
 ---
 layout: article
-titles:
-  # @start locale config
-  en      : &EN 
-  en-GB   : *EN
-  en-US   : *EN
-  en-CA   : *EN
-  en-AU   : *EN
-
-  # @end locale config
+title:
 key: page-about
 
 ---
 
-## Maria Corte-Real Santos ## 
+## Maria Corte-Real Santos
 
 <img align="right" width="220" height="300" hspace="20" src="../images/profile.jpg">
 
