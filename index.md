@@ -1,11 +1,9 @@
 ---
 layout: article
-title:
+title: Maria Corte-Real Santos
 key: page-about
 
 ---
-
-## Maria Corte-Real Santos
 
 <img align="right" width="220" height="300" hspace="20" src="../images/profile.jpg">
 
