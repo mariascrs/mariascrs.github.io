@@ -12,8 +12,10 @@ titles:
 key: page-about
 
 ---
-<img align="right" width="220" height="300" hspace="20" src="../images/profile.jpg">
 
+## Maria Corte-Real Santos ## 
+
+<img align="right" width="220" height="300" hspace="20" src="../images/profile.jpg">
 
 I am currently a second year PhD student, part of the [CDT for Cybersecurity](https://www.ucl.ac.uk/cybersecurity-cdt/) and the [Information Security group](https://sec.cs.ucl.ac.uk/) at University College London. My main interests are post-quantum cryptography, specifically isogeny-based protocols and applications.
 My main supervisors are [Philipp Jovanovic](https://philipp.jovanovic.io/) and [Sarah Meiklejohn](https://smeiklej.com/). 
