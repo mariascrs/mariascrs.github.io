@@ -2,7 +2,7 @@
 layout: article
 titles:
   # @start locale config
-  en      : &EN  Maria Corte-Real Santos
+  en      : &EN 
   en-GB   : *EN
   en-US   : *EN
   en-CA   : *EN
