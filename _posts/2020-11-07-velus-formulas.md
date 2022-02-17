@@ -116,7 +116,7 @@ $$
 and
 
 $$
-\beta = y - \sum_{Q \in S} (u_Q \frac{2y+ax + b}{(x - x_Q)^3} + v_Q\frac{a_1(x - x_Q) + y - y_Q}{(x - x_Q)^2}+ \frac{au_q - f_Qg_Q}{(x - x_Q)^2})
+\beta = y - \sum_{Q \in S} (u_Q \frac{2y+ax + b}{(x - x_Q)^3} + v_Q\frac{a(x - x_Q) + y - y_Q}{(x - x_Q)^2}+ \frac{au_Q - f_Qg_Q}{(x - x_Q)^2})
 $$
 
 For the proof of the correctness of these formulas, see Washington's treatment in [23].
