@@ -6,13 +6,13 @@ title: Talks and Teaching
 ## Talks 
 ### Academic
 
+* 18 March, 2022\
+**Isogeny-based cryptography workshop, Birmingham**\
+Talk on accelerating the Delfs-Galbraith algorithm (joint work with Craig Costello and Jia Shi). <a href="../files/isogenyworkshop-birmingham.pdf" target="_blank">Slides</a>
+
 * 14 December, 2021\
 **London Hopper Colloquium, Research Spotlight competition**\
 Gave a presentation about isogeny-based cryptography, winner of the Speaker Prize.
-
-* 24 November, 2021\
-**Cybersecurity Industry Evening for the UCL CDT in Cybersecurity**\
-In a group, presented a cybersecurity scenario and how our research would aid in solving the problems. Joint winners for best presentation. 
 
 ### Outreach
 
