@@ -16,6 +16,12 @@ Talk on accelerating the Delfs-Galbraith algorithm (joint work with Craig Costel
 Gave a presentation about isogeny-based cryptography, winner of the Speaker Prize.
 *Virtual*
 
+### Industry
+* 1 June, 2022\
+**CGI Break and Learn**\
+Talk on post-quantum cryptography and isogenies as a solution.
+*CGI Reading Offices*
+
 ### Outreach
 
 * 1 June, 2021\
