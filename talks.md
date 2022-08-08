@@ -24,7 +24,7 @@ Gave a presentation about isogeny-based cryptography, winner of the Speaker Priz
 ### Industry
 
 * 14 July, 2022 \
-**Microsoft Research Seminar**
+**Microsoft Research Seminar**\
 Talk on accelerating the Delfs-Galbraith algorithm (joint work with Craig Costello and Jia Shi). <a href="https://www.microsoft.com/en-us/research/publication/supersolver-accelerating-the-delfs-galbraith-algorithm-with-fast-subfield-root-detection/" target="_blank">Recording</a>\
 *Microsoft Research, Redmond*
 
