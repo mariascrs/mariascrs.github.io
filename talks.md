@@ -7,6 +7,11 @@ title: Talks and Teaching
 ### Academic
 
 * 29 March, 2022\
+**Efficiently Detecting $(N,N)$-splittings**\
+Talk at ISOCRYPT 2022 on detecting $(N,N)$-splittings and applications to genus 2 isogeny-based cryptography (joint work with Craig Costello and Sam Frengley). <a href="https://drive.google.com/file/d/1HtLz740lARATdi-fH4C7vRy0lY1e3MCJ/view?usp=sharing" target="_blank">Slides</a>\
+*KU Leuven*
+
+* 29 March, 2022\
 **Post-Quantum Cryptography from Isogenies**\
 Talk at the Joint Cybersecurity CDTs Summer School 2022 on obtaining quantum secure cryptography from isogenies. 
 *University College London*
@@ -62,7 +67,7 @@ Delivered a lecture on Cryptography to hundreds of Year 10 students in a taster 
 
 
 ## Teaching 
-* Term 1, 2021: Teaching assistant for <a href="https://www.ucl.ac.uk/module-catalogue/modules/introduction-to-cryptography/COMP0025" target="_blank">Introduction to Cryptography (COMP0025)</a> at UCL
+* Term 1, 2021 and 2022: Teaching assistant for <a href="https://www.ucl.ac.uk/module-catalogue/modules/introduction-to-cryptography/COMP0025" target="_blank">Introduction to Cryptography (COMP0025)</a> at UCL
 
 
 ## Conferences Attended
