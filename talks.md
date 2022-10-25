@@ -83,5 +83,6 @@ Delivered a lecture on Cryptography to hundreds of Year 10 students in a taster 
 
 ## Conferences Attended
 * [Eurocrypt 2021](https://eurocrypt.iacr.org/2021/)
+* [Crypto 2022](https://crypto.iacr.org/2022/)
 
 
