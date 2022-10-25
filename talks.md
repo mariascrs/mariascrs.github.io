@@ -10,7 +10,7 @@ title: Talks and Teaching
 * 11 October, 2022\
 **Attacking the General Isogeny Problem**\
 Invited talk at The Isogeny Club on attacking the general isogeny problem in dimension 1 and 2 (based on joint work with Craig Costello, Sam Frengley and Jia Shi). <a href="https://youtu.be/rwEtpYlD9FU" target="_blank">Recording</a>\
-*Online*
+*Virtual*
 
 * 26 September, 2022\
 **Classical Attacks on the General Isogeny Problem**\
@@ -34,7 +34,7 @@ Invited talk on accelerating the Delfs-Galbraith algorithm (joint work with Crai
 
 * 14 December, 2021\
 **London Hopper Colloquium, Research Spotlight competition**\
-Gave a presentation about isogeny-based cryptography, winner of the Speaker Prize.
+Gave a presentation about isogeny-based cryptography, winner of the Speaker Prize.\
 *Virtual*
 
 ### Industry
