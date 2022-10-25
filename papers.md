@@ -4,7 +4,7 @@ title: Papers
 ---
 
 ## 2022
-* **Cryptographic Smooth Neighbors* \
+* **Cryptographic Smooth Neighbors** \
 *Joint work with Giacomo Bruno, Craig Costello, Jonathan Komada Eriksen, Michael Naehrig, Michael Meyer, and Bruno Sterner.* \
 *In submission.* \
 ([ePrint](https://eprint.iacr.org/2022/1439.pdf){:target="_blank"})
