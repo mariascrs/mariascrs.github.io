@@ -6,9 +6,20 @@ title: Talks and Teaching
 ## Talks 
 ### Academic
 
-* 29 March, 2022\
+
+* 11 October, 2022\
+**Attacking the General Isogeny Problem**\
+Invited talk at The Isogeny Club on attacking the general isogeny problem in dimension 1 and 2 (based on joint work with Craig Costello, Sam Frengley and Jia Shi). <a href="https://youtu.be/rwEtpYlD9FU" target="_blank">Recording</a>\
+*Online*
+
+* 26 September, 2022\
+**Classical Attacks on the General Isogeny Problem**\
+Invited talk at the Quantum Cryptanalysis Workshop, University of Bristol on classical attacks against the general isogeny problem (based on joint work with Craig Costello and Jia Shi).  \
+*University of Bristol*
+
+* 23 September, 2022\
 **Efficiently Detecting $(N,N)$-splittings**\
-Talk at ISOCRYPT 2022 on detecting $(N,N)$-splittings and applications to genus 2 isogeny-based cryptography (joint work with Craig Costello and Sam Frengley). <a href="https://drive.google.com/file/d/1HtLz740lARATdi-fH4C7vRy0lY1e3MCJ/view?usp=sharing" target="_blank">Slides</a> | <a href="https://www.youtube.com/watch?v=-R5Q1nkfqrc&list=PLiHaXFHjrqYdAWotOM-7yeb0D8qdqdrUL&index=9" target="_blank">Recording</a>\ \
+Talk at ISOCRYPT 2022 on detecting $(N,N)$-splittings and applications to genus 2 isogeny-based cryptography (joint work with Craig Costello and Sam Frengley). <a href="https://drive.google.com/file/d/1HtLz740lARATdi-fH4C7vRy0lY1e3MCJ/view?usp=sharing" target="_blank">Slides</a> | <a href="https://www.youtube.com/watch?v=-R5Q1nkfqrc&list=PLiHaXFHjrqYdAWotOM-7yeb0D8qdqdrUL&index=9" target="_blank">Recording</a>\
 *KU Leuven*
 
 * 29 March, 2022\
@@ -18,7 +29,7 @@ Talk at the Joint Cybersecurity CDTs Summer School 2022 on obtaining quantum sec
 
 * 18 March, 2022\
 **Isogeny-based cryptography workshop**\
-Talk on accelerating the Delfs-Galbraith algorithm (joint work with Craig Costello and Jia Shi). <a href="../files/isogenyworkshop-birmingham.pdf" target="_blank">Slides</a>\
+Invited talk on accelerating the Delfs-Galbraith algorithm (joint work with Craig Costello and Jia Shi). <a href="../files/isogenyworkshop-birmingham.pdf" target="_blank">Slides</a>\
 *University of Birmingham*
 
 * 14 December, 2021\
@@ -30,7 +41,7 @@ Gave a presentation about isogeny-based cryptography, winner of the Speaker Priz
 
 * 14 July, 2022 \
 **Microsoft Research Seminar**\
-Talk on accelerating the Delfs-Galbraith algorithm (joint work with Craig Costello and Jia Shi). <a href="https://www.microsoft.com/en-us/research/publication/supersolver-accelerating-the-delfs-galbraith-algorithm-with-fast-subfield-root-detection/" target="_blank">Recording</a>\
+Invited talk on accelerating the Delfs-Galbraith algorithm (joint work with Craig Costello and Jia Shi). <a href="https://www.microsoft.com/en-us/research/publication/supersolver-accelerating-the-delfs-galbraith-algorithm-with-fast-subfield-root-detection/" target="_blank">Recording</a>\
 *Microsoft Research, Redmond*
 
 * 1 June, 2022\
