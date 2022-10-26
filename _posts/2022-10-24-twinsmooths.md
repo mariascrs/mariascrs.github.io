@@ -46,7 +46,7 @@ To determine how feasible it is to run the CHM algorithm to obtain twin smooths 
 * Avoiding multiple checks of the same pairs of twin smooths $(r,s)$ 
 * Iterating through smoothness bounds
 * For each pair $(r,s)$ considered in each CHM step, we need to check if for some $t$, the following holds:
-$$\frac{t}{t+1} = \frac{r}{r+1}\cdot \frac{s+1}{s}.$$ In the paper we show that this is equivalent to requiring $\gcd(r(s+1),(r+1)s) = s-r$. We observe that we can completely avoid the gcd calculation: instead, we check that $r(s+1) \cong 0 \bmod (s-r)$ holds, and perform a division to compute $t$ if so. In this way, we do just one modular reduction per pair $(r,s)$ considered in each CHM step.
+$\frac{t}{t+1} = \frac{r}{r+1}\cdot \frac{s+1}{s}.$ In the paper we show that this is equivalent to requiring $\gcd(r(s+1),(r+1)s) = s-r$. We observe that we can completely avoid the gcd calculation: instead, we check that $r(s+1) \cong 0 \bmod (s-r)$ holds, and perform a division to compute $t$ if so. In this way, we do just one modular reduction per pair $(r,s)$ considered in each CHM step.
 
 
 Despite these optimisations, using the pure CHM algorithm to produce large enough twin smooths for cryptographic purposes is infeasible in practice due to both runtime and memory limitations. Indeed, we ran this approach up to smoothness bound $B=547$ and found that to reach a twin smooth pair of size at least 256 bits requires smoothness bound of $> 5000$ for which the set of $B$-smooth twins is roughly $2^{49}$. Noting that the effort for CHM iterations grows quadratically with the set size, we deduce that it is not feasible to reach cryptographically sized smooth twins. 
@@ -68,7 +68,6 @@ The *constant-range* approach outperforms the *global-$k$* approach in
 terms of runtime, due to the elimination of all checks for $k$-balance of twins. Additionally, while very aggressive instantiations of *constant-range* miss more twin smooths, they find a largershare of the largest 100 twins compared to their *global-$k$* counterpart.
 We therefore concluded that for larger smoothness bounds $B$, for which we cannot hope to complete the full CHM algorithm, *constant-range* is the most promising approach for obtaining larger twin smooths within feasible runtimes.
 
-<center>
 
 |     **Variant**    | **Parameter** | **Runtime** | **Speedup** | **# twins** | **# twins from largest 100** |
 |:------------------:|:-------------:|:-----------:|:-----------:|:-----------:|:----------------------------:|
@@ -76,7 +75,7 @@ We therefore concluded that for larger smoothness bounds $B$, for which we canno
 |   **Global-$k$**   |   $k = 1.5$   |     226s    |      21     |   2282741   |              82              |
 | **Constant-Range** |  $R = 10000$  |     82s     |      57     |   2273197   |              93              |
 
-</center>
+
 
 ## Finding cryptographic smooth neighbours
 
@@ -94,19 +93,6 @@ full CHM may be computationally out of reach, and therefore we use a variant tha
 * For large $n$, we can obtain more twin smooths from CHM (in some cases, we can even exhaustively search for all twin
 smooths), however we have less guaranteed smoothness in $p^2-1$. 
 * The more guaranteed smootheness we have from $4r^n(r-1)$, the more likely $f_n(r)$ has the required additional smoothness. Additionally, if $f_n(x)$ factors as $g_1(x)\cdots g_m(x)$, then the smaller the degrees $\deg (g_i)$ are, the higher the probability that we have enough smoothness.
-
-<center>
-
-| $n$ |           $p_n^2(x) - 1$           |
-|:---:|:----------------------------------:|
-|  2  |          $4x^2(x-1)(x+1)$          |
-|  3  |        $4x^3(x-1)(x^2+x+1)$        |
-|  4  |       $4x^4(x-1)(x+1)(x^2+1)$      |
-|  5  |  $4x^5(x-1)(x+1)(x^4+x^3+x^2+x+1)$ |
-|  6  | $4x^2(x-1)(x+1)(x^2-x+1)(x^2+x+1)$ |
-
-</center>
-
 
 Balancing the probability of guaranteed smoothness and being able to compute enough CHM twin smooths of the required bitsize, we make the following choices of $n$ for each NIST level:
 * NIST-I parameters: $n = 2,3$
