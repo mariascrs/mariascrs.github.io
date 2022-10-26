@@ -22,7 +22,8 @@ The Conrey--Holmstrom--McLaughlin (CHM) algorithm is a simple algorithm that gen
 
 * We start with an initial set $S^{(0)} = \{1, 2, ..., B-1\}$ of positive integers less than $B$, representing twin smooth pairs $(1,2), (2,3), ..., (B-1, B)$.
 * Set $S^{(1)} =S^{(0)}$.
-* Iteratively pass through all pairs of distinct $r, s$ in $S^{(0)}$ with $r<s$ and compute $$\frac{t}{t'} = \frac{r}{r+1}\cdot \frac{s+1}{s},$$
+* Iteratively pass through all pairs of distinct $r < s$ in $S^{(0)}$ and compute 
+      $\frac{t}{t'} = \frac{r}{r+1}\cdot \frac{s+1}{s},$
 with $\frac{t}{t'}$ in lowest terms. If $t' = t+1$, then $t$ represnts a $B$-smooth pair $(t, t+1)$ and we add it to the set $S^{(1)}$. 
 * The algorithm then iterated through all pairs of distinct $r,s$ in $S^{(1)}$ to form $S^{(2)}$, and so on. 
 * We terminate when $S^{(d)} = S^{(d+1)}$ for some $d \geq 0$. 
