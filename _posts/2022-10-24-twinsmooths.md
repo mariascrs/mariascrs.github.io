@@ -121,7 +121,7 @@ One of the main contributions of our work is finding the first credible primes f
     p+1 &= 2^{79}\cdot 3^6 \cdot 23^{12} \cdot 107^6 \cdot 127^6 \cdot 307^6 \cdot 401^6 \cdot 547^6 \\
     p - 1 &= 2 \cdot 5^2 \cdot 7\cdot 11\cdot 17\cdot 19\cdot 47\cdot 71\cdot 79\cdot 109\cdot 149\cdot 229\cdot 269\cdot 283\cdot 349\cdot 449 \\
     &\quad \quad  \cdot 463\cdot 1019\cdot 1033\cdot 1657\cdot 2179\cdot 2293\cdot 4099\cdot 5119\cdot 10243 \cdot\textcolor{blue}{381343} \\
-    & \quad \quad  \cdot \textcolor{blue}{19115518067}\cdot \textcolor{blue}{740881808972441233} \cdot \textcolor{blue}{8323214379148213516392}
+    & \quad \quad  \cdot \mathbf{19115518067}\cdot \mathbf{740881808972441233} \cdot \mathbf{8323214379148213516392}
     \end{align*}$$
 
 **NIST-V Parameters:** The $508$-bit prime, $p = 2r^6 - 1$ where $r = 26697973900446483680608256$ has 
