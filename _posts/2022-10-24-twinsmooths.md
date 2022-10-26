@@ -12,13 +12,18 @@ This blogpost aims to give a general overview of our new paper *"Cryptographic S
 ## $B$-Smooth Neighbours
 
 In this paper, we revisit the problem of finding two consecutive $B$-smooth integers, i.e., find integers $(r, r+1)$ such that $r$, $r+1$ have no factors of size exceeding the smoothness bound $B$.  
-This problem that has emerged in the context of instantiating efficient isogeny-based public key cryptosystems. Though initially motivated in the context of key exchange[^1], it has found applications in the search for parameters for SQISign[^2], the leading isogeny-based signature scheme (in terms of practical potential). Whilst SQISign is currently the most compact post-quantum signature scheme, its signing algorithm is orders of magnitude slower than its post-quantum counterparts. Finding secure parameters for SQISign is related to finding $B$-smooth twins, with a large contributing factor to the overall efficiency of the protocol being the smoothness bound, $B$, as this corresponds to the rational torsion that will be used in isogeny computations. Roughly speaking, the smaller the bound $B$, the faster the signature scheme will be. 
+This problem that has emerged in the context of instantiating efficient isogeny-based public key cryptosystems. 
+Though initially motivated in the context of key exchange[^1], it has found applications in the search for parameters for SQISign[^2], the leading isogeny-based signature scheme (in terms of practical potential). For these cryptographic applications we work over the finite field $\mathbb{F}\_{p^2}$ for some prime $p$, where we require $p^2-1$ to be as smooth as possible. This is bevause $p^2-1$ often corresponds to the rational torsion available that will be used for isogeny computations. Roughly speaking, the smaller the smoothness bound, the faster the signature scheme will be. 
+If we have a pair of twin $B$-smooth integers $(r, r+1)$ and let $p = 2r+1$, then $p^2-1 = 4r(r+1)$ is $B$-smooth, as required.
 
-In this work, we introduce new ways of finding large twin smooths based on the Conrey-Holmstrom-McLaughlin algorithm, which we now describe.
+Whilst SQISign is currently the most compact post-quantum signature scheme, its signing algorithm is orders of magnitude slower than its post-quantum counterparts. Therefore, it is desirable to find primes $p$ with $p^2-1$ smooth as possible to increase SQISign's efficiency, which would be highly beneficial for its practicality. 
 
-## The Conrey--Holmstrom--McLaughlin Algorithm
+In this work, we introduce new ways of finding large twin smooths based on the Conrey-Holmstrom-McLaughlin (CHM) algorithm. It is a constructive algorithm which finds *almost* all twin smooth integers for a smoothness bound $B$. In their paper, Conrey--Holmstrom--McLaughlin runs this algorithm for $B = 200$ to find a list of 346,192 twin smooths in about 2 weeks, the largest of which were 79-bit integers. We first give an optimised implementation of the CHM algorithm that allows us to run it for much larger values of $B$, thus allowing us to find larger sized twins. For example, with $B = 547$, our implementation output a set of 82,026,426 pairs of $B$-smooth twins, the largest of which were 122-bit integers. However, it appears infeasible to increase $B$ to the point where the twins found purely using the CHM algorithm
+are large enough to be used for cryptographic applications. Aided by the fact that SQISign does not require $p^2-1$ to be *fully* smooth, we obtain cryptographic sized primes $p$ by combining larger twins found through CHM with techniques from the literature.
 
-The Conrey--Holmstrom--McLaughlin (CHM) algorithm is a simple algorithm that generates B-smooth neighbours. It works as follows:
+## The CHM Algorithm
+
+The CHM algorithm is a simple algorithm that generates B-smooth neighbours. It works as follows:
 
 * We start with an initial set $S^{(0)} = {1, 2, ..., B-1}$ of positive integers less than $B$, representing twin smooth pairs $(1,2), (2,3), ..., (B-1, B)$.
 * Set $S^{(1)} =S^{(0)}$.
@@ -111,7 +116,7 @@ After running our *constant-range* variant of the CHM algorithm to obtain suffic
     &\quad \quad  \cdot 337\cdot 457\cdot 479\cdot \mathbf{141067}\cdot \mathbf{3428098456843}\cdot \mathbf{4840475945318614791658621}
     \end{align*}$$
 
-In comparison, the state-of-the-art implementation of SQISign uses a 254-bit prime $p$ with $p^2-1$ being $3923$-smooth[^5]. However, their prime has a larger power of 2 and 3 compared to our prime, and most of the smooth factors are relatively small. Therefore, despite the larger smoothness bound, it may perform better in practice. Evaluating this in detail would require an implementation of our primes into the SQISign code. However, the current implementation uses specific optimisations that only apply to the particular prime that is being used, and so changing the prime would require reshaping the specific optimisations in the setting of our primes. We therefore leave this left for future work.
+In comparison, the state-of-the-art implementation of SQISign uses a 254-bit prime $p$ with $p^2-1$ being $3923$-smooth[^5]. However, their prime has a larger power of 2 and 3 compared to our prime, and most of the smooth factors are relatively small. Therefore, despite the larger smoothness bound, it may perform better in practice. Evaluating this in detail would require an implementation of our primes into the SQISign code. However, the current implementation uses specific optimisations that only apply to the particular prime that is being used, and so changing the prime would require reshaping the specific optimisations in the setting of our primes. We therefore leave this for future work.
 
 One of the main contributions of our work is finding the first credible primes for SQISign at the NIST-III and NIST-V security level. In fact, most of the primes $p$ we found have the majority of the smooth factors of $p^2-1$ being relatively small, and therefore lend themselves well to efficient implementations.
 
