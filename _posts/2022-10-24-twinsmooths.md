@@ -73,9 +73,10 @@ We therefore concluded that for larger smoothness bounds $B$, for which we canno
 
 
 
+
 ## Finding cryptographic smooth neighbours
 
-We now focus on finding primes $p$ suitable for isogeny-based cryptographic applications that, for efficiency reasons, need $p^2-1$ to be as smooth as possible. In particular, we target the signature scheme SQISign (cite), which requires a prime $p$ satisfying $T' | p^2-1$, where $T' = 2^fT$ with $f$ is as large as possible and $T \approx p^{5/4}$ is smooth and odd. We note that these conditions mean we do not require $(p+1)(p-1)$ to be fully smooth, which allows for some flexibility. Therefore, we can move away from solely using CHM and, instead, use the CHM results as inputs to known method for finding such primes.
+We now focus on finding primes $p$ suitable for isogeny-based cryptographic applications that, for efficiency reasons, need $p^2-1$ to be as smooth as possible. In particular, we target the signature scheme SQISign (cite), which requires a prime $p$ satisfying $T' \mid p^2-1$, where $T' = 2^fT$ with $f$ is as large as possible and $T \approx p^{5/4}$ is smooth and odd. We note that these conditions mean we do not require $(p+1)(p-1)$ to be fully smooth, which allows for some flexibility. Therefore, we can move away from solely using CHM and, instead, use the CHM results as inputs to known method for finding such primes.
 
 We will find fully smooth twins of a smaller bit-size via CHM and boost them up using the polynomials $p_n(x) = 2x^n - 1$ (for carefully chosen $n$). 
 
