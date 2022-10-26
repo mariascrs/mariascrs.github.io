@@ -84,7 +84,7 @@ We now focus on finding primes $p$ suitable for isogeny-based cryptographic appl
 
 We find fully smooth twins of a smaller bit-size via CHM and boost them up using the polynomials $p_n(x) = 2x^n - 1$ (for carefully chosen $n$). 
 
-**General Method.** For our SQISign application, we have $\log p = ${ $256, 384, 512$} for NIST Level I, III, V (respectively), $T \approx p^{5/4}$ and $f$ as large as possible. We will aim for $T' \approx p^{3/2}$ as this is what is currently used in the SQISign implementation. 
+**General Method.** For our SQISign application, we have $\log p = ${$256, 384, 512$} for NIST Level I, III, V (respectively), $T \approx p^{5/4}$ and $f$ as large as possible. We will aim for $T' \approx p^{3/2}$ as this is what is currently used in the SQISign implementation. 
 We fix a smoothness bound $B$ and let $p_n(x) = 2x^n - 1$. Then, $p_n(x)^2-1 = 4x^n(x-1)f_n(x)$. If we evaluate $p_n(x)$ at $x = r$, where $(r, r-1)$ is a $B$-smooth twin pair, then $p_n(r)^2-1$ will have guaranteed smooth factor $4r^n(r-1)$. We then have to hope that the factor $f_n(r)$ has enough smoothness so that $T' \approx p^{3/2}$.
 
 A natural question arises: what $n$ should we choose?
