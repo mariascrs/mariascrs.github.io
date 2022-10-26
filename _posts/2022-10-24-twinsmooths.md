@@ -20,20 +20,20 @@ In this work, we introduce new ways of finding large twin smooths based on the C
 
 The Conrey--Holmstrom--McLaughlin (CHM) algorithm is a simple algorithm that generates B-smooth neighbours. It works as follows:
 
-1) We start with an initial set $S^{(0)} = \{1, 2, ..., B-1\}$ of positive integers less than $B$, representing twin smooth pairs $(1,2), (2,3), ..., (B-1, B)$.
-2) Set $S^{(1)} =S^{(0)}$.
-3) Iteratively pass through all pairs of distinct $r, s$ in $S^{(0)}$ with $r<s$ and compute $$\frac{t}{t'} = \frac{r}{r+1}\cdot \frac{s+1}{s},$$
+* We start with an initial set $S^{(0)} = \{1, 2, ..., B-1\}$ of positive integers less than $B$, representing twin smooth pairs $(1,2), (2,3), ..., (B-1, B)$.
+* Set $S^{(1)} =S^{(0)}$.
+* Iteratively pass through all pairs of distinct $r, s$ in $S^{(0)}$ with $r<s$ and compute $$\frac{t}{t'} = \frac{r}{r+1}\cdot \frac{s+1}{s},$$
 with $\frac{t}{t'}$ in lowest terms. If $t' = t+1$, then $t$ represnts a $B$-smooth pair $(t, t+1)$ and we add it to the set $S^{(1)}$. 
-4) The algorithm then iterated through all pairs of distinct $r,s$ in $S^{(1)}$ to form $S^{(2)}$, and so on. 
-5) We terminate when $S^{(d)} = S^{(d+1)}$ for some $d \geq 0$. 
+* The algorithm then iterated through all pairs of distinct $r,s$ in $S^{(1)}$ to form $S^{(2)}$, and so on. 
+* We terminate when $S^{(d)} = S^{(d+1)}$ for some $d \geq 0$. 
 
 #### Example: $B$ = 5
 
-1) We start with the set $S^{(0)} = \{1,2,3,4 \}$. 
-2) Going through distinct $(r,s)$ in $S^{(0)}$, the only pairs that give us a new twin smooth pair $(t, t+1)$ are (2,3), (2,4) and (3,4): 
-$$ \frac{2}{2+1}\cdot \frac{3+1}{3} = \frac{8}{9},  \quad \frac{2}{2+1}\cdot \frac{4+1}{4} = \frac{5}{6}, \quad \frac{3}{3+1}\cdot \frac{4+1}{4} = \frac{15}{16}$$. So we get $$S^{(0)} = \{1,2,3,4,5,8,15\}.$$
-3) Continuing in this way we get $$S^{(2)} = \{1,2,3,4,5,8,9,15,24\},$$ and $$S^{(3)} = \{1,2,3,4,5,8,9,15,24, 80\}.$$
-4) Then $S^{(4)} = S^{(3)}$, so we terminate and return $S^{(3)}$. 
+* We start with the set $S^{(0)} = \{1,2,3,4 \}$. 
+* Going through distinct $(r,s)$ in $S^{(0)}$, the only pairs that give us a new twin smooth pair $(t, t+1)$ are (2,3), (2,4) and (3,4): 
+      $ \frac{2}{2+1}\cdot \frac{3+1}{3} = \frac{8}{9},  \quad \frac{2}{2+1}\cdot \frac{4+1}{4} = \frac{5}{6}, \quad \frac{3}{3+1}\cdot \frac{4+1}{4} = \frac{15}{16}$$. So we get $$S^{(0)} = \{1,2,3,4,5,8,15\}.$
+* Continuing in this way we get $$S^{(2)} = \{1,2,3,4,5,8,9,15,24\},$$ and $$S^{(3)} = \{1,2,3,4,5,8,9,15,24, 80\}.$$
+* Then $S^{(4)} = S^{(3)}$, so we terminate and return $S^{(3)}$. 
 
 This is indeed the full set of twin 5-smooth integers[^1].
 
