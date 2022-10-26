@@ -7,6 +7,8 @@ title: Posts
 * 23/01/2021: [Trusted Setup with Isogenies](https://mariascrs.github.io/2021/01/23/Trusted-Setup.html){:target="_blank"}
 * 05/01/2021: [Pseudorandom Functions from Isogenies](https://mariascrs.github.io/2021/01/05/PRFs.html){:target="_blank"}
 * 16/11/2021: [SuperSolver - accelerating the Delfs-Galbraith algorithm with fast subfield root detection](https://mariascrs.github.io/2021/11/16/supersolver.html){:target="_blank"}
+* 26/10/2022: [Cryptographic Smooth Neighbors](https://mariascrs.github.io/2022/10/24/twinsmooths.html){:target="_blank"}
+
 
 
 ## 2020
