@@ -32,8 +32,8 @@ with $\frac{t}{t'}$ in lowest terms. If $t' = t+1$, then $t$ represnts a $B$-smo
 
 * We start with the set $S^{(0)} = \{1,2,3,4 \}$. 
 * Going through distinct $(r,s)$ in $S^{(0)}$, the only pairs that give us a new twin smooth pair $(t, t+1)$ are (2,3), (2,4) and (3,4): 
-      $ \frac{2}{2+1}\cdot \frac{3+1}{3} = \frac{8}{9},  \quad \frac{2}{2+1}\cdot \frac{4+1}{4} = \frac{5}{6}, \quad \frac{3}{3+1}\cdot \frac{4+1}{4} = \frac{15}{16}$$. So we get $$S^{(0)} = \{1,2,3,4,5,8,15\}.$
-* Continuing in this way we get $$S^{(2)} = \{1,2,3,4,5,8,9,15,24\},$$ and $$S^{(3)} = \{1,2,3,4,5,8,9,15,24, 80\}.$$
+      $ \frac{2}{2+1}\cdot \frac{3+1}{3} = \frac{8}{9},  \quad \frac{2}{2+1}\cdot \frac{4+1}{4} = \frac{5}{6}, \quad \frac{3}{3+1}\cdot \frac{4+1}{4} = \frac{15}{16}$. So we get $S^{(0)} = \{1,2,3,4,5,8,15\}.$
+* Continuing in this way we get $S^{(2)} = \{1,2,3,4,5,8,9,15,24\},$ and $S^{(3)} = \{1,2,3,4,5,8,9,15,24, 80\}.$
 * Then $S^{(4)} = S^{(3)}$, so we terminate and return $S^{(3)}$. 
 
 This is indeed the full set of twin 5-smooth integers[^1].
