@@ -25,7 +25,7 @@ are large enough to be used for cryptographic applications. Aided by the fact th
 
 The CHM algorithm is a simple algorithm that generates B-smooth neighbours. It works as follows:
 
-* We start with an initial set $S^{(0)} = {1, 2, ..., B-1}$ of positive integers less than $B$, representing twin smooth pairs $(1,2), (2,3), ..., (B-1, B)$.
+* We start with an initial set $S^{(0)} = ${$1, 2, ..., B-1$} of positive integers less than $B$, representing twin smooth pairs $(1,2), (2,3), ..., (B-1, B)$.
 * Set $S^{(1)} =S^{(0)}$.
 * Iteratively pass through all pairs of distinct $r < s$ in $S^{(0)}$ and compute 
       $\frac{t}{t'} = \frac{r}{r+1}\cdot \frac{s+1}{s},$
@@ -35,10 +35,10 @@ with $\frac{t}{t'}$ in lowest terms. If $t' = t+1$, then $t$ represnts a $B$-smo
 
 #### Example: $B$ = 5
 
-* We start with the set $S^{(0)} = {1,2,3,4}$. 
+* We start with the set $S^{(0)} = ${$1,2,3,4$}. 
 * Going through distinct $(r,s)$ in $S^{(0)}$, the only pairs that give us a new twin smooth pair $(t, t+1)$ are $(2,3)$, $(2,4)$ and $(3,4)$: 
-      $ \frac{2}{2+1}\cdot \frac{3+1}{3} = \frac{8}{9},  \quad \frac{2}{2+1}\cdot \frac{4+1}{4} = \frac{5}{6}, \quad \frac{3}{3+1}\cdot \frac{4+1}{4} = \frac{15}{16}$. So we get $S^{(0)} = \{1,2,3,4,5,8,15\}.$
-* Continuing in this way we get $S^{(2)} = {1,2,3,4,5,8,9,15,24},$ and $S^{(3)} = {1,2,3,4,5,8,9,15,24, 80}.$
+      $ \frac{2}{2+1}\cdot \frac{3+1}{3} = \frac{8}{9},  \quad \frac{2}{2+1}\cdot \frac{4+1}{4} = \frac{5}{6}, \quad \frac{3}{3+1}\cdot \frac{4+1}{4} = \frac{15}{16}$. So we get $S^{(0)} = ${$1,2,3,4,5,8,15$}.
+* Continuing in this way we get $S^{(2)} = ${$1,2,3,4,5,8,9,15,24$}, and $S^{(3)} = ${$1,2,3,4,5,8,9,15,24, 80$}.
 * Then $S^{(4)} = S^{(3)}$, so we terminate and return $S^{(3)}$. 
 
 This is indeed the full set of twin 5-smooth integers[^3].
@@ -84,7 +84,7 @@ We now focus on finding primes $p$ suitable for isogeny-based cryptographic appl
 
 We find fully smooth twins of a smaller bit-size via CHM and boost them up using the polynomials $p_n(x) = 2x^n - 1$ (for carefully chosen $n$). 
 
-**General Method.** For our SQISign application, we have $\log p = \textbraceleft 256, 384, 512 \textbraceright$ for NIST Level I, III, V (respectively), $T \approx p^{5/4}$ and $f$ as large as possible. We will aim for $T' \approx p^{3/2}$ as this is what is currently used in the SQISign implementation. 
+**General Method.** For our SQISign application, we have $\log p = ${ $256, 384, 512$} for NIST Level I, III, V (respectively), $T \approx p^{5/4}$ and $f$ as large as possible. We will aim for $T' \approx p^{3/2}$ as this is what is currently used in the SQISign implementation. 
 We fix a smoothness bound $B$ and let $p_n(x) = 2x^n - 1$. Then, $p_n(x)^2-1 = 4x^n(x-1)f_n(x)$. If we evaluate $p_n(x)$ at $x = r$, where $(r, r-1)$ is a $B$-smooth twin pair, then $p_n(r)^2-1$ will have guaranteed smooth factor $4r^n(r-1)$. We then have to hope that the factor $f_n(r)$ has enough smoothness so that $T' \approx p^{3/2}$.
 
 A natural question arises: what $n$ should we choose?
@@ -107,7 +107,7 @@ We notice that for $n$ even, both $x - 1$ and $x+1$ appear in the factorisation 
 
 ## Results
 
-After running our *constant-range* variant of the CHM algorithm to obtain sufficient twin smooths of different bitsizes and smoothness $B$, we used the method described above to obtain SQISign parameters.  I'll briefly list the *best* primes that we found for each NIST security level. The text in **bold** are the rough factors that are not needed for SQISign.
+After running our *constant-range* variant of the CHM algorithm to obtain sufficient twin smooths of different bitsizes and smoothness $B$, we used the method described above to obtain SQISign parameters.  I'll briefly list the *best* primes that we found for each NIST security level. Recall that for SQISign we only require a factor $T' \approx p^{3/2}$ of $p^2-1$ to be smooth, i.e., there may be some factors dividing $p^2-1$ that are not $B$-smooth. These *rough* factors will be displayed in **bold**.
 
 **NIST-I Parameters:** The 254-bit prime $p = 2r^3-1$ with $r = 20461449125500374748856320$ has 
     $$\begin{align*}
