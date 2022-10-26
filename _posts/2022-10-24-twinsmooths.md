@@ -52,13 +52,9 @@ $\frac{t}{t+1} = \frac{r}{r+1}\cdot \frac{s+1}{s}.$ In the paper we show that th
 Despite these optimisations, using the pure CHM algorithm to produce large enough twin smooths for cryptographic purposes is infeasible in practice due to both runtime and memory limitations. Indeed, we ran this approach up to smoothness bound $B=547$ and found that to reach a twin smooth pair of size at least 256 bits requires smoothness bound of $> 5000$ for which the set of $B$-smooth twins is roughly $2^{49}$. Noting that the effort for CHM iterations grows quadratically with the set size, we deduce that it is not feasible to reach cryptographically sized smooth twins. 
 
 Therefore, we looked for variants of the CHM algorithm that restrict to  checking only a certain subset of $(r,s)$ pairs without losing too many of the new smooth neighbors. 
-Observing that similar sized $(r,s)$ are more likely to produce new twim smooths, we use the following condition to restrict the visited pairs:
+Observing that similar sized $(r,s)$ are more likely to produce new twim smooths, we use the following condition to restrict the visited pairs: Let $k>1$ be a constant parameter. Then, we only check pairs $(r,s)$ if they satisfy $0 < r < s < kr$.
 
-> Let $k>1$ be a constant parameter. Then, we only check pairs $(r,s)$ if they satisfy $0 < r < s < kr$.
-
-Compared to the full CHM algorithm, this leads to a smaller
-set of twin smooths, but allows for much faster running times.
-
+Compared to the full CHM algorithm, this leads to a smaller set of twin smooths, but allows for much faster running times.
 The two main flavours of this that we explore are:
 
 * **Global-$k$**: we initially pick some $k$ with $1 < k \leq 2$, and restrict the CHM algorithm to only check $k$-balanced pairs $(r,s)$. The choice of $k$ is subtle: choosing $k$ too close to 1 may lead to missing too many twin smooths, but picking $k$ close to 2 may result in a small speedup that does not allow us to run large smoothness bounds. 
