@@ -109,6 +109,8 @@ We notice that for $n$ even, both $x - 1$ and $x+1$ appear in the factorisation 
 
 After running our *constant-range* variant of the CHM algorithm to obtain sufficient twin smooths of different bitsizes and smoothness $B$, we used the method described above to obtain SQISign parameters.  I'll briefly list the *best* primes that we found for each NIST security level. Recall that for SQISign we only require a factor $T' \approx p^{3/2}$ of $p^2-1$ to be smooth, i.e., there may be some factors dividing $p^2-1$ that are not $B$-smooth. These *rough* factors will be displayed in **bold**.
 
+To see more primes for each NIST level, make sure to check out the full paper.
+
 **NIST-I Parameters:** The 254-bit prime $p = 2r^3-1$ with $r = 20461449125500374748856320$ has 
     $$\begin{align*}
     p+1 &= 2^{46}\cdot 5^3 \cdot 13^3 \cdot 31^3 \cdot 73^3 \cdot 83^3 \cdot 103^3 \cdot 107^3 \cdot 137^3\cdot 239^3 \cdot 271^3 \cdot 523^3 \\
