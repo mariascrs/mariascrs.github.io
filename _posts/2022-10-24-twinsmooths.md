@@ -11,7 +11,7 @@ This blogpost aims to give a general overview of our new paper *"Cryptographic S
 
 ## $B$-Smooth Neighbours
 
-In this paper, we revisit the problem of finding two consecutive $B$-smooth integers, i.e., find integers $(r, r+1)$ such that $r$, $+1$ have no factors of size exceeding the smoothness bound $B$.  
+In this paper, we revisit the problem of finding two consecutive $B$-smooth integers, i.e., find integers $(r, r+1)$ such that $r$, $r+1$ have no factors of size exceeding the smoothness bound $B$.  
 This problem that has emerged in the context of instantiating efficient isogeny-based public key cryptosystems. Though initially motivated in the context of key exchange (cite), it has found applications in the search for parameters for SQISign (cite), the leading isogeny-based signature scheme (in terms of practical potential). Whilst SQISign is currently the most compact post-quantum signature scheme, its signing algorithm is orders of magnitude slower than its post-quantum counterparts. Finding secure parameters for SQISign is related to finding $B$-smooth twins, with a large contributing factor to the overall efficiency of the protocol being the smoothness bound, $B$, as this corresponds to the rational torsion that will be used in isogeny computations. Roughly speaking, the smaller the bound $B$, the faster the signature scheme will be. 
 
 In this work, we introduce new ways of finding large twin smooths based on the Conrey-Holmstrom-McLaughlin algorithm, which we now describe.
@@ -20,7 +20,7 @@ In this work, we introduce new ways of finding large twin smooths based on the C
 
 The Conrey--Holmstrom--McLaughlin (CHM) algorithm is a simple algorithm that generates B-smooth neighbours. It works as follows:
 
-* We start with an initial set $S^{(0)} = \{1, 2, ..., B-1\}$ of positive integers less than $B$, representing twin smooth pairs $(1,2), (2,3), ..., (B-1, B)$.
+* We start with an initial set $S^{(0)} = {1, 2, ..., B-1}$ of positive integers less than $B$, representing twin smooth pairs $(1,2), (2,3), ..., (B-1, B)$.
 * Set $S^{(1)} =S^{(0)}$.
 * Iteratively pass through all pairs of distinct $r < s$ in $S^{(0)}$ and compute 
       $\frac{t}{t'} = \frac{r}{r+1}\cdot \frac{s+1}{s},$
@@ -30,10 +30,10 @@ with $\frac{t}{t'}$ in lowest terms. If $t' = t+1$, then $t$ represnts a $B$-smo
 
 #### Example: $B$ = 5
 
-* We start with the set $S^{(0)} = \{1,2,3,4 \}$. 
-* Going through distinct $(r,s)$ in $S^{(0)}$, the only pairs that give us a new twin smooth pair $(t, t+1)$ are (2,3), (2,4) and (3,4): 
+* We start with the set $S^{(0)} = {1,2,3,4}$. 
+* Going through distinct $(r,s)$ in $S^{(0)}$, the only pairs that give us a new twin smooth pair $(t, t+1)$ are $(2,3)$, $(2,4)$ and $(3,4)$: 
       $ \frac{2}{2+1}\cdot \frac{3+1}{3} = \frac{8}{9},  \quad \frac{2}{2+1}\cdot \frac{4+1}{4} = \frac{5}{6}, \quad \frac{3}{3+1}\cdot \frac{4+1}{4} = \frac{15}{16}$. So we get $S^{(0)} = \{1,2,3,4,5,8,15\}.$
-* Continuing in this way we get $S^{(2)} = \{1,2,3,4,5,8,9,15,24\},$ and $S^{(3)} = \{1,2,3,4,5,8,9,15,24, 80\}.$
+* Continuing in this way we get $S^{(2)} = {1,2,3,4,5,8,9,15,24},$ and $S^{(3)} = {1,2,3,4,5,8,9,15,24, 80}.$
 * Then $S^{(4)} = S^{(3)}$, so we terminate and return $S^{(3)}$. 
 
 This is indeed the full set of twin 5-smooth integers[^1].
@@ -46,12 +46,12 @@ To determine how feasible it is to run the CHM algorithm to obtain twin smooths 
 * Avoiding multiple checks of the same pairs of twin smooths $(r,s)$ 
 * Iterating through smoothness bounds
 * For each pair $(r,s)$ considered in each CHM step, we need to check if for some $t$, the following holds:
-$\frac{t}{t+1} = \frac{r}{r+1}\cdot \frac{s+1}{s}.$ In the paper we show that this is equivalent to requiring $\gcd(r(s+1),(r+1)s) = s-r$. We observe that we can completely avoid the gcd calculation: instead, we check that $r(s+1) \cong 0 \bmod (s-r)$ holds, and perform a division to compute $t$ if so. In this way, we do just one modular reduction per pair $(r,s)$ considered in each CHM step.
+$\frac{t}{t+1} = \frac{r}{r+1}\cdot \frac{s+1}{s}.$ In the paper we show that this is equivalent to requiring $\gcd(r(s+1),(r+1)s) = s-r$. We observe that we can completely avoid the gcd calculation: instead, we check that $r(s+1) \equiv 0 \bmod (s-r)$ holds, and perform a division to compute $t$ if so. In this way, we do just one modular reduction per pair $(r,s)$ considered in each CHM step.
 
 
 Despite these optimisations, using the pure CHM algorithm to produce large enough twin smooths for cryptographic purposes is infeasible in practice due to both runtime and memory limitations. Indeed, we ran this approach up to smoothness bound $B=547$ and found that to reach a twin smooth pair of size at least 256 bits requires smoothness bound of $> 5000$ for which the set of $B$-smooth twins is roughly $2^{49}$. Noting that the effort for CHM iterations grows quadratically with the set size, we deduce that it is not feasible to reach cryptographically sized smooth twins. 
 
-Therefore, we looked for variants of the CHM algorithm that restrict to  checking only a certain subset of $(r,s)$ pairs without losing too many of the new smooth neighbors. 
+Therefore, we looked for variants of the CHM algorithm that restrict to checking only a certain subset of $(r,s)$ pairs without losing too many of the new smooth neighbors. 
 Observing that similar sized $(r,s)$ are more likely to produce new twim smooths, we use the following condition to restrict the visited pairs: Let $k>1$ be a constant parameter. Then, we only check pairs $(r,s)$ if they satisfy $0 < r < s < kr$.
 
 Compared to the full CHM algorithm, this leads to a smaller set of twin smooths, but allows for much faster running times.
