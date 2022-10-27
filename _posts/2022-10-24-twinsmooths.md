@@ -130,10 +130,10 @@ One of the main contributions of our work is finding the first credible primes f
     & \quad \quad  \cdot \mathbf{19115518067}\cdot \mathbf{740881808972441233} \cdot \mathbf{8323214379148213516392}
     \end{align*}$$
 
-**NIST-V Parameters:** The $508$-bit prime, $p = 2r^6 - 1$ where $r = 26697973900446483680608256$ has 
+**NIST-V Parameters:** The $510$-bit prime, $p = 2r^6 - 1$ where $r = 31929740427944870006521856$ has 
 
 $$\begin{align*}
-    p+1 &= 2^{85}\cdot 19^6 \cdot 61^{6} \cdot 89^6 \cdot 101^6 \cdot 139^6 \cdot 179^6 \cdot 223^6 \cdot 239^6 \cdot 251^6 \cdot 281^6 \\
+    p+1 &= 2^{91}\cdot 19^6 \cdot 61^{6} \cdot 89^6 \cdot 101^6 \cdot 139^6 \cdot 179^6 \cdot 223^6 \cdot 239^6 \cdot 251^6 \cdot 281^6 \\
     p - 1 &= 2 \cdot 3^2 \cdot 5\cdot 7\cdot 13\cdot 23\cdot 29\cdot 31\cdot 41\cdot 53\cdot 109\cdot 149\cdot 157\cdot 181\cdot 269\cdot 317 \cdot 331 \\
     &\quad \quad  \cdot 463\cdot 557\cdot 727\cdot 10639\cdot 31123\cdot 78583\cdot 399739\cdot 545371\cdot 550657 \cdot\mathbf{4291141} \\
     & \quad \quad  \cdot \mathbf{32208313}\cdot \mathbf{47148917} \cdot \mathbf{69050951} \cdot \mathbf{39618707467} \cdot \mathbf{220678058317} \\
