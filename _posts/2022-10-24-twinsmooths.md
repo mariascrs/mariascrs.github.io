@@ -107,7 +107,7 @@ We notice that for $n$ even, both $x - 1$ and $x+1$ appear in the factorisation 
 
 ## Results
 
-After running our *constant-range* variant of the CHM algorithm to obtain sufficient twin smooths of different bitsizes and smoothness $B$, we used the method described above to obtain SQISign parameters.  I'll briefly list the *best* primes that we found for each NIST security level. Recall that for SQISign we only require a factor $T' \approx p^{3/2}$ of $p^2-1$ to be smooth, i.e., there may be some factors dividing $p^2-1$ that are not $B$-smooth. These *rough* factors will be displayed in **bold**.
+After running our *constant-range* variant of the CHM algorithm to obtain sufficient twin smooths of different bitsizes and smoothness $B$, we used the method described above to obtain SQISign parameters.  I'll briefly list the *best* primes (in terms of the signing cost metric $\sqrt{B}/f$, which we want to be as small as possible) that we found for each NIST security level. Recall that for SQISign we only require a factor $T' \approx p^{3/2}$ of $p^2-1$ to be smooth, i.e., there may be some factors dividing $p^2-1$ that are not $B$-smooth. These *rough* factors will be displayed in **bold**.
 
 To see more primes for each NIST level, make sure to check out the full paper.
 
@@ -133,11 +133,11 @@ One of the main contributions of our work is finding the first credible primes f
 **NIST-V Parameters:** The $510$-bit prime, $p = 2r^6 - 1$ where $r = 31929740427944870006521856$ has 
 
 $$\begin{align*}
-    p+1 &= 2^{91}\cdot 19^6 \cdot 61^{6} \cdot 89^6 \cdot 101^6 \cdot 139^6 \cdot 179^6 \cdot 223^6 \cdot 239^6 \cdot 251^6 \cdot 281^6 \\
-    p - 1 &= 2 \cdot 3^2 \cdot 5\cdot 7\cdot 13\cdot 23\cdot 29\cdot 31\cdot 41\cdot 53\cdot 109\cdot 149\cdot 157\cdot 181\cdot 269\cdot 317 \cdot 331 \\
-    &\quad \quad  \cdot 463\cdot 557\cdot 727\cdot 10639\cdot 31123\cdot 78583\cdot 399739\cdot 545371\cdot 550657 \cdot\mathbf{4291141} \\
-    & \quad \quad  \cdot \mathbf{32208313}\cdot \mathbf{47148917} \cdot \mathbf{69050951} \cdot \mathbf{39618707467} \cdot \mathbf{220678058317} \\
-    & \quad \quad  \cdot \mathbf{107810984992771213}\cdot \mathbf{177993780932160825}  
+    p+1 &= 2^{85}\cdot 17^{12} \cdot 37^{6} \cdot 59^6 \cdot 97^6 \cdot 233^6 \cdot 311^{12} \cdot 911^6 \cdot 1297^6 \\
+    p - 1 &= 2 \cdot 3^2 \cdot 5\cdot 7\cdot 11^2 \cdot 23^2 \cdot 29\cdot 127\cdot 163\cdot 173\cdot 191\cdot 193\cdot 211\cdot 277\cdot 347\cdot 617 \\
+    &\quad \quad  \cdot 661\cdot 761\cdot 1039\cdot 4637\cdot 5821\cdot 15649\cdot 19139\cdot 143443\cdot 150151 \cdot\mathbf{3813769} \\
+    & \quad \quad  \cdot \mathbf{358244059}\cdot \mathbf{992456937347} \cdot \mathbf{353240481781965369823897507} \\
+    & \quad \quad  \cdot \mathbf{860102006951457440137165889140302}  
     \end{align*}$$
 
 # References
