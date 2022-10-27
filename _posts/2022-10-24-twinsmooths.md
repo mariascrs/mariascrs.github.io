@@ -7,7 +7,7 @@ aside:
   toc: true
 ---
 
-This blogpost aims to give a general overview of our new paper *"Cryptographic Smooth Neighbors"* ([link](https://eprint.iacr.org/2022/)). This is joint work with Giacomo Bruno, Craig Costello, Jonathan Komada Eriksen, Michael Naehrig, Michael Meyer, and Bruno Sterner.
+This blogpost aims to give a general overview of our new paper *"Cryptographic Smooth Neighbors"* ([link](https://eprint.iacr.org/2022/1439)). This is joint work with Giacomo Bruno, Craig Costello, Jonathan Komada Eriksen, Michael Naehrig, Michael Meyer, and Bruno Sterner.
 
 ## $B$-Smooth Neighbours
 
