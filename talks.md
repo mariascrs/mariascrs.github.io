@@ -8,7 +8,7 @@ title: Talks and Teaching
 
 * 21 November, 2022\
 **The General Isogeny Problem in Dimension 2**\
-Invited talk at the Junior Number Theory Seminar at the University of Warwick. 
+Invited talk at the Junior Number Theory Seminar at the University of Warwick.\
 *The University of Warwick*
 
 * 11 October, 2022\
