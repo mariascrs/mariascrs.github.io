@@ -6,6 +6,10 @@ title: Talks and Teaching
 ## Talks 
 ### Academic
 
+* 21 November, 2022\
+**The General Isogeny Problem in Dimension 2**\
+Invited talk at the Junior Number Theory Seminar at the University of Warwick. 
+*The University of Warwick*
 
 * 11 October, 2022\
 **Attacking the General Isogeny Problem**\
@@ -22,7 +26,7 @@ Invited talk at the Quantum Cryptanalysis Workshop, University of Bristol on cla
 Talk at ISOCRYPT 2022 on detecting $(N,N)$-splittings and applications to genus 2 isogeny-based cryptography (joint work with Craig Costello and Sam Frengley). <a href="https://drive.google.com/file/d/1HtLz740lARATdi-fH4C7vRy0lY1e3MCJ/view?usp=sharing" target="_blank">Slides</a> | <a href="https://www.youtube.com/watch?v=-R5Q1nkfqrc&list=PLiHaXFHjrqYdAWotOM-7yeb0D8qdqdrUL&index=9" target="_blank">Recording</a>\
 *KU Leuven*
 
-* 29 March, 2022\
+* 29 June, 2022\
 **Post-Quantum Cryptography from Isogenies**\
 Talk at the Joint Cybersecurity CDTs Summer School 2022 on obtaining quantum secure cryptography from isogenies. 
 *University College London*
