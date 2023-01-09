@@ -18,7 +18,7 @@ As we are studying the general problem, we do not assume any knowledge of the de
 
 ## Superspecial abelian surfaces
 
-To generalise elliptic curves to higher dimensions, we want to think of elliptic curves as *one-dimensional principally polarised abelian varieties*. In this paper, we are concerned with *two*-dimensional principally polarised abelian varieties, more commonly referred to as (principally polarised) abelian *surfaces*.
+To generalise elliptic curves to higher dimensions, we want to think of elliptic curves as *one-dimensional (principally polarised) abelian varieties*. In this paper, we are concerned with *two*-dimensional (principally polarised) abelian varieties, more commonly referred to as (principally polarised) abelian *surfaces*.
 
 In isogeny-based cryptography, we usually consider *supersingular* elliptic curves. Supersingularity has a variety of equivalent definitions. Two of these are:
 * The trace $t$ of Frobenius satisfies $t \equiv 0 \bmod p$ $(p > 3)$
@@ -31,7 +31,7 @@ There are two types of abelian surfaces:
 * Jacobians $\text{Jac}(C)$ of genus 2 curves $C$.
 
 For dimension 1 isogeny-based cryptography, we usually only consider the elliptic curves up to $\bar{\mathbb{F}}$<sub>$p$</sub>-isomorphism and label these classes with the $j$-invariant. The same is true for dimension 2 isogeny-based cryptography. In this case, we label the $\bar{\mathbb{F}}$<sub>$p$</sub>-isomorphism classes with the following invariants:
-* Sets of $j$-invariants ${ j(E), j(E') }$ (note that this is a set as the ordering of $E$ and $E'$ does not matter for our purposes).
+* Sets of $j$-invariants $\text{\textbraceleft} j(E), j(E') \text{\textbraceright}$ (note that this is a set as the ordering of $E$ and $E'$ does not matter for our purposes).
 * Igusa-Clebsch invariants $I$<sub>$2$</sub>$(C)$, $I$<sub>$4$</sub>$(C)$, $I$<sub>$6$</sub>$(C)$, $I$<sub>$10$</sub>$(C)$. 
 
 The Igusa-Clebsch invariants live in weighted projective space, and the subscript denotes the weight of the invariant.
@@ -58,18 +58,19 @@ The second condition is there to ensure that $A'$ comes equipped with a principa
 
 Let $D$<sub>$N$</sub> be the number of $(N,N)$-isogenies from a superspecial surface $A$. Then we have that $D$<sub>$N$</sub> $ = O(N$<sup>$3$</sup>$)$ (the exact number can be found in Section 2 of our paper). This is much larger than in the dimension 1 case where there are $O(N)$ outgoing isogenies from a supersingular elliptic curve. Here we are ignoring the rare, special cases where $j(E) = 0$ or $1728$, for example.
 
-## The General Isogeny Problem in Dimension 2
+## Dimension 2 general isogeny problem
 
 In its most general form, the superspecial isogeny problem in two dimensions asks to find an isogeny $$\phi: A \rightarrow A'$$ between two superspecial abelian surfaces $A/\mathbb{F}$<sub>$p$<sup>$2$</sup></sub> and $A'/\mathbb{F}$<sub>$p$<sup>$2$</sup></sub>.
 
 The general isogeny problem can be viewed as finding a path between two nodes in the superspecial isogeny graph. 
 
-## Superspecial isogeny graph $\Gamma(N; p)$
+## Superspecial isogeny graph
 
 Let $p$ be a large prime not dividing $N$.
 
 > **Definition.** The superspecial isogeny graph, denoted $\Gamma(N; p)$, is the graph with vertex set 
-> $$\mathcal{S}(p) = { \text{Isomorphism classes of superspecial abelian surfaces} },$$ and whose edges are $(N,N)$-isogenies over $\bar{\mathbb{F}}$<sub>$p$</sub>.
+>            $$\mathcal{S}(p) = \text{\textbraceleft Isomorphism classes of superspecial abelian surfaces \textbraceright},$$
+>and whose edges are $(N,N)$-isogenies over $\bar{\mathbb{F}}$<sub>$p$</sub>.
 
 This graph has a number of nice properties:
 * Firstly, the vertex set is finite. More precisely, we have that the size of $\mathcal{S}(p)$ is $O(p^3)$. This is only true when we restrict to *superspecial* surfaces, and mirrors the finiteness property of the vertex set in dimension 1.
@@ -78,7 +79,13 @@ This graph has a number of nice properties:
 
 The hardness of the general isogeny problem in dimension one is largely based on the fact that the supersingular isogeny graph is Ramanujan, i.e., has optimal expansion. In contrast, $\Gamma(N; p)$ is not quite Ramanujan, but we can still argue that the expansion is good enough to build secure cryptographic protocols [7].
 
-As we have two types of abelian surfaces, there is a natural partition of the vertex set. Indeed, $\mathcal{S}(p)$ is equal to the disjoint union of $$\mathcal{J}(p) = {[A] \in \mathcal{S}(p) : A \cong \text{Jac}(C) }, $$ and $$\mathcal{E}(p) = { [A] \in \mathcal{S}(p) : A \cong E \times E' \text{ with } E, E' \text{ supersingular ECs} }.$$
+As we have two types of abelian surfaces, there is a natural partition of the vertex set. Indeed, $\mathcal{S}(p)$ is equal to the disjoint union of 
+
+$$\mathcal{J}(p) = {[A] \in \mathcal{S}(p) : A \cong \text{Jac}(C) }, $$ 
+
+and 
+
+$$\mathcal{E}(p) = \text{\textbraceleft} [A] \in \mathcal{S}(p) : A \cong E \times E' \text{ with } E, E' \text{ supersingular ECs} \text{\textbraceright}.$$
 
 There are around $O(p^3)$ nodes in $\mathcal{J}(p)$ and $O(p^2)$ nodes in $\mathcal{E}(p)$, making the latter the *rarer* case. 
 
@@ -86,7 +93,7 @@ There are around $O(p^3)$ nodes in $\mathcal{J}(p)$ and $O(p^2)$ nodes in $\math
 
 We often fix the vertex set but consider multiple edge sets. We will therefore use $\Gamma(\mathcal{N}; p)$ to denote the graph with the vertex set $\mathcal{S}(p)$ and and whose edges are $(N,N)$-isogenies for all $N\in \mathcal{N}$. 
 
-We can now view the general isogeny problem as a path finding problem: given superspecial abelian surfaces $A$ and $A'$ defined over $\mathbb{F}$<sub>$p$<sup>$2$</sup></sub>, find a walk in $\Gamma(\mathcal{N}; p)$ connecting them, where $\mathcal{N} = {N \in \mathbb{N} : p \nmid N}$.
+We can now view the general isogeny problem as a path finding problem: given superspecial abelian surfaces $A$ and $A'$ defined over $\mathbb{F}$<sub>$p$<sup>$2$</sup></sub>, find a walk in $\Gamma(\mathcal{N}; p)$ connecting them, where $\mathcal{N} = \text{\textbraceleft} N \in \mathbb{N} : p \nmid N \text{\textbraceright}$.
 
 # Attacking the isogeny problem in dimension 2
 
@@ -134,7 +141,7 @@ Let's look in more depth at this first step in the Costello-Smith algorithm:
 1. Start on a node $A$<sub>0</sub>$\in \mathcal{J}(p)$.
 2. Take a step in $\Gamma(2; p)$ via a Richelot isogeny $\phi$<sub>$1$</sub>$: A$<sub>$0$</sub>$ \rightarrow A$<sub>$1$</sub>.
 3. From the Richelot isogeny formulae, we can determine whether $A$<sub>$1$</sub>$\in \mathcal{E}(p)$ (at some point you compute a determinant $\delta$, and if this is zero, the $A$<sub>$1$</sub> is a product of elliptic curves). In this case, $A$<sub>$0$</sub> is $(2,2)$-split, and we terminate. Otherwise, take another step $\phi$<sub>$2$</sub>$: A$<sub>$1$</sub>$\rightarrow A$<sub>$2$</sub>.
-4. Repeat the previous step until finding $A$<sub>$i$</sub>$\in \mathcal{E}(p)$.
+4. Repeat the previous step until finding $A$<sub>$i$</sub>$ \in \mathcal{E}(p)$.
 
 In summary, they use Richelot isogenies (as these are the most efficient to compute) to take walks in $\Gamma(2; p)$ and detect $(2,2)$-splittings. One of the motivations of this paper was the answer the question: by taking steps in $\Gamma(2; p)$, can we detect whether the current node $A$<sub>$i$</sub> is $(N,N)$-split for $N>2$?
 
@@ -166,17 +173,25 @@ Not only this, but if we find such an $r$<sub>$0$</sub> and $s$<sub>$0$</sub> fo
 We want to detect whether $C$ is $(N,N)$-split, i.e., in the image of $\varphi$<sub>$N$</sub>. Let $I$<sub>$2$</sub>$(C)$, $I$<sub>$4$</sub>$(C)$, $I$<sub>$6$</sub>$(C)$, $I$<sub>$10$</sub>$(C)$ be the Igusa-Clebsch invariants of $C$. 
 
 **Method 1.** Compute the equation $F$<sub>$N$</sub> for the image of $\mathcal{L}$<sub>$N$</sub> in $\mathcal{M}$<sub>$2$</sub>:
-$$\text{Jac}(C) \text{ is } (N,N)\text{-split} \Leftrightarrow F_N(I_2(C), I_4(C), I_6(C), I_{10}(C)).$$ $F$<sub>$N$</sub> has been computed previously by Shaska and collaborators  [12] [13] [14] [10] and Bruin-Doereksen [1]. 
 
+          $$\text{Jac}(C) \text{ is } (N,N)\text{-split} \Leftrightarrow F_N(I_2(C), I_4(C), I_6(C), I_{10}(C)).$$
+
+$F$<sub>$N$</sub> has been computed previously by Shaska and collaborators  [12] [13] [14] [10] and Bruin-Doereksen [1]. 
 The main problem is that $F$<sub>$N$</sub> is *large* (with size growing rapidly with $N$), so the evaluation is inefficient.
 
 ![Table](splitsearcher/table.png)
 
 As a result, we instead use elimination theory and compute resultants. 
 
-**Method 2.** We normalise the Igusa-Clebsch invariants $I$<sub>$2$</sub>$(C)$, $I$<sub>$4$</sub>$(C)$, $I$<sub>$6$</sub>$(C)$, $I$<sub>$10$</sub>$(C)$ as $$\alpha_1(C) = \frac{I_4(C)}{I_2(C)^2}, \ \alpha_2(C) = \frac{I_2(C)I_4(C)}{I_6(C)}, \ \alpha_1(C) = \frac{I_4(C)I_6(C)}{I_{10}(C)}.$$ Kumar gives us the map $$\varphi_N = \big(\mathcal{I}_2(r, s): \mathcal{I}_4(r, s): \mathcal{I}_6(r, s): \mathcal{I}_{10}(r, s)\big).$$ We chose the same normalisation of the $\mathcal{I}$<sub>$k$</sub> to give us $i$<sub>$1$</sub>, $i$<sub>$2$</sub>, $i$<sub>$3$</sub> $ \in \mathbb{Q}(r,s)$.
+**Method 2.** We normalise the Igusa-Clebsch invariants $I$<sub>$2$</sub>$(C)$, $I$<sub>$4$</sub>$(C)$, $I$<sub>$6$</sub>$(C)$, $I$<sub>$10$</sub>$(C)$ as 
 
-To determine whether $\text{Jac}(C)$ is $(N,N)$-split, it suffices to determine whether there is a simultaneous solution $r$<sub>$0$</sub>$, s$<sub>$0$</sub>$\in \bar{\mathbb{F}}$<sub>$p$</sub> of $$\begin{cases} f_1(r,s) = i_1(r_0,s_0) - \alpha_1(C) \\ 
+      $$\alpha_1(C) = \frac{I_4(C)}{I_2(C)^2}, \ \alpha_2(C) = \frac{I_2(C)I_4(C)}{I_6(C)}, \ \alpha_1(C) = \frac{I_4(C)I_6(C)}{I_{10}(C)}.$$ 
+      
+Kumar gives us the map $$\varphi_N = \big(\mathcal{I}_2(r, s): \mathcal{I}_4(r, s): \mathcal{I}_6(r, s): \mathcal{I}_{10}(r, s)\big).$$ We chose the same normalisation of the $\mathcal{I}$<sub>$k$</sub> to give us $i$<sub>$1$</sub>, $i$<sub>$2$</sub>, $i$<sub>$3$</sub> $ \in \mathbb{Q}(r,s)$.
+
+To determine whether $\text{Jac}(C)$ is $(N,N)$-split, it suffices to determine whether there is a simultaneous solution $r$<sub>$0$</sub>$, s$<sub>$0$</sub>$\in \bar{\mathbb{F}}$<sub>$p$</sub> of 
+
+$$\begin{cases} f_1(r,s) = i_1(r_0,s_0) - \alpha_1(C) \\ 
         f_2(r,s) = i_2(r_0,s_0) - \alpha_2(C) \\ 
         f_3(r,s) = i_3(r_0,s_0) - \alpha_3(C) \end{cases}.$$ 
         
