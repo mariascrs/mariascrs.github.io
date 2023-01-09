@@ -11,7 +11,7 @@ In this blogpost, I'll give an overview of our new paper *An algorithm for effic
 
 
 In this paper, we revisit the general superspecial isogeny problem in dimension 2, which asks an adversary to find an isogeny $$\phi: \text{Jac}(C) \rightarrow \text{Jac}(C'),$$ where $C$ and $C'$ are genus $2$ curves with superspecial Jacobians. The best known algorithm for solving this problem is due to Costello and Smith [5].
-The general superspecial isogeny problem underlies the security of various isogeny-based protocols in two dimensions, such as the dimension 2 analogue of the CGL hash function [3], which was proposed by Takashima [15] and later extended by Castryck, Decru and Smith [2]. 
+The general superspecial isogeny problem underlies the security of various isogeny-based protocols in two dimensions, such as the dimension 2 analogue of the CGL hash function [3], which was proposed by Takashima [16] and later extended by Castryck, Decru and Smith [2]. 
 As we are studying the general problem, we do not assume any knowledge of the degree of the isogeny or any (SIDH-like) torsion point information. Indeed, the superspecial isogeny problem *with* torsion point information can be solved in polynomial time [11], thus making primitives such as the dimension 2 analogue of SIDH, G2SIDH [8], insecure.
 
 # Some background on dimension 2 abelian varieties
@@ -169,7 +169,7 @@ We want to detect whether $C$ is $(N,N)$-split, i.e., in the image of $\varphi$<
 
 **Method 1.** Compute the equation $F$<sub>$N$</sub> for the image of $\mathcal{L}$<sub>$N$</sub> in $\mathcal{M}$<sub>$2$</sub>. Then, we can detect if $[C]$ is $(N,N)$-split by determining whether $F_N(I_2(C), I_4(C), I_6(C), I_{10}(C)) = 0.$
 
-$F$<sub>$N$</sub> has been computed previously by Shaska and collaborators  [12] [13] [14] [10] and Bruin-Doereksen [1]. 
+$F$<sub>$N$</sub> has been computed previously by Shaska and collaborators [12] [13] [14] [15] [10] and Bruin-Doereksen [1]. 
 The main problem is that $F$<sub>$N$</sub> is *large* (with size growing rapidly with $N$), so the evaluation is inefficient.
 
 <img src="../../../images/posts/splitsearcher/table.png">
@@ -267,13 +267,15 @@ curve. Forum Math., 21(3):547-566, 2009.
 
 [11] D. Robert. Breaking SIDH in polynomial time. eprint 2022/1068, 2022.
 
-[12] T. Shaska. Genus 2 fields with degree 3 elliptic subfields. Forum Math., 16(2):263-280, 2004.
+[12] T. Shaska. Curves of genus two covering elliptic curves. PhD thesis, University of Florida, 2001.
 
-[13] T. Shaska and H. Völklein. Elliptic subfields and automorphisms of genus 2 function fields. In Algebra, arithmetic and geometry with applications, pages 703-723. Springer, 2004.
+[13] T. Shaska. Genus 2 fields with degree 3 elliptic subfields. Forum Math., 16(2):263-280, 2004.
 
-[14] T. Shaska, G. S. Wijesiri, S. Wolf, and L. Woodland. Degree 4 coverings of elliptic curves by genus 2 curves. Albanian J. Math., 2(4):307-318, 2008.
+[14] T. Shaska and H. Völklein. Elliptic subfields and automorphisms of genus 2 function fields. In Algebra, arithmetic and geometry with applications, pages 703-723. Springer, 2004.
 
-[15] K. Takashima. Effifient algorithms for isogeny sequences and their cryptographic applications. In Mathematical modelling for next-generation cryptography, pages 97-114. Springer, 2018.
+[15] T. Shaska, G. S. Wijesiri, S. Wolf, and L. Woodland. Degree 4 coverings of elliptic curves by genus 2 curves. Albanian J. Math., 2(4):307-318, 2008.
+
+[16] K. Takashima. Effifient algorithms for isogeny sequences and their cryptographic applications. In Mathematical modelling for next-generation cryptography, pages 97-114. Springer, 2018.
 
 
 
