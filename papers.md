@@ -7,7 +7,7 @@ title: Papers
 * **An algorithm for efficient detection of *(N,N)*-splittings and its application to the isogeny problem in dimension 2** \
 *Joint work with Craig Costello and Sam Frengley.* \
 *In submission.* \
-([ePrint](https://eprint.iacr.org/2022/1736.pdf){:target="_blank"})
+([ePrint](https://eprint.iacr.org/2022/1736.pdf){:target="_blank"}) ([Blogpost](https://www.mariascrs.com/2023/01/09/splitsearcher.html){:target="_blank"})
 
 * **Cryptographic Smooth Neighbors** \
 *Joint work with Giacomo Bruno, Craig Costello, Jonathan Komada Eriksen, Michael Naehrig, Michael Meyer, and Bruno Sterner.* \
