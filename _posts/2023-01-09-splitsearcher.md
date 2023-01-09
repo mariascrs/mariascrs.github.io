@@ -116,7 +116,7 @@ Note, however, only three runs are required to successfully return path $\phi$. 
 Therefore, this step is expected to run in $\tilde{O}(\sqrt{p})$, as it is dominated by one run of the Delfs--Galbraith algorithm. 
 
 
-<img src="splitsearcher/CS-algo/cs-algo3.png" >
+<img src="../../../_posts/splitsearcher/CS-algo/cs-algo3.png" >
 
 
 We can then obtain the desired path from $A$ to $A'$ as $\phi = \hat{\varphi}' \circ \pi \circ \varphi$, where $\hat{\cdot}$ represents the dual.
