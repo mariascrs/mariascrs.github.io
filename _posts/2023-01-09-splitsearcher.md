@@ -10,9 +10,9 @@ aside:
 In this blogpost, I'll give an overview of our new paper *An algorithm for efficient detection of $(N,N)$-splittings and its application to the isogeny problem in dimension 2* ([link](https://eprint.iacr.org/2022/1736)), with associated code available [here](https://github.com/mariascrs/SplitSearcher). This is joint work with Craig Costello and Sam Frengley.
 
 
-In this paper, we revisit the general superspecial isogeny problem in dimension 2, which asks an adversary to find an isogeny $$\phi: \text{Jac}(C) \rightarrow \text{Jac}(C'),$$ where $C$ and $C'$ are genus $2$ curves with superspecial Jacobians. The best known algorithm for solving this problem is due to Costello and Smith[^5].
-The general superspecial isogeny problem underlies the security of various isogeny-based protocols in two dimensions, such as the dimension 2 analogue of the CGL hash function[^3], which was proposed by Takashima[^15] and later extended by Castryck, Decru and Smith[^2]. 
-As we are studying the general problem, we do not assume any knowledge of the degree of the isogeny or any (SIDH-like) torsion point information. Indeed, the superspecial isogeny problem *with* torsion point information can be solved in polynomial time[^11], thus making primitives such as the dimension 2 analogue of SIDH, G2SIDH[^8], insecure.
+In this paper, we revisit the general superspecial isogeny problem in dimension 2, which asks an adversary to find an isogeny $$\phi: \text{Jac}(C) \rightarrow \text{Jac}(C'),$$ where $C$ and $C'$ are genus $2$ curves with superspecial Jacobians. The best known algorithm for solving this problem is due to Costello and Smith [5].
+The general superspecial isogeny problem underlies the security of various isogeny-based protocols in two dimensions, such as the dimension 2 analogue of the CGL hash function [3], which was proposed by Takashima [15] and later extended by Castryck, Decru and Smith [2]. 
+As we are studying the general problem, we do not assume any knowledge of the degree of the isogeny or any (SIDH-like) torsion point information. Indeed, the superspecial isogeny problem *with* torsion point information can be solved in polynomial time [11], thus making primitives such as the dimension 2 analogue of SIDH, G2SIDH [8], insecure.
 
 # Some background on dimension 2 abelian varieties
 
@@ -76,7 +76,7 @@ This graph has a number of nice properties:
 * The isomorphism classes $[A] \in \mathcal{S}(p)$ are represented by surfaces defined over $\mathbb{F}$<sub>$p$<sup>$2$</sup></sub>. Again, this property is only true by restricting to superspecial abelian surfaces, and matches the situation in genus 1. 
 * The graph is $D$<sub>$N$</sub>-regular (except for on a small number of special nodes).
 
-The hardness of the general isogeny problem in dimension one is largely based on the fact that the supersingular isogeny graph is Ramanujan, i.e., has optimal expansion. In contrast, $\Gamma(N; p)$ is not quite Ramanujan, but we can still argue that the expansion is good enough to build secure cryptographic protocols[^7].
+The hardness of the general isogeny problem in dimension one is largely based on the fact that the supersingular isogeny graph is Ramanujan, i.e., has optimal expansion. In contrast, $\Gamma(N; p)$ is not quite Ramanujan, but we can still argue that the expansion is good enough to build secure cryptographic protocols [7].
 
 As we have two types of abelian surfaces, there is a natural partition of the vertex set. Indeed, $\mathcal{S}(p)$ is equal to the disjoint union of $$\mathcal{J}(p) = \{[A] \in \mathcal{S}(p) : A \cong \text{Jac}(C) \}, $$ and $$\mathcal{E}(p) = \{ [A] \in \mathcal{S}(p) : A \cong E \times E' \text{ with } E, E' \text{ supersingular ECs} \}.$$
 
@@ -90,7 +90,7 @@ We can now view the general isogeny problem as a path finding problem: given sup
 
 # Attacking the isogeny problem in dimension 2
 
-The best known algorithm for solving the general isogeny problem is due to Costello-Smith[^5].
+The best known algorithm for solving the general isogeny problem is due to Costello-Smith [5].
 
 The Costello-Smith algorithm proceeds as follows. Suppose we are given a start node $A$ and end node $A'$ in $\mathcal{J}(p)$. Our goal is to find an isogeny $\phi: A \rightarrow A'$. 
 
@@ -107,7 +107,7 @@ By finding these paths, we have now reduced the isogeny problem in $\mathcal{S}(
 
 ##### Step 2: solve the problem in the special subset
 
-The second step is to solve the problem in $\mathcal{E}(p)$, which is (asymptotically) equivalent to solving the problem in dimension 1. As the elliptic curves $E$<sub>$1$</sub>, $E$<sub>$2$</sub>, $E$<sub>$1$</sub>$'$, and $E$<sub>$2$</sub>$'$ are supersingular, we can use an algorithm such as Delfs--Galbraith[^8] or SuperSolver[^9] to output paths $\psi $<sub>$1$</sub>$: E$<sub>$1$</sub>$\rightarrow E$<sub>$1$</sub>$'$ and $\psi $<sub>$2$</sub>$: E$<sub>$2$</sub>$\rightarrow E$<sub>$2$</sub>$'$. If the length of these paths have the same parity, then we can patch them up to obtain the product path $\pi : E$<sub>$1$</sub>$ \times E$<sub>$2$</sub>$ \rightarrow E$<sub>$1$</sub>$' \times E$<sub>$2$</sub>$'$[^1]. If the lengths of the paths do not have the same parity, we fail and return $\bot$, and run the algorithm again. 
+The second step is to solve the problem in $\mathcal{E}(p)$, which is (asymptotically) equivalent to solving the problem in dimension 1. As the elliptic curves $E$<sub>$1$</sub>, $E$<sub>$2$</sub>, $E$<sub>$1$</sub>$'$, and $E$<sub>$2$</sub>$'$ are supersingular, we can use an algorithm such as Delfs--Galbraith [8] or SuperSolver [9] to output paths $\psi $<sub>$1$</sub>$: E$<sub>$1$</sub>$\rightarrow E$<sub>$1$</sub>$'$ and $\psi $<sub>$2$</sub>$: E$<sub>$2$</sub>$\rightarrow E$<sub>$2$</sub>$'$. If the length of these paths have the same parity, then we can patch them up to obtain the product path $\pi : E$<sub>$1$</sub>$ \times E$<sub>$2$</sub>$ \rightarrow E$<sub>$1$</sub>$' \times E$<sub>$2$</sub>$'$ [1]. If the lengths of the paths do not have the same parity, we fail and return $\bot$, and run the algorithm again. 
 
 Note, however, only three runs are required to successfully return path $\phi$. Indeed, if we instead run the Costello-Smith algorithm to find paths $\psi_1 : E$<sub>$1$</sub>$ \rightarrow E$<sub>$1$</sub>$'$, $\psi$<sub>$2,1$</sub>$ : E$<sub>$2$</sub>$ \rightarrow E$, and $\psi$<sub>$2,2$</sub>$ : E \rightarrow E$<sub>$1$</sub>$'$, where $E: y^2 = x^3+x$ has an endomorphism of degree 2, say $\tau$, then we can set $\psi_2 = \psi_{2,2}\circ \psi_{2,1}$ if $\text{length}(\psi_1) \equiv \text{length}(\psi_{2,1} \circ \psi_{2,2}) \bmod 2$ and $\psi_2 = \psi_{2,2}\circ \tau \circ \psi_{2,1}$, otherwise. 
 
@@ -155,7 +155,7 @@ So, our question of whether $C$ (or rather the isomorphism class $[C]$) is $(N,N
 
 ![Kumar maps](splitsearcher/detect-split/Slide4.png)
 
-The main problem here is that we do not have explicit equations for $\varphi$<sub>$N$</sub> for every $N$. Kumar[^9] gives us this map explicitly for $N \leq 11$. So, to determine if $[C]$ is in the image of $\varphi$<sub>$N$</sub>, it suffices to determine if there is an $(r$<sub>$0$</sub>$,s$<sub>$0$</sub>$) \in \mathbb{A}$<sup>$2$</sup><sub>$r,s$</sub> that map to $(I_2(C): I_4(C): I_6(C): I_{10}(C))$.
+The main problem here is that we do not have explicit equations for $\varphi$<sub>$N$</sub> for every $N$. Kumar [9] gives us this map explicitly for $N \leq 11$. So, to determine if $[C]$ is in the image of $\varphi$<sub>$N$</sub>, it suffices to determine if there is an $(r$<sub>$0$</sub>$,s$<sub>$0$</sub>$) \in \mathbb{A}$<sup>$2$</sup><sub>$r,s$</sub> that map to $(I_2(C): I_4(C): I_6(C): I_{10}(C))$.
 
 ![Kumar maps](splitsearcher/detect-split/Slide5.png)
 
@@ -166,7 +166,7 @@ Not only this, but if we find such an $r$<sub>$0$</sub> and $s$<sub>$0$</sub> fo
 We want to detect whether $C$ is $(N,N)$-split, i.e., in the image of $\varphi$<sub>$N$</sub>. Let $I$<sub>$2$</sub>$(C)$, $I$<sub>$4$</sub>$(C)$, $I$<sub>$6$</sub>$(C)$, $I$<sub>$10$</sub>$(C)$ be the Igusa-Clebsch invariants of $C$. 
 
 **Method 1.** Compute the equation $F$<sub>$N$</sub> for the image of $\mathcal{L}$<sub>$N$</sub> in $\mathcal{M}$<sub>$2$</sub>:
-$$\text{Jac}(C) \text{ is } (N,N)\text{-split} \Leftrightarrow F_N(I_2(C), I_4(C), I_6(C), I_{10}(C)).$$ $F$<sub>$N$</sub> has been computed previously by Shaska and collaborators [^12][^13][^14][^10] and Bruin-Doereksen[^1]. 
+$$\text{Jac}(C) \text{ is } (N,N)\text{-split} \Leftrightarrow F_N(I_2(C), I_4(C), I_6(C), I_{10}(C)).$$ $F$<sub>$N$</sub> has been computed previously by Shaska and collaborators  [12] [13] [14] [10] and Bruin-Doereksen [1]. 
 
 The main problem is that $F$<sub>$N$</sub> is *large* (with size growing rapidly with $N$), so the evaluation is inefficient.
 
@@ -220,7 +220,7 @@ If at any point we detect a splitting, terminate.
 
 ##### Comparison with SuperSolver
 
-At a high level, SplitSeacher can be viewed as an analogue of SuperSolver[^4] (joint work with Craig Costello and Jia Shi), which improves on the concrete complexity of the Delfs-Galbraith attack against the dimension 1 isogeny problem. Both attacks use random walks to find *special* nodes in the graph to reduce the algorithm to a comparitevely easier isogeny problem: the special nodes in the Delfs-Galbraith algorithm are the isomorphism classes of elliptic curves defined over $\mathbb{F}$<sub>$p$</sub>, while the special nodes in the Costello-Smith algorithm are the isomorphism classes of abelian surfaces that are isomorphic to products of elliptic curves. The improvements in SuperSolver came from an efficient method for determining whether modular polynomials have subfield roots without computing any such roots explicitly. Here, our improvements come from Kumar's parametrisations of the moduli space of dimension $2$ abelian surfaces whose Jacobians are split by an $(N,N)$-isogeny. 
+At a high level, SplitSeacher can be viewed as an analogue of SuperSolver [4] (joint work with Craig Costello and Jia Shi), which improves on the concrete complexity of the Delfs-Galbraith attack against the dimension 1 isogeny problem. Both attacks use random walks to find *special* nodes in the graph to reduce the algorithm to a comparitevely easier isogeny problem: the special nodes in the Delfs-Galbraith algorithm are the isomorphism classes of elliptic curves defined over $\mathbb{F}$<sub>$p$</sub>, while the special nodes in the Costello-Smith algorithm are the isomorphism classes of abelian surfaces that are isomorphic to products of elliptic curves. The improvements in SuperSolver came from an efficient method for determining whether modular polynomials have subfield roots without computing any such roots explicitly. Here, our improvements come from Kumar's parametrisations of the moduli space of dimension $2$ abelian surfaces whose Jacobians are split by an $(N,N)$-isogeny. 
 To hear more this general framework for attacking the general isogeny problem (in dimensions 1 and 2), check out the [talk](https://youtu.be/rwEtpYlD9FU) I gave at the Isogeny Club.
 
 ## Implementation and Experimental Results
@@ -237,22 +237,22 @@ For primes of size 50 to 800 bits, SuperSolver [Table 6, 14] reports speedups ra
 
 # References
 
-[^1]: N. Bruin and K. Doerksen. The arithmetic of genus two curves with (4; 4)-split Jacobians. Canad. J.Math., 63(5):992-1024, 2011.
-[^2]: W. Castryck, T. Decru, and B. Smith. Hash functions from superspecial genus-2 curves using Richelot isogenies. Journal of Mathematical Cryptology, 14(1):268-292, 2020.
-[^3]: D. X. Charles, K. E. Lauter, and E. Z. Goren. Cryptographic hash functions from expander graphs. Journal of Cryptology, 22(1):93-113, 2009.
-[^4]: M. Corte-Real Santos, C. Costello, and J. Shi. Accelerating the Delfs-Galbraith algorithm with fast subfield root detection. In Annual International Cryptology Conference, pages 285-314. Springer, 2022.
-[^5]: C. Costello and B. Smith. The supersingular isogeny problem in genus 2 and beyond. In PQ Crypto, pages 151-168. Springer, 2020.
-[^6]: C. Delfs and S. D. Galbraith. Computing isogenies between supersingular elliptic curves over $\mathbb{F}$<sub>$p$</sub>. Designs, Codes and Cryptography, 78(2):425-440, 2016.
-[^7]: E. Florit and B. Smith. Automorphisms and isogeny graphs of abelian varieties, with applications to the superspecial Richelot isogeny graph. In Arithmetic, Geometry, Cryptography, and Coding Theory 2021, 2021.
-[^8]: E. V. Flynn and Y. B. Ti. Genus two isogeny cryptography. In PQ Crypto, pages 286-306. Springer,2019.
-[^9]: A. Kumar. Hilbert modular surfaces for square discriminants and elliptic subfields of genus 2 function fields. Research in the Mathematical Sciences, 2(1):1-46, 2015.
-[^(10)]: K. Magaard, T. Shaska, and H. Völklein. Genus 2 curves that admit a degree 5 map to an elliptic
-curve. Forum Math., 21(3):547-566, 2009.
-[^(11)]: D. Robert. Breaking SIDH in polynomial time. eprint 2022/1068, 2022.
-[^(12)]: T. Shaska. Genus 2 fields with degree 3 elliptic subfields. Forum Math., 16(2):263-280, 2004.
-[^(13)]: T. Shaska and H. Völklein. Elliptic subfields and automorphisms of genus 2 function fields. In Algebra, arithmetic and geometry with applications, pages 703-723. Springer, 2004.
-[^(14)]: T. Shaska, G. S. Wijesiri, S. Wolf, and L. Woodland. Degree 4 coverings of elliptic curves by genus 2 curves. Albanian J. Math., 2(4):307-318, 2008.
-[^(15)]: K. Takashima. Effifient algorithms for isogeny sequences and their cryptographic applications. In Mathematical modelling for next-generation cryptography, pages 97-114. Springer, 2018.
+[1] N. Bruin and K. Doerksen. The arithmetic of genus two curves with (4; 4)-split Jacobians. Canad. J.Math., 63(5):992-1024, 2011.
+[2] W. Castryck, T. Decru, and B. Smith. Hash functions from superspecial genus-2 curves using Richelot isogenies. Journal of Mathematical Cryptology, 14(1):268-292, 2020.
+[3] D. X. Charles, K. E. Lauter, and E. Z. Goren. Cryptographic hash functions from expander graphs. Journal of Cryptology, 22(1):93-113, 2009.
+[4] M. Corte-Real Santos, C. Costello, and J. Shi. Accelerating the Delfs-Galbraith algorithm with fast subfield root detection. In Annual International Cryptology Conference, pages 285-314. Springer, 2022.
+[5] C. Costello and B. Smith. The supersingular isogeny problem in genus 2 and beyond. In PQ Crypto, pages 151-168. Springer, 2020.
+[6] C. Delfs and S. D. Galbraith. Computing isogenies between supersingular elliptic curves over $\mathbb{F}$<sub>$p$</sub>. Designs, Codes and Cryptography, 78(2):425-440, 2016.
+[7] E. Florit and B. Smith. Automorphisms and isogeny graphs of abelian varieties, with applications to the superspecial Richelot isogeny graph. In Arithmetic, Geometry, Cryptography, and Coding Theory 2021, 2021.
+[8] E. V. Flynn and Y. B. Ti. Genus two isogeny cryptography. In PQ Crypto, pages 286-306. Springer,2019.
+[9] A. Kumar. Hilbert modular surfaces for square discriminants and elliptic subfields of genus 2 function fields. Research in the Mathematical Sciences, 2(1):1-46, 2015.
+[10] K. Magaard, T. Shaska, and H. Völklein. Genus 2 curves that admit a degree 5 map to an elliptic
+curve. Forum Math., 21(3):547-566, 2009. 
+[11] D. Robert. Breaking SIDH in polynomial time. eprint 2022/1068, 2022.
+[(12)] T. Shaska. Genus 2 fields with degree 3 elliptic subfields. Forum Math., 16(2):263-280, 2004.
+[(13)] T. Shaska and H. Völklein. Elliptic subfields and automorphisms of genus 2 function fields. In Algebra, arithmetic and geometry with applications, pages 703-723. Springer, 2004.
+[(14)] T. Shaska, G. S. Wijesiri, S. Wolf, and L. Woodland. Degree 4 coverings of elliptic curves by genus 2 curves. Albanian J. Math., 2(4):307-318, 2008.
+[(15)] K. Takashima. Effifient algorithms for isogeny sequences and their cryptographic applications. In Mathematical modelling for next-generation cryptography, pages 97-114. Springer, 2018.
 
 
 
