@@ -216,7 +216,7 @@ For $N = 5$, we check $D$<sub>$5$</sub> $= 156$ nodes.
 
 If at any point we detect a splitting, terminate.
 
-**Step 3.*** Repeat steps 1 and 2 until an $(N,N)$-splitting is found. 
+**Step 3.** Repeat steps 1 and 2 until an $(N,N)$-splitting is found. 
 
 ##### Comparison with SuperSolver
 
