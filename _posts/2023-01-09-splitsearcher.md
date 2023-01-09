@@ -82,7 +82,7 @@ As we have two types of abelian surfaces, there is a natural partition of the ve
 
 There are around $O(p^3)$ nodes in $\mathcal{J}(p)$ and $O(p^2)$ nodes in $\mathcal{E}(p)$, making the latter the *rarer* case. 
 
-![Isogeny Graph](splitsearcher/graph.png)
+![Isogeny Graph](splitsearcher/graph.jpg)
 
 We often fix the vertex set but consider multiple edge sets. We will therefore use $\Gamma(\mathcal{N}; p)$ to denote the graph with the vertex set $\mathcal{S}(p)$ and and whose edges are $(N,N)$-isogenies for all $N\in \mathcal{N}$. 
 
@@ -94,13 +94,13 @@ The best known algorithm for solving the general isogeny problem is due to Coste
 
 The Costello-Smith algorithm proceeds as follows. Suppose we are given a start node $A$ and end node $A'$ in $\mathcal{J}(p)$. Our goal is to find an isogeny $\phi: A \rightarrow A'$. 
 
-![CS Algo](splitsearcher/CS-algo/cs-algo1.png)
+![CS Algo](splitsearcher/CS-algo/cs-algo1.jpg)
 
 ##### Step 1: find a path to the special subset
 
 The first step is to find paths from $A, A' \in \mathcal{J}(p)$ to nodes in $\mathcal{E}(p)$, say we find isogenies $\varphi: A \rightarrow E$<sub>$1$</sub>$\times E$<sub>$2$</sub> and $\varphi': A' \rightarrow E$<sub>$1$</sub>$' \times E$<sub>$2$</sub>$'$, where the elliptic curves here are supersingular. Due to the proportion of nodes in $\mathcal{J}(p)$ to nodes in $\mathcal{E}(p)$, we expect to find such paths in $\tilde{O}(p)$. 
 
-![CS Algo: Step 1](splitsearcher/CS-algo/cs-algo2.png)
+![CS Algo: Step 1](splitsearcher/CS-algo/cs-algo2.jpg)
 
 By finding these paths, we have now reduced the isogeny problem in $\mathcal{S}(p)$ to the isogeny problem in $\mathcal{E}(p)$. 
 
@@ -114,7 +114,7 @@ Note, however, only three runs are required to successfully return path $\phi$. 
 Therefore, this step is expected to run in $\tilde{O}(\sqrt{p})$, as it is dominated by one run of the Delfs--Galbraith algorithm. 
 
 
-![CS Algo: Step 2](splitsearcher/CS-algo/cs-algo3.png)
+![CS Algo: Step 2](splitsearcher/CS-algo/cs-algo3.jpg)
 
 
 We can then obtain the desired path from $A$ to $A'$ as $\phi = \hat{\varphi}' \circ \pi \circ \varphi$, where $\hat{\cdot}$ represents the dual.
