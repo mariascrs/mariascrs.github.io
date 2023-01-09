@@ -159,7 +159,7 @@ So, our question of whether $C$ (or rather the isomorphism class $[C]$) is $(N,N
 
 The main problem here is that we do not have explicit equations for $\varphi$<sub>$N$</sub> for every $N$. Kumar [9] gives us this map explicitly for $N \leq 11$. So, to determine if $[C]$ is in the image of $\varphi$<sub>$N$</sub>, it suffices to determine if there is an $(r$<sub>$0$</sub>$,s$<sub>$0$</sub>$) \in \mathbb{A}$<sup>$2$</sup><sub>$r,s$</sub> that map to $(I_2(C): I_4(C): I_6(C): I_{10}(C))$.
 
-<img src="splitsearcher/detect-split/Slide5.png" >
+<img src="splitsearcher/detect-split/Slide5.png">
 
 Not only this, but if we find such an $r$<sub>$0$</sub> and $s$<sub>$0$</sub> for some $N$, Kumar gives us maps that recover the elliptic curves such that there exists an $(N,N)$-isogeny $\text{Jac}(C) \rightarrow E \times E'$. Unfortunately, we don't recover the actual isogeny, only that one exists. However, we can compute the isogeny as a post-computation using the [AVIsogenies package](https://www.math.u-bordeaux.fr/~damienrobert/avisogenies/) (e.g., by computing all $(N,N)$-isogenies from $\text{Jac}(C)$, as we now know that one will land in a product).
 
@@ -167,9 +167,7 @@ Not only this, but if we find such an $r$<sub>$0$</sub> and $s$<sub>$0$</sub> fo
 
 We want to detect whether $C$ is $(N,N)$-split, i.e., in the image of $\varphi$<sub>$N$</sub>. Let $I$<sub>$2$</sub>$(C)$, $I$<sub>$4$</sub>$(C)$, $I$<sub>$6$</sub>$(C)$, $I$<sub>$10$</sub>$(C)$ be the Igusa-Clebsch invariants of $C$. 
 
-**Method 1.** Compute the equation $F$<sub>$N$</sub> for the image of $\mathcal{L}$<sub>$N$</sub> in $\mathcal{M}$<sub>$2$</sub>:
-
-> $\text{Jac}(C) \text{ is } (N,N)\text{-split} \Leftrightarrow F_N(I_2(C), I_4(C), I_6(C), I_{10}(C)).$
+**Method 1.** Compute the equation $F$<sub>$N$</sub> for the image of $\mathcal{L}$<sub>$N$</sub> in $\mathcal{M}$<sub>$2$</sub>: $\text{Jac}(C) \text{ is } (N,N)\text{-split}$ $\Leftrightarrow$ $F_N(I_2(C), I_4(C), I_6(C), I_{10}(C)).$
 
 $F$<sub>$N$</sub> has been computed previously by Shaska and collaborators  [12] [13] [14] [10] and Bruin-Doereksen [1]. 
 The main problem is that $F$<sub>$N$</sub> is *large* (with size growing rapidly with $N$), so the evaluation is inefficient.
