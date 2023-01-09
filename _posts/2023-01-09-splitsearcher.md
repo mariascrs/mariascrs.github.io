@@ -77,17 +77,14 @@ This graph has a number of nice properties:
 
 The hardness of the general isogeny problem in dimension one is largely based on the fact that the supersingular isogeny graph is Ramanujan, i.e., has optimal expansion. In contrast, $\Gamma(N; p)$ is not quite Ramanujan, but we can still argue that the expansion is good enough to build secure cryptographic protocols [7].
 
-As we have two types of abelian surfaces, there is a natural partition of the vertex set. Indeed, $\mathcal{S}(p)$ is equal to the disjoint union of 
+As we have two types of abelian surfaces, there is a natural partition of the vertex set. Indeed, $\mathcal{S}(p)$ is equal to the disjoint union of: 
 
-$$\mathcal{J}(p) = {[A] \in \mathcal{S}(p) : A \cong \text{Jac}(C) }, $$ 
-
-and 
-
-$$\mathcal{E}(p) = \\{ [A] \in \mathcal{S}(p) : A \cong E \times E' \text{ with } E, E' \text{ supersingular ECs} \\}.$$
+* $\mathcal{J}(p) = \\{ [A] \in \mathcal{S}(p) : A \cong \text{Jac}(C) \\}, $ and 
+* $\mathcal{E}(p) = \\{ [A] \in \mathcal{S}(p) : A \cong E \times E' \text{ with } E, E' \text{ supersingular ECs} \\}.$
 
 There are around $O(p^3)$ nodes in $\mathcal{J}(p)$ and $O(p^2)$ nodes in $\mathcal{E}(p)$, making the latter the *rarer* case. 
 
-<img src="splitsearcher/graph.png" />
+<img src="splitsearcher/graph.png" >
 
 We often fix the vertex set but consider multiple edge sets. We will therefore use $\Gamma(\mathcal{N}; p)$ to denote the graph with the vertex set $\mathcal{S}(p)$ and and whose edges are $(N,N)$-isogenies for all $N\in \mathcal{N}$. 
 
@@ -99,13 +96,13 @@ The best known algorithm for solving the general isogeny problem is due to Coste
 
 The Costello-Smith algorithm proceeds as follows. Suppose we are given a start node $A$ and end node $A'$ in $\mathcal{J}(p)$. Our goal is to find an isogeny $\phi: A \rightarrow A'$. 
 
-<img src="splitsearcher/CS-algo/cs-algo1.png" />
+<img src="splitsearcher/CS-algo/cs-algo1.png" >
 
 ##### Step 1: find a path to the special subset
 
 The first step is to find paths from $A, A' \in \mathcal{J}(p)$ to nodes in $\mathcal{E}(p)$, say we find isogenies $\varphi: A \rightarrow E$<sub>$1$</sub>$\times E$<sub>$2$</sub> and $\varphi': A' \rightarrow E$<sub>$1$</sub>$' \times E$<sub>$2$</sub>$'$, where the elliptic curves here are supersingular. Due to the proportion of nodes in $\mathcal{J}(p)$ to nodes in $\mathcal{E}(p)$, we expect to find such paths in $\tilde{O}(p)$. 
 
-<img src="splitsearcher/CS-algo/cs-algo2.png" />
+<img src="splitsearcher/CS-algo/cs-algo2.png" >
 
 By finding these paths, we have now reduced the isogeny problem in $\mathcal{S}(p)$ to the isogeny problem in $\mathcal{E}(p)$. 
 
@@ -119,7 +116,7 @@ Note, however, only three runs are required to successfully return path $\phi$. 
 Therefore, this step is expected to run in $\tilde{O}(\sqrt{p})$, as it is dominated by one run of the Delfs--Galbraith algorithm. 
 
 
-<img src="splitsearcher/CS-algo/cs-algo3.png" />
+<img src="splitsearcher/CS-algo/cs-algo3.png" >
 
 
 We can then obtain the desired path from $A$ to $A'$ as $\phi = \hat{\varphi}' \circ \pi \circ \varphi$, where $\hat{\cdot}$ represents the dual.
@@ -153,16 +150,16 @@ We consider two moduli spaces:
 * $\mathcal{L}$<sub>$N$</sub>: parameterises genus 2 curves with $(N,N)$-split Jacobians up to $\bar{\mathbb{F}}$<sub>$p$</sub>-isomorphism (which is sufficient for our cryptographic purposes). For small $N$, this is more or less a plane (more precisely, it is birational to $\mathbb{A}$<sup>$2$</sup>), let's say with coordinates $r,s$. 
 * $\mathcal{M}$<sub>$2$</sub>: parameterises genus 2 curves up to $\bar{\mathbb{F}}$<sub>$p$</sub>-isomorphism. There is a map from $\mathcal{M}$<sub>$2$</sub> to weighted projective space $\mathbb{P}(2,4,6,10)$, given by the Igusa-Celbsch invariants. 
 
-<img src="splitsearcher/detect-split/Slide2.png" />
+<img src="splitsearcher/detect-split/Slide2.png" >
 
 For abstract reasons, for every $N$, there is a map $\varphi$<sub>$N$</sub> from $\mathcal{L}$<sub>$N$</sub>, with image inside $\mathcal{M}$<sub>$2$</sub>.
 So, our question of whether $C$ (or rather the isomorphism class $[C]$) is $(N,N)$-split can be answered by whether $[C]$ lives inside $\text{Im } \varphi$<sub>$N$</sub> (or, more precisely, the Zariski closure of the image). 
 
-<img src="splitsearcher/detect-split/Slide4.png" />
+<img src="splitsearcher/detect-split/Slide4.png" >
 
 The main problem here is that we do not have explicit equations for $\varphi$<sub>$N$</sub> for every $N$. Kumar [9] gives us this map explicitly for $N \leq 11$. So, to determine if $[C]$ is in the image of $\varphi$<sub>$N$</sub>, it suffices to determine if there is an $(r$<sub>$0$</sub>$,s$<sub>$0$</sub>$) \in \mathbb{A}$<sup>$2$</sup><sub>$r,s$</sub> that map to $(I_2(C): I_4(C): I_6(C): I_{10}(C))$.
 
-<img src="splitsearcher/detect-split/Slide5.png" />
+<img src="splitsearcher/detect-split/Slide5.png" >
 
 Not only this, but if we find such an $r$<sub>$0$</sub> and $s$<sub>$0$</sub> for some $N$, Kumar gives us maps that recover the elliptic curves such that there exists an $(N,N)$-isogeny $\text{Jac}(C) \rightarrow E \times E'$. Unfortunately, we don't recover the actual isogeny, only that one exists. However, we can compute the isogeny as a post-computation using the [AVIsogenies package](https://www.math.u-bordeaux.fr/~damienrobert/avisogenies/) (e.g., by computing all $(N,N)$-isogenies from $\text{Jac}(C)$, as we now know that one will land in a product).
 
@@ -172,18 +169,16 @@ We want to detect whether $C$ is $(N,N)$-split, i.e., in the image of $\varphi$<
 
 **Method 1.** Compute the equation $F$<sub>$N$</sub> for the image of $\mathcal{L}$<sub>$N$</sub> in $\mathcal{M}$<sub>$2$</sub>:
 
-          $$\text{Jac}(C) \text{ is } (N,N)\text{-split} \Leftrightarrow F_N(I_2(C), I_4(C), I_6(C), I_{10}(C)).$$
+> $\text{Jac}(C) \text{ is } (N,N)\text{-split} \Leftrightarrow F_N(I_2(C), I_4(C), I_6(C), I_{10}(C)).$
 
 $F$<sub>$N$</sub> has been computed previously by Shaska and collaborators  [12] [13] [14] [10] and Bruin-Doereksen [1]. 
 The main problem is that $F$<sub>$N$</sub> is *large* (with size growing rapidly with $N$), so the evaluation is inefficient.
 
-<img src="splitsearcher/table.png" />
+<img src="splitsearcher/table.png">
 
 As a result, we instead use elimination theory and compute resultants. 
 
-**Method 2.** We normalise the Igusa-Clebsch invariants $I$<sub>$2$</sub>$(C)$, $I$<sub>$4$</sub>$(C)$, $I$<sub>$6$</sub>$(C)$, $I$<sub>$10$</sub>$(C)$ as 
-
-      $$\alpha_1(C) = \frac{I_4(C)}{I_2(C)^2}, \ \alpha_2(C) = \frac{I_2(C)I_4(C)}{I_6(C)}, \ \alpha_1(C) = \frac{I_4(C)I_6(C)}{I_{10}(C)}.$$ 
+**Method 2.** We normalise the Igusa-Clebsch invariants $I$<sub>$2$</sub>$(C)$, $I$<sub>$4$</sub>$(C)$, $I$<sub>$6$</sub>$(C)$, $I$<sub>$10$</sub>$(C)$ as $\alpha_1(C) = \frac{I_4(C)}{I_2(C)^2}$, $\alpha_2(C) = \frac{I_2(C)I_4(C)}{I_6(C)}$, $\alpha_1(C) = \frac{I_4(C)I_6(C)}{I_{10}(C)}.$ 
       
 Kumar gives us the map $$\varphi_N = \big(\mathcal{I}_2(r, s): \mathcal{I}_4(r, s): \mathcal{I}_6(r, s): \mathcal{I}_{10}(r, s)\big).$$ We chose the same normalisation of the $\mathcal{I}$<sub>$k$</sub> to give us $i$<sub>$1$</sub>, $i$<sub>$2$</sub>, $i$<sub>$3$</sub> $ \in \mathbb{Q}(r,s)$.
 
@@ -211,22 +206,22 @@ For our example, let us suppose the optimal set of $N$'s is ${2, 3, 5}$.
 
 **Step 1.** We first take a step in $\Gamma(2; p)$ using Richelot isogenies. If we have walking onto a product of elliptic curves, then we terminate. 
 
-<img src="splitsearcher/splitting/Slide4.png" />
+<img src="splitsearcher/splitting/Slide4.png">
 
 
 **Step 2.** Using the method outlined in the previous section, we apply efficient $(N,N)$-splitting detection for $N \in {2, 3, 5}$. 
 
 First, for $N = 2$, we check $14$ nodes (all nodes except the one we stepped from)
 
-<img src="splitsearcher/splitting/Slide6.png" />
+<img src="splitsearcher/splitting/Slide6.png" >
 
 For $N = 3$, we check $D$<sub>$3$</sub> $= 40$ nodes.
 
-<img src="splitsearcher/splitting/Slide7.png" />
+<img src="splitsearcher/splitting/Slide7.png" >
 
 For $N = 5$, we check $D$<sub>$5$</sub> $= 156$ nodes.
 
-<img src="splitsearcher/splitting/Slide8.png" />
+<img src="splitsearcher/splitting/Slide8.png" >
 
 If at any point we detect a splitting, terminate.
 
@@ -241,7 +236,7 @@ To hear more this general framework for attacking the general isogeny problem (i
 
 We implemented and optimised the first step of the Costello-Smith attack with *and* without detection of $(N,N)$-splittings. We performed experiments for primes $p$ of bitsize $50-1000$, running the first step until reaching $10$<sup>$8$</sup> multiplications. We counted the number of nodes revealed and $\mathbb{F}$<sub>$p$</sub> multiplications per node revealed.
 
-<img src="splitsearcher/table2.png" />
+<img src="splitsearcher/table2.png" >
 
 ##### Comparison to SuperSolver improvements 
 
