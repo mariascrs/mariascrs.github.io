@@ -238,21 +238,35 @@ For primes of size 50 to 800 bits, SuperSolver [Table 6, 14] reports speedups ra
 # References
 
 [1] N. Bruin and K. Doerksen. The arithmetic of genus two curves with (4; 4)-split Jacobians. Canad. J.Math., 63(5):992-1024, 2011.
+
 [2] W. Castryck, T. Decru, and B. Smith. Hash functions from superspecial genus-2 curves using Richelot isogenies. Journal of Mathematical Cryptology, 14(1):268-292, 2020.
+
 [3] D. X. Charles, K. E. Lauter, and E. Z. Goren. Cryptographic hash functions from expander graphs. Journal of Cryptology, 22(1):93-113, 2009.
+
 [4] M. Corte-Real Santos, C. Costello, and J. Shi. Accelerating the Delfs-Galbraith algorithm with fast subfield root detection. In Annual International Cryptology Conference, pages 285-314. Springer, 2022.
+
 [5] C. Costello and B. Smith. The supersingular isogeny problem in genus 2 and beyond. In PQ Crypto, pages 151-168. Springer, 2020.
+
 [6] C. Delfs and S. D. Galbraith. Computing isogenies between supersingular elliptic curves over $\mathbb{F}$<sub>$p$</sub>. Designs, Codes and Cryptography, 78(2):425-440, 2016.
+
 [7] E. Florit and B. Smith. Automorphisms and isogeny graphs of abelian varieties, with applications to the superspecial Richelot isogeny graph. In Arithmetic, Geometry, Cryptography, and Coding Theory 2021, 2021.
+
 [8] E. V. Flynn and Y. B. Ti. Genus two isogeny cryptography. In PQ Crypto, pages 286-306. Springer,2019.
+
 [9] A. Kumar. Hilbert modular surfaces for square discriminants and elliptic subfields of genus 2 function fields. Research in the Mathematical Sciences, 2(1):1-46, 2015.
+
 [10] K. Magaard, T. Shaska, and H. Völklein. Genus 2 curves that admit a degree 5 map to an elliptic
 curve. Forum Math., 21(3):547-566, 2009. 
+
 [11] D. Robert. Breaking SIDH in polynomial time. eprint 2022/1068, 2022.
-[(12)] T. Shaska. Genus 2 fields with degree 3 elliptic subfields. Forum Math., 16(2):263-280, 2004.
-[(13)] T. Shaska and H. Völklein. Elliptic subfields and automorphisms of genus 2 function fields. In Algebra, arithmetic and geometry with applications, pages 703-723. Springer, 2004.
-[(14)] T. Shaska, G. S. Wijesiri, S. Wolf, and L. Woodland. Degree 4 coverings of elliptic curves by genus 2 curves. Albanian J. Math., 2(4):307-318, 2008.
-[(15)] K. Takashima. Effifient algorithms for isogeny sequences and their cryptographic applications. In Mathematical modelling for next-generation cryptography, pages 97-114. Springer, 2018.
+
+[12] T. Shaska. Genus 2 fields with degree 3 elliptic subfields. Forum Math., 16(2):263-280, 2004.
+
+[13] T. Shaska and H. Völklein. Elliptic subfields and automorphisms of genus 2 function fields. In Algebra, arithmetic and geometry with applications, pages 703-723. Springer, 2004.
+
+[14] T. Shaska, G. S. Wijesiri, S. Wolf, and L. Woodland. Degree 4 coverings of elliptic curves by genus 2 curves. Albanian J. Math., 2(4):307-318, 2008.
+
+[15] K. Takashima. Effifient algorithms for isogeny sequences and their cryptographic applications. In Mathematical modelling for next-generation cryptography, pages 97-114. Springer, 2018.
 
 
 
