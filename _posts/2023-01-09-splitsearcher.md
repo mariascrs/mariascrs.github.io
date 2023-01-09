@@ -167,7 +167,7 @@ Not only this, but if we find such an $r$<sub>$0$</sub> and $s$<sub>$0$</sub> fo
 
 We want to detect whether $C$ is $(N,N)$-split, i.e., in the image of $\varphi$<sub>$N$</sub>. Let $I$<sub>$2$</sub>$(C)$, $I$<sub>$4$</sub>$(C)$, $I$<sub>$6$</sub>$(C)$, $I$<sub>$10$</sub>$(C)$ be the Igusa-Clebsch invariants of $C$. 
 
-**Method 1.** Compute the equation $F$<sub>$N$</sub> for the image of $\mathcal{L}$<sub>$N$</sub> in $\mathcal{M}$<sub>$2$</sub>: $\text{Jac}(C) \text{ is } (N,N)\text{-split}$ $\Leftrightarrow$ $F_N(I_2(C), I_4(C), I_6(C), I_{10}(C)).$
+**Method 1.** Compute the equation $F$<sub>$N$</sub> for the image of $\mathcal{L}$<sub>$N$</sub> in $\mathcal{M}$<sub>$2$</sub>. Then, we can detect if $[C]$ is $(N,N)$-split by determining whether $F_N(I_2(C), I_4(C), I_6(C), I_{10}(C)) = 0.$
 
 $F$<sub>$N$</sub> has been computed previously by Shaska and collaborators  [12] [13] [14] [10] and Bruin-Doereksen [1]. 
 The main problem is that $F$<sub>$N$</sub> is *large* (with size growing rapidly with $N$), so the evaluation is inefficient.
