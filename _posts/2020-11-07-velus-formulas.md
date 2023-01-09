@@ -8,7 +8,7 @@ aside:
 ---
 In this blog post I will assume knowledge on:
 * Elliptic curves (over finite fields)
-* A [previous blogpost](https://mariascrs.github.io/2020/10/06/isogenies-for-crypto.html) on isogenies for cryptography
+* A [previous blogpost](https://mariascrs.github.io/2020/11/06/isogenies-for-crypto.html) on isogenies for cryptography
 * Polynomials
 
 Suppose we have an  elliptic curve $E_1$ over a finite field $\mathbb{F}_{p^2}$. Given the kernel of an isogeny (a finite subgroup of the group of points on $E_1$), Vélu's formulas give us a way to determine the codomain of the isogeny, as well as compute the isogeny. This technique is used in the Supersingular Isogeny Diffie-Hellman (SIDH) protocol proposed by Feo, Jao and Plût [2], which I will introduce in a future blog post.  
@@ -116,7 +116,7 @@ $$
 and
 
 $$
-\beta = y - \sum_{Q \in S} (u_Q \frac{2y+ax + b}{(x - x_Q)^3} + v_Q\frac{a_1(x - x_Q) + y - y_Q}{(x - x_Q)^2}+ \frac{au_q - f_Qg_Q}{(x - x_Q)^2})
+\beta = y - \sum_{Q \in S} (u_Q \frac{2y+ax + b}{(x - x_Q)^3} + v_Q\frac{a(x - x_Q) + y - y_Q}{(x - x_Q)^2}+ \frac{au_Q - f_Qg_Q}{(x - x_Q)^2})
 $$
 
 For the proof of the correctness of these formulas, see Washington's treatment in [23].
