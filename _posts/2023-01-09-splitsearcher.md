@@ -72,7 +72,7 @@ Let $p$ be a large prime not dividing $N$.
 > $$\mathcal{S}(p) = \{ \text{Isomorphism classes of superspecial abelian surfaces} \},$$ and whose edges are $(N,N)$-isogenies over $\bar{\mathbb{F}}$<sub>$p$</sub>.
 
 This graph has a number of nice properties:
-* Firstly, the vertex set is finite. More precisely, we have $\# \mathcal{S}(p) = O(p^3)$. This is only true when we restrict to *superspecial* surfaces, and mirrors the finiteness property of the vertex set in dimension 1.
+* Firstly, the vertex set is finite. More precisely, we have that the size of $\mathcal{S}(p)$ is $O(p^3)$. This is only true when we restrict to *superspecial* surfaces, and mirrors the finiteness property of the vertex set in dimension 1.
 * The isomorphism classes $[A] \in \mathcal{S}(p)$ are represented by surfaces defined over $\mathbb{F}$<sub>$p$<sup>$2$</sup></sub>. Again, this property is only true by restricting to superspecial abelian surfaces, and matches the situation in genus 1. 
 * The graph is $D$<sub>$N$</sub>-regular (except for on a small number of special nodes).
 
