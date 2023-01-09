@@ -131,10 +131,10 @@ For this reason, we focus on this step.
 
 Let's look in more depth at this first step in the Costello-Smith algorithm:
 
-1) Start on a node $A$<sub>0</sub>$\in \mathcal{J}(p)$.
-2) Take a step in $\Gamma(2; p)$ via a Richelot isogeny $\phi$<sub>$1$</sub>$: A$<sub>$0$</sub>$ \rightarrow A$<sub>$1$</sub>.
-3) From the Richelot isogeny formulae, we can determine whether $A$<sub>$1$</sub>$\in \mathcal{E}(p)$ (at some point you compute a determinant $\delta$, and if this is zero, the $A$<sub>$1$</sub> is a product of elliptic curves). In this case, $A$<sub>$0$</sub> is $(2,2)$-split, and we terminate. Otherwise, take another step $\phi$<sub>$2$</sub>$: A$<sub>$1$</sub>$\rightarrow A$<sub>$2$</sub>.
-4) Repeat the previous step until finding $A$<sub>$i$</sub>$\in \mathcal{E}(p)$.
+1. Start on a node $A$<sub>0</sub>$\in \mathcal{J}(p)$.
+2. Take a step in $\Gamma(2; p)$ via a Richelot isogeny $\phi$<sub>$1$</sub>$: A$<sub>$0$</sub>$ \rightarrow A$<sub>$1$</sub>.
+3. From the Richelot isogeny formulae, we can determine whether $A$<sub>$1$</sub>$\in \mathcal{E}(p)$ (at some point you compute a determinant $\delta$, and if this is zero, the $A$<sub>$1$</sub> is a product of elliptic curves). In this case, $A$<sub>$0$</sub> is $(2,2)$-split, and we terminate. Otherwise, take another step $\phi$<sub>$2$</sub>$: A$<sub>$1$</sub>$\rightarrow A$<sub>$2$</sub>.
+4. Repeat the previous step until finding $A$<sub>$i$</sub>$\in \mathcal{E}(p)$.
 
 In summary, they use Richelot isogenies (as these are the most efficient to compute) to take walks in $\Gamma(2; p)$ and detect $(2,2)$-splittings. One of the motivations of this paper was the answer the question: by taking steps in $\Gamma(2; p)$, can we detect whether the current node $A$<sub>$i$</sub> is $(N,N)$-split for $N>2$?
 
@@ -246,13 +246,13 @@ For primes of size 50 to 800 bits, SuperSolver [Table 6, 14] reports speedups ra
 [^7]: E. Florit and B. Smith. Automorphisms and isogeny graphs of abelian varieties, with applications to the superspecial Richelot isogeny graph. In Arithmetic, Geometry, Cryptography, and Coding Theory 2021, 2021.
 [^8]: E. V. Flynn and Y. B. Ti. Genus two isogeny cryptography. In PQ Crypto, pages 286-306. Springer,2019.
 [^9]: A. Kumar. Hilbert modular surfaces for square discriminants and elliptic subfields of genus 2 function fields. Research in the Mathematical Sciences, 2(1):1-46, 2015.
-[^10]: K. Magaard, T. Shaska, and H. Völklein. Genus 2 curves that admit a degree 5 map to an elliptic
+[^(10)]: K. Magaard, T. Shaska, and H. Völklein. Genus 2 curves that admit a degree 5 map to an elliptic
 curve. Forum Math., 21(3):547-566, 2009.
-[^11]: D. Robert. Breaking SIDH in polynomial time. eprint 2022/1068, 2022.
-[^12]: T. Shaska. Genus 2 fields with degree 3 elliptic subfields. Forum Math., 16(2):263-280, 2004.
-[^13]: T. Shaska and H. Völklein. Elliptic subfields and automorphisms of genus 2 function fields. In Algebra, arithmetic and geometry with applications, pages 703-723. Springer, 2004.
-[^14]: T. Shaska, G. S. Wijesiri, S. Wolf, and L. Woodland. Degree 4 coverings of elliptic curves by genus 2 curves. Albanian J. Math., 2(4):307-318, 2008.
-[^15]: K. Takashima. Effifient algorithms for isogeny sequences and their cryptographic applications. In Mathematical modelling for next-generation cryptography, pages 97-114. Springer, 2018.
+[^(11)]: D. Robert. Breaking SIDH in polynomial time. eprint 2022/1068, 2022.
+[^(12)]: T. Shaska. Genus 2 fields with degree 3 elliptic subfields. Forum Math., 16(2):263-280, 2004.
+[^(13)]: T. Shaska and H. Völklein. Elliptic subfields and automorphisms of genus 2 function fields. In Algebra, arithmetic and geometry with applications, pages 703-723. Springer, 2004.
+[^(14)]: T. Shaska, G. S. Wijesiri, S. Wolf, and L. Woodland. Degree 4 coverings of elliptic curves by genus 2 curves. Albanian J. Math., 2(4):307-318, 2008.
+[^(15)]: K. Takashima. Effifient algorithms for isogeny sequences and their cryptographic applications. In Mathematical modelling for next-generation cryptography, pages 97-114. Springer, 2018.
 
 
 
