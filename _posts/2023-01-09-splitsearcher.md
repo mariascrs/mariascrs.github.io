@@ -21,7 +21,7 @@ As we are studying the general problem, we do not assume any knowledge of the de
 To generalise elliptic curves to higher dimensions, we want to think of elliptic curves as *one-dimensional principally polarised abelian varieties*. In this paper, we are concerned with *two*-dimensional principally polarised abelian varieties, more commonly referred to as (principally polarised) abelian *surfaces*.
 
 In isogeny-based cryptography, we usually consider *supersingular* elliptic curves. Supersingularity has a variety of equivalent definitions. Two of these are:
-* The trace $t$ of Frobenius satisfies $t \equiv 0 \bmod p (p > 3)$
+* The trace $t$ of Frobenius satisfies $t \equiv 0 \bmod p$ $(p > 3)$
 * The Newton polygon is a straight line segment with slope $1/2$.
 
 In dimension $>1$, however, these become distinct. The first property is called *superspeciality* and the second is *supersingularity*. Unfortunately (and rather confusingly), the correct generalisation of a supersingular elliptic curve over $\bar{\mathbb{F}}$<sub>$p$</sub> is a superspecial abelian surface over $\bar{\mathbb{F}}$<sub>$p$</sub>. 
