@@ -3,6 +3,9 @@ layout: article
 title: Posts
 ---
 
+## 2023
+* 09/01/2023: [Efficiently detecting $(N,N)$ splittings and the application to the dimension 2 isogeny problem](https://mariascrs.github.io/2023/01/09/splitsearcher.html){:target="_blank"}
+
 ## 2022
 * 26/10/2022: [Cryptographic Smooth Neighbors](https://mariascrs.github.io/2022/10/24/twinsmooths.html){:target="_blank"}
 
