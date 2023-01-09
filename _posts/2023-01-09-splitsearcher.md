@@ -31,7 +31,7 @@ There are two types of abelian surfaces:
 * Jacobians $\text{Jac}(C)$ of genus 2 curves $C$.
 
 For dimension 1 isogeny-based cryptography, we usually only consider the elliptic curves up to $\bar{\mathbb{F}}$<sub>$p$</sub>-isomorphism and label these classes with the $j$-invariant. The same is true for dimension 2 isogeny-based cryptography. In this case, we label the $\bar{\mathbb{F}}$<sub>$p$</sub>-isomorphism classes with the following invariants:
-* Sets of $j$-invariants $\text{\textbraceleft} j(E), j(E') \text{\textbraceright}$ (note that this is a set as the ordering of $E$ and $E'$ does not matter for our purposes).
+* Sets of $j$-invariants $\\{ j(E), j(E') \\}$ (note that this is a set as the ordering of $E$ and $E'$ does not matter for our purposes).
 * Igusa-Clebsch invariants $I$<sub>$2$</sub>$(C)$, $I$<sub>$4$</sub>$(C)$, $I$<sub>$6$</sub>$(C)$, $I$<sub>$10$</sub>$(C)$. 
 
 The Igusa-Clebsch invariants live in weighted projective space, and the subscript denotes the weight of the invariant.
@@ -68,9 +68,7 @@ The general isogeny problem can be viewed as finding a path between two nodes in
 
 Let $p$ be a large prime not dividing $N$.
 
-> **Definition.** The superspecial isogeny graph, denoted $\Gamma(N; p)$, is the graph with vertex set 
->            $$\mathcal{S}(p) = \text{\textbraceleft Isomorphism classes of superspecial abelian surfaces \textbraceright},$$
->and whose edges are $(N,N)$-isogenies over $\bar{\mathbb{F}}$<sub>$p$</sub>.
+> **Definition.** The superspecial isogeny graph, denoted $\Gamma(N; p)$, is the graph with vertex set $\mathcal{S}(p)$, defined as the set of isomorphism classes of superspecial abelian surfaces, and whose edges are $(N,N)$-isogenies over $\bar{\mathbb{F}}$<sub>$p$</sub>.
 
 This graph has a number of nice properties:
 * Firstly, the vertex set is finite. More precisely, we have that the size of $\mathcal{S}(p)$ is $O(p^3)$. This is only true when we restrict to *superspecial* surfaces, and mirrors the finiteness property of the vertex set in dimension 1.
@@ -85,7 +83,7 @@ $$\mathcal{J}(p) = {[A] \in \mathcal{S}(p) : A \cong \text{Jac}(C) }, $$
 
 and 
 
-$$\mathcal{E}(p) = \text{\textbraceleft} [A] \in \mathcal{S}(p) : A \cong E \times E' \text{ with } E, E' \text{ supersingular ECs} \text{\textbraceright}.$$
+$$\mathcal{E}(p) = \\{ [A] \in \mathcal{S}(p) : A \cong E \times E' \text{ with } E, E' \text{ supersingular ECs} \\}.$$
 
 There are around $O(p^3)$ nodes in $\mathcal{J}(p)$ and $O(p^2)$ nodes in $\mathcal{E}(p)$, making the latter the *rarer* case. 
 
@@ -93,7 +91,7 @@ There are around $O(p^3)$ nodes in $\mathcal{J}(p)$ and $O(p^2)$ nodes in $\math
 
 We often fix the vertex set but consider multiple edge sets. We will therefore use $\Gamma(\mathcal{N}; p)$ to denote the graph with the vertex set $\mathcal{S}(p)$ and and whose edges are $(N,N)$-isogenies for all $N\in \mathcal{N}$. 
 
-We can now view the general isogeny problem as a path finding problem: given superspecial abelian surfaces $A$ and $A'$ defined over $\mathbb{F}$<sub>$p$<sup>$2$</sup></sub>, find a walk in $\Gamma(\mathcal{N}; p)$ connecting them, where $\mathcal{N} = \text{\textbraceleft} N \in \mathbb{N} : p \nmid N \text{\textbraceright}$.
+We can now view the general isogeny problem as a path finding problem: given superspecial abelian surfaces $A$ and $A'$ defined over $\mathbb{F}$<sub>$p$<sup>$2$</sup></sub>, find a walk in $\Gamma(\mathcal{N}; p)$ connecting them, where $\mathcal{N} = \\{ N \in \mathbb{N} : p \nmid N \\}$.
 
 # Attacking the isogeny problem in dimension 2
 
