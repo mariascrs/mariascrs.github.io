@@ -94,7 +94,7 @@ The best known algorithm for solving the general isogeny problem is due to Coste
 
 The Costello-Smith algorithm proceeds as follows. Suppose we are given a start node $A$ and end node $A'$ in $\mathcal{J}(p)$. Our goal is to find an isogeny $\phi: A \rightarrow A'$. 
 
-![CS Algo](splitsearcher/CS-algo/cs-algo1.jpg)
+![CS Algo](./splitsearcher/CS-algo/cs-algo1.png)
 
 ##### Step 1: find a path to the special subset
 
