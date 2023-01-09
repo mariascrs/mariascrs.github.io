@@ -31,12 +31,12 @@ There are two types of abelian surfaces:
 * Jacobians $\text{Jac}(C)$ of genus 2 curves $C$.
 
 For dimension 1 isogeny-based cryptography, we usually only consider the elliptic curves up to $\bar{\mathbb{F}}$<sub>$p$</sub>-isomorphism and label these classes with the $j$-invariant. The same is true for dimension 2 isogeny-based cryptography. In this case, we label the $\bar{\mathbb{F}}$<sub>$p$</sub>-isomorphism classes with the following invariants:
-* Sets of $j$-invariants $\{ j(E), j(E') \}$ (note that this is a set as the ordering of $E$ and $E'$ does not matter for our purposes).
+* Sets of $j$-invariants ${ j(E), j(E') }$ (note that this is a set as the ordering of $E$ and $E'$ does not matter for our purposes).
 * Igusa-Clebsch invariants $I$<sub>$2$</sub>$(C)$, $I$<sub>$4$</sub>$(C)$, $I$<sub>$6$</sub>$(C)$, $I$<sub>$10$</sub>$(C)$. 
 
 The Igusa-Clebsch invariants live in weighted projective space, and the subscript denotes the weight of the invariant.
 
-> **Definition.** Let $\mathbb{A}$<sup>$n+1$</sup> be $n$-dimensional affine space over $\bar{\mathbb{F}}$<sub>$p$</sub>. The *weighted projective space* $\mathbb{P}(w$<sub>$0$</sub>$, \dots, w$<sub>$n$</sub>$)$ is the set of equivalence classes of $\mathbb{A}$<sup>$n+1$</sup>$\backslash\{0\}$ under the equivalence relation $\sim$ defined $(a$<sub>$0$</sub>$: \dots : a$<sub>$n$</sub>) $ \sim (b$<sub>$0$</sub>$:  \dots : b$<sub>$n$</sub>) if and only if there exists $\lambda \in \bar{\mathbb{F}}$<sub>$p$</sub> such that $(a$<sub>$0$</sub>$, \dots, a$<sub>$n$</sub>) $ =(\lambda$<sup>$w$<sub>$0$</sub></sup>$b$<sub>$0$</sub>$, \dots, \lambda$<sup>$w$<sub>$n$</sub></sup>$b$<sub>$n$</sub>$)$.
+> **Definition.** Let $\mathbb{A}$<sup>$n+1$</sup> be $n$-dimensional affine space over $\bar{\mathbb{F}}$<sub>$p$</sub>. The *weighted projective space* $\mathbb{P}(w$<sub>$0$</sub>$, \dots, w$<sub>$n$</sub>$)$ is the set of equivalence classes of $\mathbb{A}$<sup>$n+1$</sup>$\backslash{0}$ under the equivalence relation $\sim$ defined $(a$<sub>$0$</sub>$: \dots : a$<sub>$n$</sub>) $ \sim (b$<sub>$0$</sub>$:  \dots : b$<sub>$n$</sub>) if and only if there exists $\lambda \in \bar{\mathbb{F}}$<sub>$p$</sub> such that $(a$<sub>$0$</sub>$, \dots, a$<sub>$n$</sub>) $ =(\lambda$<sup>$w$<sub>$0$</sub></sup>$b$<sub>$0$</sub>$, \dots, \lambda$<sup>$w$<sub>$n$</sub></sup>$b$<sub>$n$</sub>$)$.
 
 If we want to move these invariants to affine space (where we now have true equality, rather than equality up to some projective constant), we will have to normalise these invariants (taking into account the weight of each coordinate). There are infinitely many choices of normalisation, however some are more common or natural than others. A common choice is 
 $$i_1 = \frac{6(I_2^2-16I_4)}{I_2^2}, \ i_2 = \frac{-12(5I_2^3 - 176I_2I_4 + 384I_6) }{I_2^3}, \ i_3 = \frac{3888I_{10}}{I_2^5}.$$ Note, however, that in our paper we deviate from this choice, the reason for which will be explained later. 
@@ -69,7 +69,7 @@ The general isogeny problem can be viewed as finding a path between two nodes in
 Let $p$ be a large prime not dividing $N$.
 
 > **Definition.** The superspecial isogeny graph, denoted $\Gamma(N; p)$, is the graph with vertex set 
-> $$\mathcal{S}(p) = \{ \text{Isomorphism classes of superspecial abelian surfaces} \},$$ and whose edges are $(N,N)$-isogenies over $\bar{\mathbb{F}}$<sub>$p$</sub>.
+> $$\mathcal{S}(p) = { \text{Isomorphism classes of superspecial abelian surfaces} },$$ and whose edges are $(N,N)$-isogenies over $\bar{\mathbb{F}}$<sub>$p$</sub>.
 
 This graph has a number of nice properties:
 * Firstly, the vertex set is finite. More precisely, we have that the size of $\mathcal{S}(p)$ is $O(p^3)$. This is only true when we restrict to *superspecial* surfaces, and mirrors the finiteness property of the vertex set in dimension 1.
@@ -78,7 +78,7 @@ This graph has a number of nice properties:
 
 The hardness of the general isogeny problem in dimension one is largely based on the fact that the supersingular isogeny graph is Ramanujan, i.e., has optimal expansion. In contrast, $\Gamma(N; p)$ is not quite Ramanujan, but we can still argue that the expansion is good enough to build secure cryptographic protocols [7].
 
-As we have two types of abelian surfaces, there is a natural partition of the vertex set. Indeed, $\mathcal{S}(p)$ is equal to the disjoint union of $$\mathcal{J}(p) = \{[A] \in \mathcal{S}(p) : A \cong \text{Jac}(C) \}, $$ and $$\mathcal{E}(p) = \{ [A] \in \mathcal{S}(p) : A \cong E \times E' \text{ with } E, E' \text{ supersingular ECs} \}.$$
+As we have two types of abelian surfaces, there is a natural partition of the vertex set. Indeed, $\mathcal{S}(p)$ is equal to the disjoint union of $$\mathcal{J}(p) = {[A] \in \mathcal{S}(p) : A \cong \text{Jac}(C) }, $$ and $$\mathcal{E}(p) = { [A] \in \mathcal{S}(p) : A \cong E \times E' \text{ with } E, E' \text{ supersingular ECs} }.$$
 
 There are around $O(p^3)$ nodes in $\mathcal{J}(p)$ and $O(p^2)$ nodes in $\mathcal{E}(p)$, making the latter the *rarer* case. 
 
@@ -86,7 +86,7 @@ There are around $O(p^3)$ nodes in $\mathcal{J}(p)$ and $O(p^2)$ nodes in $\math
 
 We often fix the vertex set but consider multiple edge sets. We will therefore use $\Gamma(\mathcal{N}; p)$ to denote the graph with the vertex set $\mathcal{S}(p)$ and and whose edges are $(N,N)$-isogenies for all $N\in \mathcal{N}$. 
 
-We can now view the general isogeny problem as a path finding problem: given superspecial abelian surfaces $A$ and $A'$ defined over $\mathbb{F}$<sub>$p$<sup>$2$</sup></sub>, find a walk in $\Gamma(\mathcal{N}; p)$ connecting them, where $\mathcal{N} = \{N \in \mathbb{N} : p \nmid N\}$.
+We can now view the general isogeny problem as a path finding problem: given superspecial abelian surfaces $A$ and $A'$ defined over $\mathbb{F}$<sub>$p$<sup>$2$</sup></sub>, find a walk in $\Gamma(\mathcal{N}; p)$ connecting them, where $\mathcal{N} = {N \in \mathbb{N} : p \nmid N}$.
 
 # Attacking the isogeny problem in dimension 2
 
@@ -194,13 +194,13 @@ We now discuss how efficient splitting detection can be applied to attacking the
 $$\frac{\text{number of } \mathbb{F}_p \text{ multiplications}}{\text{number of nodes revealed and inspected}}.$$ The *numerator* is simply the cost of taking a step in the $(2,2)$-isogeny graph plus the cost of splitting detection for $N$ in the optimal set. 
 The *denominator* is trickier to compute. The number of nodes revealed by taking a step is simply 1. If $N$ is odd, then the number of nodes inspected at each step using split detection is the number of neighbours in $\Gamma(N;p)$, namely $D$<sub>$N$</sub>. However, if $N$ is even, as we are walking in the $(2,2)$-isogeny graph, the number of nodes inspected at each step by split detection is *less than* $D$<sub>$N$</sub>. We determine the precise number in Lemma 4 of our paper. 
 
-For our example, let us suppose the optimal set of $N$'s is $\{2, 3, 5\}$.
+For our example, let us suppose the optimal set of $N$'s is ${2, 3, 5}$.
 
 **Step 1.** We first take a step in $\Gamma(2; p)$ using Richelot isogenies. If we have walking onto a product of elliptic curves, then we terminate. 
 
 ![SplitSeacher](splitsearcher/splitting/Slide4.png)
 
-**Step 2.** Using the method outlined in the previous section, we apply efficient $(N,N)$-splitting detection for $N \in \{2, 3, 5\}$. 
+**Step 2.** Using the method outlined in the previous section, we apply efficient $(N,N)$-splitting detection for $N \in {2, 3, 5}$. 
 
 First, for $N = 2$, we check $14$ nodes (all nodes except the one we stepped from)
 
