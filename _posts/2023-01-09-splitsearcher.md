@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Efficiently detecting $(N,N)$ splittings and the application to the dimension 2isogeny problem
+title: Efficiently detecting $(N,N)$ splittings and the application to the dimension 2 isogeny problem
 tags: maths isogeny genus2 cryptography post-quantum paper
 mathjax: true
 aside:
