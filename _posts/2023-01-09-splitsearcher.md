@@ -84,7 +84,7 @@ As we have two types of abelian surfaces, there is a natural partition of the ve
 
 There are around $O(p^3)$ nodes in $\mathcal{J}(p)$ and $O(p^2)$ nodes in $\mathcal{E}(p)$, making the latter the *rarer* case. 
 
-<img src="splitsearcher/graph.png" >
+<img src="../../../images/posts/splitsearcher/graph.png" >
 
 We often fix the vertex set but consider multiple edge sets. We will therefore use $\Gamma(\mathcal{N}; p)$ to denote the graph with the vertex set $\mathcal{S}(p)$ and and whose edges are $(N,N)$-isogenies for all $N\in \mathcal{N}$. 
 
@@ -96,7 +96,7 @@ The best known algorithm for solving the general isogeny problem is due to Coste
 
 The Costello-Smith algorithm proceeds as follows. Suppose we are given a start node $A$ and end node $A'$ in $\mathcal{J}(p)$. Our goal is to find an isogeny $\phi: A \rightarrow A'$. 
 
-<img src="splitsearcher/CS-algo/cs-algo1.png" >
+<img src="../../../images/posts/splitsearcher/CS-algo/cs-algo1.png" >
 
 ##### Step 1: find a path to the special subset
 
