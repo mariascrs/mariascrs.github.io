@@ -12,7 +12,7 @@ title: Papers
 * **Cryptographic Smooth Neighbors** \
 *Joint work with Giacomo Bruno, Craig Costello, Jonathan Komada Eriksen, Michael Naehrig, Michael Meyer, and Bruno Sterner.* \
 *In submission.* \
-([ePrint](https://eprint.iacr.org/2022/1439.pdf){:target="_blank"})
+([ePrint](https://eprint.iacr.org/2022/1439.pdf){:target="_blank"}) ([Blogpost](https://www.mariascrs.com/2022/10/24/twinsmooths.html){:target="_blank"})
 
 ## 2021
 * **SuperSolver: accelerating the Delfs-Galbraith algorithm with fast subfield root detection** \
