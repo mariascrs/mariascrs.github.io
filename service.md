@@ -4,8 +4,10 @@ title: Conferences, Workshops and Teaching
 ---
 
 ## Conferences and Workshops
+
 ### Organised
 * [CrossFyre '23](https://sites.google.com/view/crossfyre2023/), affliated event at Eurocrypt 2023 in Lyon, France.
+
 ### Attended
 * [Eurocrypt 2021](https://eurocrypt.iacr.org/2021/), Zagreb, Croatia
 * Isogeny-based cryptography workshop, University of Birmingham, UK
