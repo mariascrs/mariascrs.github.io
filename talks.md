@@ -51,12 +51,3 @@ Invited talk on accelerating the Delfs-Galbraith algorithm (joint work with Crai
 **CGI Break and Learn**\
 Talk on post-quantum cryptography and isogenies as a solution.
 *CGI Reading Offices*
-
-
-
-
-## Conferences Attended
-* [Eurocrypt 2021](https://eurocrypt.iacr.org/2021/)
-* [Crypto 2022](https://crypto.iacr.org/2022/)
-
-
