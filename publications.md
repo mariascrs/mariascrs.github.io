@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Papers
+title: Publications
 ---
 
 ## 2022
