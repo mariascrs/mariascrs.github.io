@@ -1,6 +1,6 @@
 header:
-  - title:      Papers
-    url: /papers.html
+  - title:      Publications
+    url: /publications.html
   - titles:
       # @start locale config
       en      : &EN       Posts
@@ -14,5 +14,7 @@ header:
     url:        /talks.html
   - title:      Subscribe
     url:        /subscribe.html
+  - title:      Service
+    url:        /service.html
   
 
