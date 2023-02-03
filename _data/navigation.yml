@@ -12,9 +12,10 @@ header:
     url: /posts.html
   - title:      Talks
     url:        /talks.html
-  - title:      Subscribe
-    url:        /subscribe.html
   - title:      Service
     url:        /service.html
+  - title:      Subscribe
+    url:        /subscribe.html
+
   
 
