@@ -10,3 +10,7 @@ We hope that this implementation serves as an educational resource for an intere
 This project is comprised of:
 * [SQISign-SageMath](https://github.com/LearningToSQI/SQISign-SageMath), the SageMath implementation released under an MIT license
 * [Learning to SQI](https://learningtosqi.github.io/), an accompanying blog written for those wanting to learn more about the implementation.
+
+## SQIsign NIST submission
+
+I was involved in the [SQIsign submission](http://sqisign.org/) to NIST's call for alternative post-quantum secure signature schemes, which has progressed to Round 1. 
