@@ -15,7 +15,8 @@ title: Conferences, Workshops and Teaching
 * Graduate Summer School of the PCMI Summer Session 2022, Park City, Utah
 * ISOCRYPT 2022, KU Leuven, Belgium
 * Quantum Cryptanalysis Workshop 2022, University of Bristol, UK
-
+* [Workshop on Isogeny Graphs in Cryptography](https://www.birs.ca/events/2023/5-day-workshops/23w5132). BIRS, Banff, Canada
+  
 ## Outreach Talks
 
 * June, 2022\
@@ -45,4 +46,4 @@ Delivered a lecture on Cryptography to hundreds of Year 10 students in a taster 
 
 
 ## Teaching 
-* Term 1, 2021 and 2022: Teaching assistant for <a href="https://www.ucl.ac.uk/module-catalogue/modules/introduction-to-cryptography/COMP0025" target="_blank">Introduction to Cryptography (COMP0025)</a> at UCL
+* Term 1, 2021 - 2023: Teaching assistant for <a href="https://www.ucl.ac.uk/module-catalogue/modules/introduction-to-cryptography/COMP0025" target="_blank">Introduction to Cryptography (COMP0025)</a> at UCL
