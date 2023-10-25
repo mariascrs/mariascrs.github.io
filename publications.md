@@ -3,6 +3,12 @@ layout: article
 title: Publications
 ---
 
+## 2023
+* **AprèsSQI: Extra Fast Verification for SQIsign Using Extension-Field Signing**
+*Joint work with Jonathan Komada Eriksen, Michael Meyer, and Krijn Reijnders.* \
+*In submission.* \
+([ePrint](https://eprint.iacr.org/2023/1559.pdf){:target="_blank"})
+
 ## 2022
 * **An algorithm for efficient detection of *(N,N)*-splittings and its application to the isogeny problem in dimension 2** \
 *Joint work with Craig Costello and Sam Frengley.* \
