@@ -12,7 +12,7 @@ title: Publications
 ## 2022
 * **An algorithm for efficient detection of *(N,N)*-splittings and its application to the isogeny problem in dimension 2** \
 *Joint work with Craig Costello and Sam Frengley.* \
-*In submission.* \
+*To appear at PKC 2024.* \
 ([ePrint](https://eprint.iacr.org/2022/1736.pdf){:target="_blank"}) ([Blogpost](https://www.mariascrs.com/2023/01/09/splitsearcher.html){:target="_blank"})
 
 * **Cryptographic Smooth Neighbors** \
