@@ -5,6 +5,11 @@ title: Talks
 
 ## Academic Talks 
 
+* 26 Januray, 2024\
+**SQIsign and AprèsSQI: post-quantum secure signatures from isogenies**\
+Invited talk at the Radboud Digital Security group Lunch Talk.\
+*Radboud Universiteit*
+
 * 21 November, 2022\
 **The General Isogeny Problem in Dimension 2**\
 Invited talk at the Junior Number Theory Seminar at the University of Warwick.\
