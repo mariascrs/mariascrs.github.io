@@ -17,8 +17,8 @@ title: Publications
 
 * **Cryptographic Smooth Neighbors** \
 *Joint work with Giacomo Bruno, Craig Costello, Jonathan Komada Eriksen, Michael Naehrig, Michael Meyer, and Bruno Sterner.* \
-*To appear at Asiacrypt 2023.* \
-([ePrint](https://eprint.iacr.org/2022/1439.pdf){:target="_blank"}) ([Blogpost](https://www.mariascrs.com/2022/10/24/twinsmooths.html){:target="_blank"})
+*Asiacrypt 2023.* \
+([DOI](https://doi.org/10.1007/978-981-99-8739-9_7){:target="_blank"}) [ePrint](https://eprint.iacr.org/2022/1439.pdf){:target="_blank"}) ([Blogpost](https://www.mariascrs.com/2022/10/24/twinsmooths.html){:target="_blank"})
 
 ## 2021
 * **Accelerating the Delfs-Galbraith algorithm with fast subfield root detection** \
