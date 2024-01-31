@@ -6,7 +6,7 @@ title: Publications
 ## 2023
 * **AprèsSQI: Extra Fast Verification for SQIsign Using Extension-Field Signing** \
 *Joint work with Jonathan Komada Eriksen, Michael Meyer, and Krijn Reijnders.* \
-*In submission.* \
+*To appear at Eurocrypt 2024.* \
 ([ePrint](https://eprint.iacr.org/2023/1559.pdf){:target="_blank"})
 
 ## 2022
