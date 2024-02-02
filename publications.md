@@ -5,7 +5,7 @@ title: Publications
 
 ## 2024
 * **Efficient (3,3)-isogenies on fast Kummer surfaces** \
-*Joint work with [Craig Costello](https://www.craigcostello.com.au/) and [Benjamin Smith](https://www.lix.polytechnique.fr/~smith/).*
+*Joint work with [Craig Costello](https://www.craigcostello.com.au/) and [Benjamin Smith](https://www.lix.polytechnique.fr/~smith/).* \
 *In submisssion.* \
 ([ePrint](https://eprint.iacr.org/2024/144.pdf){:target="_blank"})
 
