@@ -18,8 +18,8 @@ title: Publications
 ## 2022
 * **An algorithm for efficient detection of *(N,N)*-splittings and its application to the isogeny problem in dimension 2** \
 *Joint work with [Craig Costello](https://www.craigcostello.com.au/) and [Sam Frengley](https://www.dpmms.cam.ac.uk/~stf32/).* \
-*To appear at PKC 2024.* \
-([ePrint](https://eprint.iacr.org/2022/1736.pdf){:target="_blank"}) ([Blogpost](https://www.mariascrs.com/2023/01/09/splitsearcher.html){:target="_blank"})
+*PKC 2024, Best Paper Award.* \
+([DOI](https://doi.org/10.1007/978-3-031-57725-3_6){:target="_blank"}) ([ePrint](https://eprint.iacr.org/2022/1736.pdf){:target="_blank"}) ([Blogpost](https://www.mariascrs.com/2023/01/09/splitsearcher.html){:target="_blank"})
 
 * **Cryptographic Smooth Neighbors** \
 *Joint work with Giacomo Bruno, [Craig Costello](https://www.craigcostello.com.au/), [Jonathan Komada Eriksen](https://jonathke.github.io/), [Michael Naehrig](https://cryptosith.org/michael/), [Michael Meyer]((https://www.uni-regensburg.de/informatik-data-science/datensicherheit-kryptographie/team/dr-michael-meyer/index.html)), and Bruno Sterner.* \
