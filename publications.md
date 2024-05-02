@@ -12,13 +12,13 @@ title: Publications
 ## 2023
 * **AprèsSQI: Extra Fast Verification for SQIsign Using Extension-Field Signing** \
 *Joint work with [Jonathan Komada Eriksen](https://jonathke.github.io/), [Michael Meyer](https://www.uni-regensburg.de/informatik-data-science/datensicherheit-kryptographie/team/dr-michael-meyer/index.html), and [Krijn Reijnders](https://krijnreijnders.com/).* \
-*To appear at Eurocrypt 2024.* \
+*To appear at Eurocrypt 2024, **Best Early-Career Paper Award*** \
 ([ePrint](https://eprint.iacr.org/2023/1559.pdf){:target="_blank"})
 
 ## 2022
 * **An algorithm for efficient detection of *(N,N)*-splittings and its application to the isogeny problem in dimension 2** \
 *Joint work with [Craig Costello](https://www.craigcostello.com.au/) and [Sam Frengley](https://www.dpmms.cam.ac.uk/~stf32/).* \
-*PKC 2024, Best Paper Award.* \
+*PKC 2024, **Best Paper Award**.* \
 ([DOI](https://doi.org/10.1007/978-3-031-57725-3_6){:target="_blank"}) ([ePrint](https://eprint.iacr.org/2022/1736.pdf){:target="_blank"}) ([Blogpost](https://www.mariascrs.com/2023/01/09/splitsearcher.html){:target="_blank"})
 
 * **Cryptographic Smooth Neighbors** \
