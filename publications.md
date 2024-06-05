@@ -3,9 +3,13 @@ layout: article
 title: Publications
 ---
 
+* **On cycles of pairing-friendly abelian varieties** \
+*Joint work with [Craig Costello](https://www.craigcostello.com.au/) and [Michael Naehrig](https://cryptosith.org/michael/).* \
+*To appear at CRYPTO 2024.* \
+([ePrint](https://eprint.iacr.org/2024/869.pdf){:target="_blank"})
 * **Efficient (3,3)-isogenies on fast Kummer surfaces** \
 *Joint work with [Craig Costello](https://www.craigcostello.com.au/) and [Benjamin Smith](https://www.lix.polytechnique.fr/~smith/).* \
-*In submisssion.* \
+*To appear at ANTS XVI.* \
 ([ePrint](https://eprint.iacr.org/2024/144.pdf){:target="_blank"})
 * **AprèsSQI: Extra Fast Verification for SQIsign Using Extension-Field Signing** \
 *Joint work with [Jonathan Komada Eriksen](https://jonathke.github.io/), [Michael Meyer](https://www.uni-regensburg.de/informatik-data-science/datensicherheit-kryptographie/team/dr-michael-meyer/index.html), and [Krijn Reijnders](https://krijnreijnders.com/).* \
