@@ -24,7 +24,7 @@ title: Publications
 *PKC 2024, **Best Paper Award**.* \
 ([DOI](https://doi.org/10.1007/978-3-031-57725-3_6){:target="_blank"}) ([ePrint](https://eprint.iacr.org/2022/1736.pdf){:target="_blank"}) ([Blogpost](https://www.mariascrs.com/2023/01/09/splitsearcher.html){:target="_blank"}) ([Talk](https://youtu.be/hIRiGG2ch2k?si=_P2uE3s-hcNkN_6Y){:target="_blank"})
 * **Cryptographic Smooth Neighbors** \
-*Joint work with Giacomo Bruno, [Craig Costello](https://www.craigcostello.com.au/), [Jonathan Komada Eriksen](https://jonathke.github.io/), [Michael Naehrig](https://cryptosith.org/michael/), [Michael Meyer]((https://www.uni-regensburg.de/informatik-data-science/datensicherheit-kryptographie/team/dr-michael-meyer/index.html)), and Bruno Sterner.* \
+*Joint work with Giacomo Bruno, [Craig Costello](https://www.craigcostello.com.au/), [Jonathan Komada Eriksen](https://jonathke.github.io/), [Michael Meyer]((https://www.uni-regensburg.de/informatik-data-science/datensicherheit-kryptographie/team/dr-michael-meyer/index.html)), [Michael Naehrig](https://cryptosith.org/michael/), and Bruno Sterner.* \
 *Asiacrypt 2023.* \
 ([DOI](https://doi.org/10.1007/978-981-99-8739-9_7){:target="_blank"}) [ePrint](https://eprint.iacr.org/2022/1439.pdf){:target="_blank"}) ([Blogpost](https://www.mariascrs.com/2022/10/24/twinsmooths.html){:target="_blank"})
 * **Accelerating the Delfs-Galbraith algorithm with fast subfield root detection** \
