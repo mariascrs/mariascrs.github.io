@@ -3,6 +3,10 @@ layout: article
 title: Publications
 ---
 
+* **Return of the Kummer: a toolbox for genus 2 cryptography** \
+*Joint work with [Krijn Reijnders](https://krijnreijnders.com/).*\
+*In submission.*\
+([ePrint](https://eprint.iacr.org/2024/948){:target="_blank"})
 * **On cycles of pairing-friendly abelian varieties** \
 *Joint work with [Craig Costello](https://www.craigcostello.com.au/) and [Michael Naehrig](https://cryptosith.org/michael/).* \
 *To appear at CRYPTO 2024.* \
