@@ -5,7 +5,17 @@ title: Talks
 
 ## Academic Talks 
 
-* 26 Januray, 2024\
+* 25 June, 2024\
+**SQIsign Verification in higher dimension**\
+Invited talk at the Séminaire de Théorie Algorithmique des Nombres. <a href="https://drive.google.com/file/d/1UlCaKmDz9IhgV075rg7ejxN6or9Yw1gZ/view?usp=sharing" target="_blank">Slides</a>\
+*Institut de Mathématiques de Bordeaux*
+
+* 5 March, 2024\
+**SQIsign and ApresSQI: towards practical post-quantum secure signatures from isogenies**\
+Invited talk at Project-team GRACE Seminar.\
+*INRIA Scalary and École polytechnique*
+  
+* 26 January, 2024\
 **SQIsign and AprèsSQI: post-quantum secure signatures from isogenies**\
 Invited talk at the Radboud Digital Security group Lunch Talk.\
 *Radboud Universiteit*
