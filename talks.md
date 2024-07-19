@@ -5,6 +5,11 @@ title: Talks
 
 ## Academic Talks 
 
+* 19 July, 2024\
+**Post-quantum secure signature schemes from isogenies**\
+Invited talk at the Cryptography And Information Security Seminar at MIT.\
+*Massachusetts Institute of Technology*
+
 * 25 June, 2024\
 **SQIsign Verification in higher dimension**\
 Invited talk at the Séminaire de Théorie Algorithmique des Nombres. <a href="https://drive.google.com/file/d/1UlCaKmDz9IhgV075rg7ejxN6or9Yw1gZ/view?usp=sharing" target="_blank">Slides</a>\
@@ -19,6 +24,11 @@ Invited talk at Project-team GRACE Seminar.\
 **SQIsign and AprèsSQI: post-quantum secure signatures from isogenies**\
 Invited talk at the Radboud Digital Security group Lunch Talk.\
 *Radboud Universiteit*
+
+* 22 November, 2023\
+**Post-quantum secure signature schemes from isogenies**\
+Invited talk at the UCL Information Security Seminar.\
+*University College London*
 
 * 21 November, 2022\
 **The General Isogeny Problem in Dimension 2**\
