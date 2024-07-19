@@ -2,7 +2,10 @@
 layout: article
 title: Publications
 ---
-
+* **Finding Practical Parameters for Isogeny-based Cryptography**\
+*Joint work with [Jonathan Komada Eriksen](https://jonathke.github.io/), [Michael Meyer](https://www.uni-regensburg.de/informatik-data-science/datensicherheit-kryptographie/team/dr-michael-meyer/index.html), and [Francisco Rodríguez-Henríquez](https://delta.cs.cinvestav.mx/~francisco/).
+*In submission.*\
+([ePrint](https://eprint.iacr.org/2024/1150){:target="_blank"})
 * **Return of the Kummer: a toolbox for genus 2 cryptography** \
 *Joint work with [Krijn Reijnders](https://krijnreijnders.com/).*\
 *In submission.*\
