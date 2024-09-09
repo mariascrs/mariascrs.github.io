@@ -3,19 +3,12 @@ layout: article
 title: Conferences, Workshops and Teaching
 ---
 
-## Conferences and Workshops
+## Conferences, Workshops and Seminars
 
 ### Organised
-* [CrossFyre '23](https://sites.google.com/view/crossfyre2023/), affliated event at Eurocrypt 2023 in Lyon, France.
-
-### Attended
-* [Eurocrypt 2021](https://eurocrypt.iacr.org/2021/), Zagreb, Croatia
-* Isogeny-based cryptography workshop, University of Birmingham, UK
-* [Crypto 2022](https://crypto.iacr.org/2022/), Santa Barbara, USA
-* Graduate Summer School of the PCMI Summer Session 2022, Park City, Utah
-* ISOCRYPT 2022, KU Leuven, Belgium
-* Quantum Cryptanalysis Workshop 2022, University of Bristol, UK
-* [Workshop on Isogeny Graphs in Cryptography](https://www.birs.ca/events/2023/5-day-workshops/23w5132). BIRS, Banff, Canada
+* [The Isogeny Club](https://isogeny.club/), co-organise an online seminar series on isogeny-based cryptography.
+* [CrossFyre '23](https://sites.google.com/view/crossfyre2023/), co-organised as an affliate event at Eurocrypt 2023 in Lyon, France.
+* [UCL Information Security Seminars](https://sec.cs.ucl.ac.uk/seminars/), co-organise the UCL Information Security seminar series.
   
 ## Outreach Talks
 
