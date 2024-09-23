@@ -2,13 +2,13 @@
 layout: article
 title: Publications
 ---
-* **Isogenies on Kummer Surfaces**\
-*Joint work with [E. Victor Flynn](https://people.maths.ox.ac.uk/flynn/).*\
-*In preparation.*
 * **Return of the Kummer: a toolbox for genus 2 cryptography** \
 *Joint work with [Krijn Reijnders](https://krijnreijnders.com/).*\
 *In submission.*\
 ([ePrint](https://eprint.iacr.org/2024/948){:target="_blank"})
+* **Isogenies on Kummer Surfaces**\
+*Joint work with [E. Victor Flynn](https://people.maths.ox.ac.uk/flynn/).
+*To appear in Math. Comp.*
 * **Finding Practical Parameters for Isogeny-based Cryptography**\
 *Joint work with [Jonathan Komada Eriksen](https://jonathke.github.io/), [Michael Meyer](https://www.uni-regensburg.de/informatik-data-science/datensicherheit-kryptographie/team/dr-michael-meyer/index.html), and [Francisco Rodríguez-Henríquez](https://delta.cs.cinvestav.mx/~francisco/)*.\
 *To appear in IACR Communications in Cryptology Volume 1, Issue 3.*\
