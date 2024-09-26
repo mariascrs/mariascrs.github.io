@@ -27,7 +27,7 @@ title: Publications
 *Eurocrypt 2024, **Best Early-Career Paper Award*** \
 ([DOI](https://doi.org/10.1007/978-3-031-58716-0_3){:target="_blank"}) ([ePrint](https://eprint.iacr.org/2023/1559.pdf){:target="_blank"})
 * **An algorithm for efficient detection of *(N,N)*-splittings and its application to the isogeny problem in dimension 2** \
-*Joint work with [Craig Costello](https://www.craigcostello.com.au/) and [Sam Frengley](https://www.dpmms.cam.ac.uk/~stf32/).* \
+*Joint work with [Craig Costello](https://www.craigcostello.com.au/) and [Sam Frengley](https://samfrengley.github.io/).* \
 *PKC 2024, **Best Paper Award**.* \
 ([DOI](https://doi.org/10.1007/978-3-031-57725-3_6){:target="_blank"}) ([ePrint](https://eprint.iacr.org/2022/1736.pdf){:target="_blank"}) ([Blogpost](https://www.mariascrs.com/2023/01/09/splitsearcher.html){:target="_blank"}) ([Talk](https://youtu.be/hIRiGG2ch2k?si=_P2uE3s-hcNkN_6Y){:target="_blank"})
 * **Cryptographic Smooth Neighbors** \
