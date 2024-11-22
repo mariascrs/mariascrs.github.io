@@ -5,6 +5,13 @@ title: Talks
 
 ## Academic Talks 
 
+Here we exclude talks at conferences corresponding to accepted papers. For these, see [Publications](https://www.mariascrs.com/publications.html).
+
+* 15 November, 2024\
+**Post-quantum secure signature schemes from isogenies**
+Invited talk at the <a href="https://sites.google.com/view/london-crypto-day/lcd-2024?authuser=0" target="_blank">London Crypto Day 2024</a>.\
+*Alan Turing Institute, London*
+
 * 19 July, 2024\
 **Post-quantum secure signature schemes from isogenies**\
 Invited talk at the Cryptography And Information Security Seminar at MIT.\
