@@ -35,6 +35,6 @@ title: Publications
 *Asiacrypt 2023.* \
 ([DOI](https://doi.org/10.1007/978-981-99-8739-9_7){:target="_blank"}) ([ePrint](https://eprint.iacr.org/2022/1439.pdf){:target="_blank"}) ([Blogpost](https://www.mariascrs.com/2022/10/24/twinsmooths.html){:target="_blank"})
 * **Accelerating the Delfs-Galbraith algorithm with fast subfield root detection** \
-*Joint work with [Craig Costello](https://www.craigcostello.com.au/) and Jia Shi.* \
+*Joint work with [Craig Costello](https://www.craigcostello.com.au/) and [Jia Shi](https://janeshi99.github.io/).* \
 *CRYPTO 2022.* \
 ([DOI](https://doi.org/10.1007/978-3-031-15982-4_10){:target="_blank"}) ([ePrint](https://eprint.iacr.org/2021/1488.pdf){:target="_blank"}) ([Blogpost](https://mariascrs.github.io/2021/11/16/supersolver.html){:target="_blank"}) ([Talk](https://www.youtube.com/watch?v=XzdcRcb65UM&t=1s){:target="_blank"})
