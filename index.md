@@ -7,7 +7,7 @@ key: page-about
 
 <img align="right" width="220" height="300" hspace="20" src="../images/profile.jpg">
 
-I am currently a post-doctural researcher at ENS de Lyon, in the [Unité de Mathématiques pures et appliquées (UMPA)](https://www.umpa.ens-lyon.fr/recherche/equipe-de-theorie-et-des-nombres), working with [Benjamin Wesolowski](https://www.bweso.com/). My main interests are post-quantum cryptography, specifically isogeny-based cryptography, and computational number theory.
+I am currently a post-doctoral researcher at ENS de Lyon, in the [Unité de Mathématiques pures et appliquées (UMPA)](https://www.umpa.ens-lyon.fr/recherche/equipe-de-theorie-et-des-nombres), working with [Benjamin Wesolowski](https://www.bweso.com/). My main interests are post-quantum cryptography, specifically isogeny-based cryptography, and computational number theory.
 
 Previously, I completed my PhD at at University College London, as part of the [CDT for Cybersecurity](https://www.ucl.ac.uk/cybersecurity-cdt/) and the [Information Security group](https://sec.cs.ucl.ac.uk/), under the supervision of [Philipp Jovanovic](https://philipp.jovanovic.io/) and [Sarah Meiklejohn](https://smeiklej.com/). 
 
