@@ -11,6 +11,8 @@ I am currently a post-doctoral researcher at ENS de Lyon, in the [Unité de Math
 
 Previously, I completed my PhD at at University College London, as part of the [CDT for Cybersecurity](https://www.ucl.ac.uk/cybersecurity-cdt/) and the [Information Security group](https://sec.cs.ucl.ac.uk/), under the supervision of [Philipp Jovanovic](https://philipp.jovanovic.io/) and [Sarah Meiklejohn](https://smeiklej.com/). 
 
+My PhD Thesis: <a href="../files/thesis.pdf" target="_blank">*The design, concrete security and efficiency of isogeny-based cryptography*</a>
+
 Before starting my PhD, I completed my Undergraduate and Master's degree in Mathematics at the [University of Cambridge](https://www.maths.cam.ac.uk/), specialising in Algebraic Number Theory and Elliptic Curves.
 
 Organiser of [The Isogeny Club](https://isogeny.club/), together with [Jonathan Komada Eriksen](https://jonathke.github.io/).
