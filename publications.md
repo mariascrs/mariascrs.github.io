@@ -38,3 +38,7 @@ title: Publications
 *Joint work with [Craig Costello](https://www.craigcostello.com.au/) and [Jia Shi](https://janeshi99.github.io/).* \
 *CRYPTO 2022.* \
 ([DOI](https://doi.org/10.1007/978-3-031-15982-4_10){:target="_blank"}) ([ePrint](https://eprint.iacr.org/2021/1488.pdf){:target="_blank"}) ([Blogpost](https://mariascrs.github.io/2021/11/16/supersolver.html){:target="_blank"}) ([Talk](https://www.youtube.com/watch?v=XzdcRcb65UM&t=1s){:target="_blank"})
+
+# Thesis
+
+My PhD Thesis: <a href="../files/thesis.pdf" target="_blank">*The design, concrete security and efficiency of isogeny-based cryptography*</a>
