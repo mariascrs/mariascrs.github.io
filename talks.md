@@ -19,7 +19,7 @@ Invited talk at the Cryptography And Information Security Seminar at MIT.\
 
 * 25 June, 2024\
 **SQIsign Verification in higher dimension**\
-Invited talk at the Séminaire de Théorie Algorithmique des Nombres. <a href="https://drive.google.com/file/d/1UlCaKmDz9IhgV075rg7ejxN6or9Yw1gZ/view?usp=sharing" target="_blank">Slides</a>\
+Invited talk at the Séminaire de Théorie Algorithmique des Nombres. <a href="../files/Bordeaux-Seminar.pdf" target="_blank">Slides</a>\
 *Institut de Mathématiques de Bordeaux*
 
 * 5 March, 2024\
@@ -54,7 +54,7 @@ Invited talk at the Quantum Cryptanalysis Workshop, University of Bristol on cla
 
 * 23 September, 2022\
 **Efficiently Detecting $(N,N)$-splittings**\
-Talk at ISOCRYPT 2022 on detecting $(N,N)$-splittings and applications to genus 2 isogeny-based cryptography (joint work with Craig Costello and Sam Frengley). <a href="https://drive.google.com/file/d/1HtLz740lARATdi-fH4C7vRy0lY1e3MCJ/view?usp=sharing" target="_blank">Slides</a> | <a href="https://www.youtube.com/watch?v=-R5Q1nkfqrc&list=PLiHaXFHjrqYdAWotOM-7yeb0D8qdqdrUL&index=9" target="_blank">Recording</a>\
+Talk at ISOCRYPT 2022 on detecting $(N,N)$-splittings and applications to genus 2 isogeny-based cryptography (joint work with Craig Costello and Sam Frengley). <a href="../files/leuventalk.pdf" target="_blank">Slides</a> | <a href="https://www.youtube.com/watch?v=-R5Q1nkfqrc&list=PLiHaXFHjrqYdAWotOM-7yeb0D8qdqdrUL&index=9" target="_blank">Recording</a>\
 *KU Leuven*
 
 * 29 June, 2022\
