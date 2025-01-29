@@ -2,6 +2,10 @@
 layout: article
 title: Publications
 ---
+* **PRISM: Simple And Compact Identification and Signatures From Large Prime Degree Isogenies** \
+*Joint work with [Andrea Basso](https://andreabasso.com/), [Giacomo Borin](https://giacomoborin.github.io/), [Wouter Castryck](https://homes.esat.kuleuven.be/~wcastryc/), [Riccardo Invernizzi](https://r98inver.github.io/), [Antonin Leroux](https://tonioecto.github.io/antoninleroux/), [Luciano Maino](https://lucianomaino.github.io/Luciano-Maino.github.io/), [Frederik Vercauteren](https://www.esat.kuleuven.be/cosic/people/person/?u=u0031924), [Benjamin Wesolowski](https://www.bweso.com/).*\
+*In submission.*\
+([ePrint](https://eprint.iacr.org/2025/135){:target="_blank"})
 * **Return of the Kummer: a toolbox for genus 2 cryptography** \
 *Joint work with [Krijn Reijnders](https://krijnreijnders.com/).*\
 *In submission.*\
