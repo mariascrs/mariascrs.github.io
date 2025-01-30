@@ -12,8 +12,8 @@ title: Publications
 ([ePrint](https://eprint.iacr.org/2024/948){:target="_blank"})
 * **Isogenies on Kummer Surfaces**\
 *Joint work with [E. Victor Flynn](https://people.maths.ox.ac.uk/flynn/).*\
-*To appear in Math. Comp.*\
-([arXiv](https://arxiv.org/abs/2409.14819){:target="_blank"})
+*Mathematics of Computation.*\
+([DOI](https://doi.org/10.1090/mcom/4036){:target="_blank"}) ([arXiv](https://arxiv.org/abs/2409.14819){:target="_blank"})
 * **Finding Practical Parameters for Isogeny-based Cryptography**\
 *Joint work with [Jonathan Komada Eriksen](https://jonathke.github.io/), [Michael Meyer](https://www.uni-regensburg.de/informatik-data-science/datensicherheit-kryptographie/team/dr-michael-meyer/index.html), and [Francisco Rodríguez-Henríquez](https://delta.cs.cinvestav.mx/~francisco/)*.\
 *IACR Communications in Cryptology Volume 1, Issue 3.*\
