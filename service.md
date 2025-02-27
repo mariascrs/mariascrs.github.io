@@ -3,13 +3,17 @@ layout: article
 title: Conferences, Workshops and Teaching
 ---
 
-## Conferences, Workshops and Seminars
+## Organisation
 
-### Organised
+### Seminars
 * [The Isogeny Club](https://isogeny.club/), co-organise an online seminar series on isogeny-based cryptography.
-* [CrossFyre '23](https://sites.google.com/view/crossfyre2023/), co-organised as an affliate event at Eurocrypt 2023 in Lyon, France.
 * [UCL Information Security Seminars](https://sec.cs.ucl.ac.uk/seminars/), co-organised the UCL Information Security seminar series (2020-2024).
   
+### Conferences and Workshops
+* [The Isogeny Club Brainstorm Days 2025](https://isogeny.club/eurocrypt), co-organising as an affliate event at Eurocrypt 2025 in Madrid, Spain.
+* The Isogeny Club Brainstorm Days 2024, co-organised as an affliate event at Eurocrypt 2024 in Zurich, Switzerland.
+* [CrossFyre '23](https://sites.google.com/view/crossfyre2023/), co-organised as an affliate event at Eurocrypt 2023 in Lyon, France.
+
 ## Outreach Talks
 
 * June, 2022\
