@@ -1,4 +1,4 @@
-s---
+---
 layout: article
 title: Projects
 ---
