@@ -1,4 +1,4 @@
----
+s---
 layout: article
 title: Projects
 ---
@@ -13,4 +13,4 @@ This project is comprised of:
 
 ## SQIsign NIST submission
 
-1 of 15 contributors of the [SQIsign submission](http://sqisign.org/) to NIST's call for alternative post-quantum secure signature schemes, which has progressed to Round 1. 
+Contributor of the [SQIsign submission](http://sqisign.org/) to NIST's call for alternative post-quantum secure signature schemes, which has progressed to Round 2. 
