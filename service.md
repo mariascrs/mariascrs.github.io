@@ -11,7 +11,7 @@ title: Conferences, Workshops and Teaching
   
 ### Conferences and Workshops
 * [The Isogeny Club Brainstorm Days 2025](https://isogeny.club/eurocrypt), co-organising as an affliate event at Eurocrypt 2025 in Madrid, Spain.
-* The Isogeny Club Brainstorm Days 2024, co-organised as an affliate event at Eurocrypt 2024 in Zurich, Switzerland.
+* **The Isogeny Club Brainstorm Days 2024**, co-organised as an affliate event at Eurocrypt 2024 in Zurich, Switzerland.
 * [CrossFyre '23](https://sites.google.com/view/crossfyre2023/), co-organised as an affliate event at Eurocrypt 2023 in Lyon, France.
 
 ## Outreach Talks
