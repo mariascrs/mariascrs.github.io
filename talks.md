@@ -7,7 +7,7 @@ title: Talks
 
 Here we exclude talks at conferences corresponding to accepted papers. For these, see [Publications](https://www.mariascrs.com/publications.html).
 
-* 26 February, 2024\
+* 26 February, 2025\
 **Finding Practical Parameters for Isogeny-based Cryptography**\
 Invited talk at the <a href="https://www.tii.ae/seminar/crc-seminar-series-maria-corte-real-santos" target="_blank">TII CRC Seminar Series</a>.\
 *Online*
