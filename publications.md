@@ -1,19 +1,13 @@
 ---
 layout: article
-title: Publications
+title: Academic Papers
 ---
-* **Efficient algorithms for the detection of *(N,N)*-splittings and endomorphisms** \
-*Joint work with [Craig Costello](https://www.craigcostello.com.au/) and [Sam Frengley](https://samfrengley.github.io/).* \
-*In submission.*\
-([ePrint](https://eprint.iacr.org/2025/147){:target="_blank"})
+# Publications
+
 * **PRISM: Simple And Compact Identification and Signatures From Large Prime Degree Isogenies** \
 *Joint work with [Andrea Basso](https://andreabasso.com/), [Giacomo Borin](https://giacomoborin.github.io/), [Wouter Castryck](https://homes.esat.kuleuven.be/~wcastryc/), [Riccardo Invernizzi](https://r98inver.github.io/), [Antonin Leroux](https://tonioecto.github.io/antoninleroux/), [Luciano Maino](https://lucianomaino.github.io/Luciano-Maino.github.io/), [Frederik Vercauteren](https://www.esat.kuleuven.be/cosic/people/person/?u=u0031924), [Benjamin Wesolowski](https://www.bweso.com/).*\
 *Accepted at PKC 2025.*\
 ([ePrint](https://eprint.iacr.org/2025/135){:target="_blank"})
-* **Return of the Kummer: a toolbox for genus 2 cryptography** \
-*Joint work with [Krijn Reijnders](https://krijnreijnders.com/).*\
-*In submission.*\
-([ePrint](https://eprint.iacr.org/2024/948){:target="_blank"})
 * **Isogenies on Kummer Surfaces**\
 *Joint work with [E. Victor Flynn](https://people.maths.ox.ac.uk/flynn/).*\
 *Mathematics of Computation.*\
@@ -46,6 +40,18 @@ title: Publications
 *Joint work with [Craig Costello](https://www.craigcostello.com.au/) and [Jia Shi](https://janeshi99.github.io/).* \
 *CRYPTO 2022.* \
 ([DOI](https://doi.org/10.1007/978-3-031-15982-4_10){:target="_blank"}) ([ePrint](https://eprint.iacr.org/2021/1488.pdf){:target="_blank"}) ([Blogpost](https://mariascrs.github.io/2021/11/16/supersolver.html){:target="_blank"}) ([Talk](https://www.youtube.com/watch?v=XzdcRcb65UM&t=1s){:target="_blank"})
+
+# Preprints
+
+* **Efficient algorithms for the detection of *(N,N)*-splittings and endomorphisms** \
+*Joint work with [Craig Costello](https://www.craigcostello.com.au/) and [Sam Frengley](https://samfrengley.github.io/).* \
+*In submission.*\
+([ePrint](https://eprint.iacr.org/2025/147){:target="_blank"})
+* **Return of the Kummer: a toolbox for genus 2 cryptography** \
+*Joint work with [Krijn Reijnders](https://krijnreijnders.com/).*\
+*In submission.*\
+([ePrint](https://eprint.iacr.org/2024/948){:target="_blank"})
+
 
 # Thesis
 
