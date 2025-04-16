@@ -110,7 +110,7 @@ $$
 The image point of the point $(x, y)$ under the isogeny is given by $(\alpha, \beta)$ where
 
 $$
-\alpha = x+ \sum_{Q \in S} (\frac{v_Q}{x - x_Q} - \frac{u_Q}{(x - x_Q)^2})
+\alpha = x+ \sum_{Q \in S} (\frac{v_Q}{x - x_Q} + \frac{u_Q}{(x - x_Q)^2})
 $$
 
 and
