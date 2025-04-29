@@ -17,6 +17,11 @@ Talk at the <a href="https://www.cig.udl.cat/SQIparty2025_home" target="_blank">
 Invited talk at the <a href="https://indico.math.cnrs.fr/category/164/" target="_blank">Séminaire d'arithmétique à Lyon</a>.\
 *ENS de Lyon*
 
+* March 28, 2025\
+**Cycles of pairing-friendly abelian varieties**\
+Invited talk at the <a href="https://www.creachlabs.fr/en/event-sessions-archive?event=41" target="_blank">Séminaire de Cryptographie de Rennes</a>.\
+*Centre Inria de l'Université de Rennes*
+
 * 26 February, 2025\
 **Finding Practical Parameters for Isogeny-based Cryptography**\
 Invited talk at the <a href="https://www.tii.ae/seminar/crc-seminar-series-maria-corte-real-santos" target="_blank">TII CRC Seminar Series</a>.\
