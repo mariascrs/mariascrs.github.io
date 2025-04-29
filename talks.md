@@ -7,6 +7,16 @@ title: Talks
 
 Here we exclude talks at conferences corresponding to accepted papers. For these, see [Publications](https://www.mariascrs.com/publications.html).
 
+* 28 April, 2025\
+**Computing two-dimensional isogenies for SQIsign**\
+Talk at the <a href="https://www.cig.udl.cat/SQIparty2025_home" target="_blank">SQIparty</a>, a workshop on isogeny-based cryptography.\
+*Universitat de Lleida*
+
+* 10 April, 2025\
+**The dimension two isogeny problem for cryptography**\
+Invited talk at the <a href="https://indico.math.cnrs.fr/category/164/" target="_blank">Séminaire d'arithmétique à Lyon</a>.\
+*ENS de Lyon*
+
 * 26 February, 2025\
 **Finding Practical Parameters for Isogeny-based Cryptography**\
 Invited talk at the <a href="https://www.tii.ae/seminar/crc-seminar-series-maria-corte-real-santos" target="_blank">TII CRC Seminar Series</a>.\
