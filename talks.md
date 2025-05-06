@@ -73,13 +73,13 @@ Invited talk at the Quantum Cryptanalysis Workshop, University of Bristol on cla
 *University of Bristol*
 
 * 23 September, 2022\
-**Efficiently Detecting $(N,N)$-splittings**\
-Talk at ISOCRYPT 2022 on detecting $(N,N)$-splittings and applications to genus 2 isogeny-based cryptography (joint work with Craig Costello and Sam Frengley). <a href="../files/leuventalk.pdf" target="_blank">Slides</a> | <a href="https://www.youtube.com/watch?v=-R5Q1nkfqrc&list=PLiHaXFHjrqYdAWotOM-7yeb0D8qdqdrUL&index=9" target="_blank">Recording</a>\
+**Efficiently Detecting (N,N)-splittings**\
+Talk at ISOCRYPT 2022 on detecting (N,N)-splittings and applications to genus 2 isogeny-based cryptography (joint work with Craig Costello and Sam Frengley). <a href="../files/leuventalk.pdf" target="_blank">Slides</a> | <a href="https://www.youtube.com/watch?v=-R5Q1nkfqrc&list=PLiHaXFHjrqYdAWotOM-7yeb0D8qdqdrUL&index=9" target="_blank">Recording</a>\
 *KU Leuven*
 
 * 29 June, 2022\
 **Post-Quantum Cryptography from Isogenies**\
-Talk at the Joint Cybersecurity CDTs Summer School 2022 on obtaining quantum secure cryptography from isogenies. 
+Talk at the Joint Cybersecurity CDTs Summer School 2022 on obtaining quantum secure cryptography from isogenies.\
 *University College London*
 
 * 18 March, 2022\
