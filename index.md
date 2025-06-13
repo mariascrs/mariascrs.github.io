@@ -18,3 +18,5 @@ Organiser of [The Isogeny Club](https://isogeny.club/), together with [Jonathan 
 
 I am passionate about communicating cryptography and mathematics to others, and have written a series of [blog posts on isogeny-based cryptography](https://mariascrs.github.io/posts.html), as well as giving a number of outreach [talks](https://mariascrs.github.io/talks.html) to STEM students.
 
+The manuscript of my thesis is available <a href="../files/thesis.pdf" target="_blank">here</a>.
+
