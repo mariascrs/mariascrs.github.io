@@ -45,7 +45,7 @@ title: Academic Papers
 
 * **Evaluation of Modular Polynomials from Supersingular Elliptic Curves** \
 *Joint work with [Jonathan Komada Eriksen](https://jonathke.github.io/), [Antonin Leroux](https://tonioecto.github.io/antoninleroux/), [Michael Meyer](https://www.uni-regensburg.de/informatik-data-science/datensicherheit-kryptographie/team/dr-michael-meyer/index.html), and [Lorenz Panny](https://yx7.cc/).*\
-*In submission.*\
+*In submission.* \
 * **Efficient algorithms for the detection of *(N,N)*-splittings and endomorphisms** \
 *Joint work with [Craig Costello](https://www.craigcostello.com.au/) and [Sam Frengley](https://samfrengley.github.io/).* \
 *In submission.*\
