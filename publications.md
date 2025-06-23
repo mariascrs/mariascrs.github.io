@@ -5,7 +5,7 @@ title: Academic Papers
 # Publications
 * **Efficient algorithms for the detection of *(N,N)*-splittings and endomorphisms** \
 *Joint work with [Craig Costello](https://www.craigcostello.com.au/) and [Sam Frengley](https://samfrengley.github.io/).* \
-*Journal of Cryptology, to appear.*\
+*Journal of Cryptology, to appear.*
 * **PRISM: Simple And Compact Identification and Signatures From Large Prime Degree Isogenies** \
 *Joint work with [Andrea Basso](https://andreabasso.com/), [Giacomo Borin](https://giacomoborin.github.io/), [Wouter Castryck](https://homes.esat.kuleuven.be/~wcastryc/), [Riccardo Invernizzi](https://r98inver.github.io/), [Antonin Leroux](https://tonioecto.github.io/antoninleroux/), [Luciano Maino](https://lucianomaino.github.io/Luciano-Maino.github.io/), [Frederik Vercauteren](https://www.esat.kuleuven.be/cosic/people/person/?u=u0031924), [Benjamin Wesolowski](https://www.bweso.com/).*\
 *PKC 2025, **Best Paper Award**.* \
