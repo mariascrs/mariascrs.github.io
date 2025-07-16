@@ -50,7 +50,7 @@ title: Academic Papers
 *Joint work with [Jonathan Komada Eriksen](https://jonathke.github.io/), [Antonin Leroux](https://tonioecto.github.io/antoninleroux/), [Michael Meyer](https://www.uni-regensburg.de/informatik-data-science/datensicherheit-kryptographie/team/dr-michael-meyer/index.html), and [Lorenz Panny](https://yx7.cc/).*\
 *In submission.* \
 ([arXiv](https://arxiv.org/abs/2506.15429){:target="_blank"})
-([ePrint](https://eprint.iacr.org/2025/147){:target="_blank"})
+([ePrint](https://eprint.iacr.org/2025/1154){:target="_blank"})
 * **Return of the Kummer: a toolbox for genus 2 cryptography** \
 *Joint work with [Krijn Reijnders](https://krijnreijnders.com/).*\
 *In submission.*\
