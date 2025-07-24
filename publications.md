@@ -7,6 +7,11 @@ title: Academic Papers
 *Joint work with [Craig Costello](https://www.craigcostello.com.au/) and [Sam Frengley](https://samfrengley.github.io/).* \
 *Journal of Cryptology, to appear. 2025.*\
 ([ePrint](https://eprint.iacr.org/2025/147){:target="_blank"})
+* **Evaluation of Modular Polynomials from Supersingular Elliptic Curves** \
+*Joint work with [Jonathan Komada Eriksen](https://jonathke.github.io/), [Antonin Leroux](https://tonioecto.github.io/antoninleroux/), [Michael Meyer](https://www.uni-regensburg.de/informatik-data-science/datensicherheit-kryptographie/team/dr-michael-meyer/index.html), and [Lorenz Panny](https://yx7.cc/).*\
+*LuCaNT 2025, to appear.* \
+([arXiv](https://arxiv.org/abs/2506.15429){:target="_blank"})
+([ePrint](https://eprint.iacr.org/2025/1154){:target="_blank"})
 * **PRISM: Simple And Compact Identification and Signatures From Large Prime Degree Isogenies** \
 *Joint work with [Andrea Basso](https://andreabasso.com/), [Giacomo Borin](https://giacomoborin.github.io/), [Wouter Castryck](https://homes.esat.kuleuven.be/~wcastryc/), [Riccardo Invernizzi](https://r98inver.github.io/), [Antonin Leroux](https://tonioecto.github.io/antoninleroux/), [Luciano Maino](https://lucianomaino.github.io/Luciano-Maino.github.io/), [Frederik Vercauteren](https://www.esat.kuleuven.be/cosic/people/person/?u=u0031924), [Benjamin Wesolowski](https://www.bweso.com/).*\
 *PKC 2025, **Best Paper Award**.* \
@@ -46,11 +51,6 @@ title: Academic Papers
 
 # Preprints
 
-* **Evaluation of Modular Polynomials from Supersingular Elliptic Curves** \
-*Joint work with [Jonathan Komada Eriksen](https://jonathke.github.io/), [Antonin Leroux](https://tonioecto.github.io/antoninleroux/), [Michael Meyer](https://www.uni-regensburg.de/informatik-data-science/datensicherheit-kryptographie/team/dr-michael-meyer/index.html), and [Lorenz Panny](https://yx7.cc/).*\
-*In submission.* \
-([arXiv](https://arxiv.org/abs/2506.15429){:target="_blank"})
-([ePrint](https://eprint.iacr.org/2025/1154){:target="_blank"})
 * **Return of the Kummer: a toolbox for genus 2 cryptography** \
 *Joint work with [Krijn Reijnders](https://krijnreijnders.com/).*\
 *In submission.*\
