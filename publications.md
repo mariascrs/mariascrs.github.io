@@ -23,7 +23,8 @@ title: Academic Papers
 * **Finding Practical Parameters for Isogeny-based Cryptography**\
 *Joint work with [Jonathan Komada Eriksen](https://jonathke.github.io/), [Michael Meyer](https://www.uni-regensburg.de/informatik-data-science/datensicherheit-kryptographie/team/dr-michael-meyer/index.html), and [Francisco Rodríguez-Henríquez](https://delta.cs.cinvestav.mx/~francisco/)*.\
 *IACR Communications in Cryptology Volume 1, Issue 3. 2024.*\
-([DOI](https://cic.iacr.org/p/1/3/39){:target="_blank"}) ([ePrint](https://eprint.iacr.org/2024/1150){:target="_blank"})
+*Accepted for presentation at ArcticCrypt 2025.*\
+([DOI](https://cic.iacr.org/p/1/3/39){:target="_blank"}) ([ePrint](https://eprint.iacr.org/2024/1150){:target="_blank"}) (<a href="../files/arcticcrypt.pdf" target="_blank">Talk</a>)
 * **On cycles of pairing-friendly abelian varieties** \
 *Joint work with [Craig Costello](https://www.craigcostello.com.au/) and [Michael Naehrig](https://cryptosith.org/michael/).* \
 *CRYPTO 2024.* \
