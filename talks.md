@@ -7,6 +7,11 @@ title: Talks
 
 Here we exclude talks at conferences corresponding to accepted papers. For these, see [Publications](https://www.mariascrs.com/publications.html).
 
+* 10 September, 2025\
+**Detecting splittings and endomorphisms using Humbert surfaces**\
+Talk at the <a href="https://www.esat.kuleuven.be/cosic/projects/isocrypt/lid6/" target="_blank">Leuven Isogeny Days 6</a>, a workshop on isogeny-based cryptography. <a href="https://www.esat.kuleuven.be/cosic/projects/isocrypt/wp-content/uploads/sites/4/2025/09/detectingRM.pdf" target="_blank">Slides</a>\
+*KU Leuven*
+
 * 28 April, 2025\
 **Computing two-dimensional isogenies for SQIsign**\
 Talk at the <a href="https://www.cig.udl.cat/SQIparty2025_home" target="_blank">SQIparty</a>, a workshop on isogeny-based cryptography.\
@@ -74,7 +79,7 @@ Invited talk at the Quantum Cryptanalysis Workshop, University of Bristol on cla
 
 * 23 September, 2022\
 **Efficiently Detecting (N,N)-splittings**\
-Talk at ISOCRYPT 2022 on detecting (N,N)-splittings and applications to genus 2 isogeny-based cryptography (joint work with Craig Costello and Sam Frengley). <a href="../files/leuventalk.pdf" target="_blank">Slides</a> | <a href="https://www.youtube.com/watch?v=-R5Q1nkfqrc&list=PLiHaXFHjrqYdAWotOM-7yeb0D8qdqdrUL&index=9" target="_blank">Recording</a>\
+Talk at the <a href="https://www.esat.kuleuven.be/cosic/projects/isocrypt/lid3/" target="_blank">Leuven Isogeny Days 3</a> on detecting (N,N)-splittings and applications to genus 2 isogeny-based cryptography (joint work with Craig Costello and Sam Frengley). <a href="../files/leuventalk.pdf" target="_blank">Slides</a> | <a href="https://www.youtube.com/watch?v=-R5Q1nkfqrc&list=PLiHaXFHjrqYdAWotOM-7yeb0D8qdqdrUL&index=9" target="_blank">Recording</a>\
 *KU Leuven*
 
 * 29 June, 2022\
