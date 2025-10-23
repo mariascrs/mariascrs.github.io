@@ -7,9 +7,14 @@ title: Talks
 
 Here we exclude talks at conferences corresponding to accepted papers. For these, see [Publications](https://www.mariascrs.com/publications.html).
 
+* October, 2025\
+**An introduction to post-quantum cryptography**\
+Invited lecture-style talk at the Information Security Seminar at UCL.\
+*University College London*
+
 * 10 September, 2025\
 **Detecting splittings and endomorphisms using Humbert surfaces**\
-Talk at the <a href="https://www.esat.kuleuven.be/cosic/projects/isocrypt/lid6/" target="_blank">Leuven Isogeny Days 6</a>, a workshop on isogeny-based cryptography. <a href="https://www.esat.kuleuven.be/cosic/projects/isocrypt/wp-content/uploads/sites/4/2025/09/detectingRM.pdf" target="_blank">Slides</a>\
+Invited talk at the <a href="https://www.esat.kuleuven.be/cosic/projects/isocrypt/lid6/" target="_blank">Leuven Isogeny Days 6</a>, a workshop on isogeny-based cryptography. <a href="https://www.esat.kuleuven.be/cosic/projects/isocrypt/wp-content/uploads/sites/4/2025/09/detectingRM.pdf" target="_blank">Slides</a>\
 *KU Leuven*
 
 * 28 April, 2025\
