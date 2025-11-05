@@ -9,7 +9,8 @@ title: Academic Papers
 ([ePrint](https://eprint.iacr.org/2025/1604){:target="_blank"})
 * **Efficient algorithms for the detection of *(N,N)*-splittings and endomorphisms** \
 *Joint work with [Craig Costello](https://www.craigcostello.com.au/) and [Sam Frengley](https://samfrengley.github.io/).* \
-*Journal of Cryptology, to appear. 2025.*\
+(([ePrint])(https://eprint.iacr.org/2025/147){:target="_blank"}) (([DOI](https://rdcu.be/eOj1n)){:target="_blank"})
+*Journal of Cryptology, 2025.*\
 ([ePrint](https://eprint.iacr.org/2025/147){:target="_blank"})
 * **Evaluation of Modular Polynomials from Supersingular Elliptic Curves** \
 *Joint work with [Jonathan Komada Eriksen](https://jonathke.github.io/), [Antonin Leroux](https://tonioecto.github.io/antoninleroux/), [Michael Meyer](https://www.uni-regensburg.de/informatik-data-science/datensicherheit-kryptographie/team/dr-michael-meyer/index.html), and [Lorenz Panny](https://yx7.cc/).*\
