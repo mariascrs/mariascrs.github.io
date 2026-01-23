@@ -4,7 +4,7 @@ title: Academic Papers
 ---
 # Publications
 * **Qlapoti: Simple and Efficient Translation of Quaternion Ideals to Isogenies** \
-*Joint wotk with [Giacomo Borin](https://giacomoborin.github.io/), [Jonathan Komada Eriksen](https://jonathke.github.io/), [Riccardo Invernizzi](https://r98inver.github.io/), [Marzio Mula](https://www.unibw.de/crypto-en/team/marzio-mula-m-sc), [Sina Schaeffler](https://www.iacr.org/cryptodb/data/author.php?authorkey=13617), [Frederik Vercauteren](https://www.esat.kuleuven.be/cosic/people/person/?u=u0031924).* \
+*Joint work with [Giacomo Borin](https://giacomoborin.github.io/), [Jonathan Komada Eriksen](https://jonathke.github.io/), [Riccardo Invernizzi](https://r98inver.github.io/), [Marzio Mula](https://www.unibw.de/crypto-en/team/marzio-mula-m-sc), [Sina Schaeffler](https://www.iacr.org/cryptodb/data/author.php?authorkey=13617), [Frederik Vercauteren](https://www.esat.kuleuven.be/cosic/people/person/?u=u0031924).* \
 *Asiacrypt 2025.*\
 ([DOI](https://doi.org/10.1007/978-981-95-5113-2_6){:target="_blank"}) ([ePrint](https://eprint.iacr.org/2025/1604){:target="_blank"})
 * **Efficient algorithms for the detection of *(N,N)*-splittings and endomorphisms** \
