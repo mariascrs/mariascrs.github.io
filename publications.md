@@ -7,7 +7,6 @@ title: Academic Papers
 *Joint work with [Krijn Reijnders](https://krijnreijnders.com/).*\
 *IACR Communications in Cryptology Volume 2, Issue 4. 2025.*\
 ([DOI](https://doi.org/10.62056/a0zogyl7s){:target="_blank"}) ([ePrint](https://eprint.iacr.org/2024/948){:target="_blank"})
-([ePrint](https://eprint.iacr.org/2024/948){:target="_blank"})
 * **Qlapoti: Simple and Efficient Translation of Quaternion Ideals to Isogenies** \
 *Joint work with [Giacomo Borin](https://giacomoborin.github.io/), [Jonathan Komada Eriksen](https://jonathke.github.io/), [Riccardo Invernizzi](https://r98inver.github.io/), [Marzio Mula](https://www.unibw.de/crypto-en/team/marzio-mula-m-sc), [Sina Schaeffler](https://www.iacr.org/cryptodb/data/author.php?authorkey=13617), [Frederik Vercauteren](https://www.esat.kuleuven.be/cosic/people/person/?u=u0031924).* \
 *Asiacrypt 2025.*\
