@@ -3,6 +3,11 @@ layout: article
 title: Academic Papers
 ---
 # Publications
+* **Return of the Kummer: a toolbox for genus 2 cryptography** \
+*Joint work with [Krijn Reijnders](https://krijnreijnders.com/).*\
+*IACR Communications in Cryptology Volume 2, Issue 4. 2025.*\
+([DOI](https://doi.org/10.62056/a0zogyl7s){:target="_blank"}) ([ePrint](https://eprint.iacr.org/2024/948){:target="_blank"})
+([ePrint](https://eprint.iacr.org/2024/948){:target="_blank"})
 * **Qlapoti: Simple and Efficient Translation of Quaternion Ideals to Isogenies** \
 *Joint work with [Giacomo Borin](https://giacomoborin.github.io/), [Jonathan Komada Eriksen](https://jonathke.github.io/), [Riccardo Invernizzi](https://r98inver.github.io/), [Marzio Mula](https://www.unibw.de/crypto-en/team/marzio-mula-m-sc), [Sina Schaeffler](https://www.iacr.org/cryptodb/data/author.php?authorkey=13617), [Frederik Vercauteren](https://www.esat.kuleuven.be/cosic/people/person/?u=u0031924).* \
 *Asiacrypt 2025.*\
@@ -53,13 +58,6 @@ title: Academic Papers
 *Joint work with [Craig Costello](https://www.craigcostello.com.au/) and [Jia Shi](https://janeshi99.github.io/).* \
 *CRYPTO 2022.* \
 ([DOI](https://doi.org/10.1007/978-3-031-15982-4_10){:target="_blank"}) ([ePrint](https://eprint.iacr.org/2021/1488.pdf){:target="_blank"}) ([Blogpost](https://mariascrs.github.io/2021/11/16/supersolver.html){:target="_blank"}) ([Talk](https://www.youtube.com/watch?v=XzdcRcb65UM&t=1s){:target="_blank"})
-
-# Preprints
-
-* **Return of the Kummer: a toolbox for genus 2 cryptography** \
-*Joint work with [Krijn Reijnders](https://krijnreijnders.com/).*\
-*In submission.*\
-([ePrint](https://eprint.iacr.org/2024/948){:target="_blank"})
 
 
 # Thesis
