@@ -61,7 +61,8 @@ title: Academic Papers
 #  Preprints
 * **PRISM with a pinch of salt: Simple, Efficient and Strongly Unforgeable Signatures from Isogenies** \
 *Joint work with [Andrea Basso](https://andreabasso.com/), [Giacomo Borin](https://giacomoborin.github.io/), [Wouter Castryck](https://homes.esat.kuleuven.be/~wcastryc/), [Riccardo Invernizzi](https://r98inver.github.io/), [Antonin Leroux](https://tonioecto.github.io/antoninleroux/), [Luciano Maino](https://lucianomaino.github.io/Luciano-Maino.github.io/), [Frederik Vercauteren](https://www.esat.kuleuven.be/cosic/people/person/?u=u0031924), [Benjamin Wesolowski](https://www.bweso.com/).*\
-*In submission.* 
+*In submission.*\
+([ePrint](https://eprint.iacr.org/2026/443){:target="_blank"})
 
 # Thesis
 
