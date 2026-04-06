@@ -53,6 +53,7 @@ I will be on the program comittee for the following conferences:
 * **2026**: CRYPTO, WAIFI, Asiacrypt
 
 I have been a sub-reviewer for the following conferences/journals:
+* **2026**: ANTS XVII
 * **2025**: CRYPTO, Eurocrypt
 * **2024**: Eurocrypt, ANTS XVI, CRYPTO, CiC, Asiacrypt
 * **2023**: Asiacrypt
