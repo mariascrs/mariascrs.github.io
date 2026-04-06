@@ -45,7 +45,7 @@ Delivered a lecture on Cryptography to hundreds of Year 10 students in a taster 
 
 
 ## Teaching 
-* 2 - 13 March 2026: Invited lecturer at <a href="https://sites.google.com/view/agmiit-2026/home?authuser=0" target="_blank">CIMPA SUmmer School</a> in Santa Fe, Argentina
+* 2 - 13 March 2026: Invited lecturer at <a href="https://sites.google.com/view/agmiit-2026/home?authuser=0" target="_blank">CIMPA Summer School</a> in Santa Fe, Argentina
 * Term 1, 2021 - 2023: Teaching assistant for <a href="https://www.ucl.ac.uk/module-catalogue/modules/introduction-to-cryptography/COMP0025" target="_blank">Introduction to Cryptography (COMP0025)</a> at UCL
 
 ## Reviewing 
