@@ -53,10 +53,10 @@ Delivered a lecture on Cryptography to hundreds of Year 10 students in a taster 
 * Term 1, 2021 - 2023: Teaching assistant for <a href="https://www.ucl.ac.uk/module-catalogue/modules/introduction-to-cryptography/COMP0025" target="_blank">Introduction to Cryptography (COMP0025)</a> at UCL
 
 ## Reviewing 
-I will be on the program comittee for the following conferences:
-* **2026**: CRYPTO, WAIFI, Asiacrypt
+### Program Committee
+* **2026**: CRYPTO, WAIFI, Asiacrypt, [MaGIC workshop](https://magic-workshop.github.io/)
 
-I have been a sub-reviewer for the following conferences/journals:
+### Sub-reviewer
 * **2026**: ANTS XVII
 * **2025**: CRYPTO, Eurocrypt
 * **2024**: Eurocrypt, ANTS XVI, CRYPTO, CiC, Asiacrypt
