@@ -18,7 +18,7 @@ title: Conferences, Workshops and Teaching
 * [CrossFyre '23](https://sites.google.com/view/crossfyre2023/), co-organised as an affliate event at Eurocrypt 2023 in Lyon, France.
 
 ### Associations 
-* [Women & Allies in Cryptography Association](https://www.womenincryptography.com/association/)), a member of the Collegial Council.
+* [Women & Allies in Cryptography Association](https://www.womenincryptography.com/association/), a member of the Collegial Council.
 
 ## Outreach Talks
 
