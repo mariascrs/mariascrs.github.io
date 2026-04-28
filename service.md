@@ -20,6 +20,21 @@ title: Conferences, Workshops and Teaching
 ### Associations 
 * [Women & Allies in Cryptography Association](https://www.womenincryptography.com/association/), a member of the Collegial Council.
 
+## Reviewing 
+### Program Committee
+* **2026**: CRYPTO, WAIFI, Asiacrypt, [MaGIC workshop](https://magic-workshop.github.io/)
+
+### Sub-reviewer
+* **2026**: ANTS XVII
+* **2025**: CRYPTO, Eurocrypt
+* **2024**: Eurocrypt, ANTS XVI, CRYPTO, CiC, Asiacrypt
+* **2023**: Asiacrypt
+* **2022**: PKC, Asiacrypt
+
+## Teaching 
+* 2 - 13 March 2026: Invited lecturer at <a href="https://sites.google.com/view/agmiit-2026/home?authuser=0" target="_blank">CIMPA Summer School</a> in Santa Fe, Argentina
+* Term 1, 2021 - 2023: Teaching assistant for <a href="https://www.ucl.ac.uk/module-catalogue/modules/introduction-to-cryptography/COMP0025" target="_blank">Introduction to Cryptography (COMP0025)</a> at UCL
+
 ## Outreach Talks
 
 * June, 2022\
@@ -46,19 +61,3 @@ Delivered a Maths Taster Lecture on Cryptography to Year 12 students. <a href="h
 **Women in STEM - Selwyn College, Cambridge**\
 Delivered a lecture on Cryptography to hundreds of Year 10 students in a taster day for Women in STEM. <a href="https://docs.google.com/presentation/d/1IXgY7_xpQinM_ZPfvubV5d6tQVn2XnNI6V6CuPp7Sfc/edit?usp=sharing" target="_blank">Slides</a>\
 *Virtual*
-
-
-## Teaching 
-* 2 - 13 March 2026: Invited lecturer at <a href="https://sites.google.com/view/agmiit-2026/home?authuser=0" target="_blank">CIMPA Summer School</a> in Santa Fe, Argentina
-* Term 1, 2021 - 2023: Teaching assistant for <a href="https://www.ucl.ac.uk/module-catalogue/modules/introduction-to-cryptography/COMP0025" target="_blank">Introduction to Cryptography (COMP0025)</a> at UCL
-
-## Reviewing 
-### Program Committee
-* **2026**: CRYPTO, WAIFI, Asiacrypt, [MaGIC workshop](https://magic-workshop.github.io/)
-
-### Sub-reviewer
-* **2026**: ANTS XVII
-* **2025**: CRYPTO, Eurocrypt
-* **2024**: Eurocrypt, ANTS XVI, CRYPTO, CiC, Asiacrypt
-* **2023**: Asiacrypt
-* **2022**: PKC, Asiacrypt
