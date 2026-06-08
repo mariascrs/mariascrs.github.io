@@ -8,7 +8,7 @@ title: Academic Papers
 *IACR Communications in Cryptology Volume 2, Issue 4. 2025.*\
 ([DOI](https://doi.org/10.62056/a0zogyl7s){:target="_blank"}) ([ePrint](https://eprint.iacr.org/2024/948){:target="_blank"})
 * **Qlapoti: Simple and Efficient Translation of Quaternion Ideals to Isogenies** \
-*Joint work with [Giacomo Borin](https://giacomoborin.github.io/), [Jonathan Komada Eriksen](https://jonathke.github.io/), [Riccardo Invernizzi](https://r98inver.github.io/), [Marzio Mula](https://www.unibw.de/crypto-en/team/marzio-mula-m-sc), [Sina Schaeffler](https://www.iacr.org/cryptodb/data/author.php?authorkey=13617), [Frederik Vercauteren](https://www.esat.kuleuven.be/cosic/people/person/?u=u0031924).* \
+*Joint work with [Giacomo Borin](https://giacomoborin.github.io/), [Jonathan Komada Eriksen](https://jonathke.github.io/), [Riccardo Invernizzi](https://r98inver.github.io/), [Marzio Mula](https://www.unibw.de/crypto-en/team/marzio-mula-m-sc), [Sina Schaeffler](https://www.iacr.org/cryptodb/data/author.php?authorkey=13617), and [Frederik Vercauteren](https://www.esat.kuleuven.be/cosic/people/person/?u=u0031924).* \
 *Asiacrypt 2025.*\
 ([DOI](https://doi.org/10.1007/978-981-95-5113-2_6){:target="_blank"}) ([ePrint](https://eprint.iacr.org/2025/1604){:target="_blank"})
 * **Efficient algorithms for the detection of *(N,N)*-splittings and endomorphisms** \
@@ -21,7 +21,7 @@ title: Academic Papers
 ([arXiv](https://arxiv.org/abs/2506.15429){:target="_blank"})
 ([ePrint](https://eprint.iacr.org/2025/1154){:target="_blank"})
 * **PRISM: Simple And Compact Identification and Signatures From Large Prime Degree Isogenies** \
-*Joint work with [Andrea Basso](https://andreabasso.com/), [Giacomo Borin](https://giacomoborin.github.io/), [Wouter Castryck](https://homes.esat.kuleuven.be/~wcastryc/), [Riccardo Invernizzi](https://r98inver.github.io/), [Antonin Leroux](https://tonioecto.github.io/antoninleroux/), [Luciano Maino](https://lucianomaino.github.io/Luciano-Maino.github.io/), [Frederik Vercauteren](https://www.esat.kuleuven.be/cosic/people/person/?u=u0031924), [Benjamin Wesolowski](https://www.bweso.com/).*\
+*Joint work with [Andrea Basso](https://andreabasso.com/), [Giacomo Borin](https://giacomoborin.github.io/), [Wouter Castryck](https://homes.esat.kuleuven.be/~wcastryc/), [Riccardo Invernizzi](https://r98inver.github.io/), [Antonin Leroux](https://tonioecto.github.io/antoninleroux/), [Luciano Maino](https://lucianomaino.github.io/Luciano-Maino.github.io/), [Frederik Vercauteren](https://www.esat.kuleuven.be/cosic/people/person/?u=u0031924), and [Benjamin Wesolowski](https://www.bweso.com/).*\
 *PKC 2025, **Best Paper Award**.* \
 ([DOI](https://doi.org/10.1007/978-3-031-91826-1_10){:target="_blank"}) ([ePrint](https://eprint.iacr.org/2025/135){:target="_blank"})
 * **Isogenies on Kummer Surfaces**\
@@ -60,10 +60,13 @@ title: Academic Papers
 
 #  Preprints
 * **PRISM with a pinch of salt: Simple, Efficient and Strongly Unforgeable Signatures from Isogenies** \
-*Joint work with [Andrea Basso](https://andreabasso.com/), [Giacomo Borin](https://giacomoborin.github.io/), [Wouter Castryck](https://homes.esat.kuleuven.be/~wcastryc/), [Riccardo Invernizzi](https://r98inver.github.io/), [Antonin Leroux](https://tonioecto.github.io/antoninleroux/), [Luciano Maino](https://lucianomaino.github.io/Luciano-Maino.github.io/), [Frederik Vercauteren](https://www.esat.kuleuven.be/cosic/people/person/?u=u0031924), [Benjamin Wesolowski](https://www.bweso.com/).*\
+*Joint work with [Andrea Basso](https://andreabasso.com/), [Giacomo Borin](https://giacomoborin.github.io/), [Wouter Castryck](https://homes.esat.kuleuven.be/~wcastryc/), [Riccardo Invernizzi](https://r98inver.github.io/), [Antonin Leroux](https://tonioecto.github.io/antoninleroux/), [Luciano Maino](https://lucianomaino.github.io/Luciano-Maino.github.io/), [Frederik Vercauteren](https://www.esat.kuleuven.be/cosic/people/person/?u=u0031924), and [Benjamin Wesolowski](https://www.bweso.com/).*\
 *In submission.*\
 ([ePrint](https://eprint.iacr.org/2026/443){:target="_blank"})
-
+* **A computational framework for principally polarized abelian varieties and applications** \
+*Joint work with Etienne Piasecki, and [Benjamin Wesolowski](https://www.bweso.com/).*\
+*In submission.*\
+([ePrint](https://eprint.iacr.org/2026/1142){:target="_blank"})
 # Thesis
 
 My PhD Thesis: <a href="../files/thesis.pdf" target="_blank">*The design, concrete security and efficiency of isogeny-based cryptography*</a>
