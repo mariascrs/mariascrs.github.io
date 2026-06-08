@@ -67,6 +67,11 @@ title: Academic Papers
 *Joint work with Etienne Piasecki, and [Benjamin Wesolowski](https://www.bweso.com/).*\
 *In submission.*\
 ([ePrint](https://eprint.iacr.org/2026/1142){:target="_blank"})
+* **Isogeny-based Signatures with Randomizable Keys** \
+*Joint work with [Andrea Basso](https://andreabasso.com/), [Giacomo Borin](https://giacomoborin.github.io/), [Pierrick Dartois](https://www.pierrickdartois.fr/homepage/), [Riccardo Invernizzi](https://r98inver.github.io/), [Luciano Maino](https://lucianomaino.github.io/Luciano-Maino.github.io/), [Robi Pedersen](https://robi-pedersen.com/), and [Michel Seck](https://scholar.google.com/citations?user=tXE_rj8AAAAJ&hl=en).*\
+*In submission.*\
+([ePrint](https://eprint.iacr.org/2026/1169){:target="_blank"})
+
 # Thesis
 
 My PhD Thesis: <a href="../files/thesis.pdf" target="_blank">*The design, concrete security and efficiency of isogeny-based cryptography*</a>
