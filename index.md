@@ -20,3 +20,6 @@ I am passionate about communicating cryptography and mathematics to others, and 
 
 The manuscript of my thesis is available <a href="../files/thesis.pdf" target="_blank">here</a>.
 
+
+If you're interested in my work, I will be speaking at the following upcoming events:
+* [Foundations of Computational Mathematics](https://focm2026.univie.ac.at/?page_id=1065#Period2) (13-15 July 2026)
