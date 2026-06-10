@@ -7,6 +7,16 @@ title: Talks
 
 Here we exclude talks at conferences corresponding to accepted papers. For these, see [Publications](https://www.mariascrs.com/publications.html).
 
+* January, 2026\
+**Expansion properties of the superspecial isogeny graph**\
+Contributed talk at Atelier Melodia.\
+*Laval, France*
+
+* December, 2025\
+**Digital signature schemes from isogeny-based cryptography**\
+Invited talk at [Portugal Crypto Day](https://cryptoday.pt/)\
+*ISEP, Porto, Portugal*
+
 * October, 2025\
 **An introduction to post-quantum cryptography**\
 Invited lecture-style talk at the Information Security Seminar at UCL.\
