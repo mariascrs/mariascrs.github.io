@@ -64,7 +64,7 @@ title: Academic Papers
 *In submission.*\
 ([ePrint](https://eprint.iacr.org/2026/443){:target="_blank"})
 * **A computational framework for principally polarized abelian varieties and applications** \
-*Joint work with Etienne Piasecki, and [Benjamin Wesolowski](https://www.bweso.com/).*\
+*Joint work with [Etienne Piasecki](https://ray3314.github.io/piasecki.github.io/), and [Benjamin Wesolowski](https://www.bweso.com/).*\
 *In submission.*\
 ([ePrint](https://eprint.iacr.org/2026/1142){:target="_blank"})
 * **Isogeny-based Signatures with Randomizable Keys** \
