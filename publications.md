@@ -71,6 +71,10 @@ title: Academic Papers
 *Joint work with [Andrea Basso](https://andreabasso.com/), [Giacomo Borin](https://giacomoborin.github.io/), [Pierrick Dartois](https://www.pierrickdartois.fr/homepage/), [Riccardo Invernizzi](https://r98inver.github.io/), [Luciano Maino](https://lucianomaino.github.io/Luciano-Maino.github.io/), [Robi Pedersen](https://robi-pedersen.com/), and [Michel Seck](https://scholar.google.com/citations?user=tXE_rj8AAAAJ&hl=en).*\
 *In submission.*\
 ([ePrint](https://eprint.iacr.org/2026/1169){:target="_blank"})
+* **Algorithms for solving the isogeny problem with oriented elliptic curves** \
+*Joint work with [Arthur Herlédan Le Merdy](https://a-hlm.github.io/), [Joseph Macula](https://sites.google.com/view/joe-macula), [Michael Meyer](https://www.uni-regensburg.de/en/informatics-data-science/faculty/facilities/data-security-and-cryptography/team/dr-michael-meyer), [Travis Morrison](https://travismo.github.io/), and [Eli Orvis](https://euclid.colorado.edu/~wior7645/HTML/home.html).*\
+*In submission.*\
+([ePrint](https://eprint.iacr.org/2026/1219){:target="_blank"})
 
 # Thesis
 
