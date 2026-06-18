@@ -10,7 +10,7 @@ title: Academic Papers
 * **Qlapoti: Simple and Efficient Translation of Quaternion Ideals to Isogenies** \
 *Joint work with [Giacomo Borin](https://giacomoborin.github.io/), [Jonathan Komada Eriksen](https://jonathke.github.io/), [Riccardo Invernizzi](https://r98inver.github.io/), [Marzio Mula](https://www.unibw.de/crypto-en/team/marzio-mula-m-sc), [Sina Schaeffler](https://www.iacr.org/cryptodb/data/author.php?authorkey=13617), and [Frederik Vercauteren](https://www.esat.kuleuven.be/cosic/people/person/?u=u0031924).* \
 *Asiacrypt 2025.*\
-([DOI](https://doi.org/10.1007/978-981-95-5113-2_6){:target="_blank"}) ([ePrint](https://eprint.iacr.org/2025/1604){:target="_blank"})
+([DOI](https://doi.org/10.1007/978-981-95-5113-2_6){:target="_blank"}) ([ePrint](https://eprint.iacr.org/2025/1604){:target="_blank"}) ([Artifact](https://artifacts.iacr.org/asiacrypt/2025/a6/){:target="_blank"})
 * **Efficient algorithms for the detection of *(N,N)*-splittings and endomorphisms** \
 *Joint work with [Craig Costello](https://www.craigcostello.com.au/) and [Sam Frengley](https://samfrengley.github.io/).* \
 *Journal of Cryptology, 2025.*\
@@ -44,7 +44,7 @@ title: Academic Papers
 * **AprèsSQI: Extra Fast Verification for SQIsign Using Extension-Field Signing** \
 *Joint work with [Jonathan Komada Eriksen](https://jonathke.github.io/), [Michael Meyer](https://www.uni-regensburg.de/informatik-data-science/datensicherheit-kryptographie/team/dr-michael-meyer/index.html), and [Krijn Reijnders](https://krijnreijnders.com/).* \
 *Eurocrypt 2024, **Best Early-Career Paper Award*** \
-([DOI](https://doi.org/10.1007/978-3-031-58716-0_3){:target="_blank"}) ([ePrint](https://eprint.iacr.org/2023/1559.pdf){:target="_blank"})
+([DOI](https://doi.org/10.1007/978-3-031-58716-0_3){:target="_blank"}) ([ePrint](https://eprint.iacr.org/2023/1559.pdf){:target="_blank"}) ([Artifact])(https://artifacts.iacr.org/eurocrypt/2024/a4/){:target="_blank"})
 * **An algorithm for efficient detection of *(N,N)*-splittings and its application to the isogeny problem in dimension 2** \
 *Joint work with [Craig Costello](https://www.craigcostello.com.au/) and [Sam Frengley](https://samfrengley.github.io/).* \
 *PKC 2024, **Best Paper Award**.* \
