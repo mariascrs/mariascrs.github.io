@@ -21,5 +21,6 @@ I am passionate about communicating cryptography and mathematics to others, and 
 The manuscript of my thesis is available <a href="../files/thesis.pdf" target="_blank">here</a>.
 
 
-If you're interested in my work, I will be speaking at the following upcoming events:
-* [Foundations of Computational Mathematics](https://focm2026.univie.ac.at/?page_id=1065#Period2) (13-15 July 2026)
+If you're interested in my work, I will be attending the following upcoming events:
+* [Leuven Isogeny Days 7](https://www.esat.kuleuven.be/cosic/projects/isocrypt/lid7/) (16-18 September 2026)
+* [Isogenies of Abelian Varieties Applications to Post-Quantum Cryptography](https://bernoulli-isogeny.github.io/index.html) (16-20 November 2026) as a speaker
