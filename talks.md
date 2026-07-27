@@ -7,6 +7,11 @@ title: Talks
 
 Here we exclude talks at conferences corresponding to accepted papers. For these, see [Publications](https://www.mariascrs.com/publications.html).
 
+* July, 2026\
+**Computing isogenies of odd degree in any dimension**\
+Invited speaker at Computational Number Theory workshop at [FoCM](https://focm2026.univie.ac.at/). <a href="https://ucloud.univie.ac.at/index.php/s/nQPEEDDXwRsZDPZ" target="_blank">Slides</a>\
+*Vienna, Austria*
+
 * January, 2026\
 **Expansion properties of the superspecial isogeny graph**\
 Contributed talk at Atelier Melodia.\
