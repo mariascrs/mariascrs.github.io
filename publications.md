@@ -3,6 +3,10 @@ layout: article
 title: Academic Papers
 ---
 # Publications
+* **A computational framework for principally polarized abelian varieties and applications** \
+*Joint work with [Etienne Piasecki](https://ray3314.github.io/piasecki.github.io/), and [Benjamin Wesolowski](https://www.bweso.com/).*\
+*To appear at Asiacrypt 2026.*\
+([ePrint](https://eprint.iacr.org/2026/1142){:target="_blank"})
 * **PRISM with a pinch of salt: Simple, Efficient and Strongly Unforgeable Signatures from Isogenies** \
 *Joint work with [Andrea Basso](https://andreabasso.com/), [Giacomo Borin](https://giacomoborin.github.io/), [Wouter Castryck](https://homes.esat.kuleuven.be/~wcastryc/), [Riccardo Invernizzi](https://r98inver.github.io/), [Antonin Leroux](https://tonioecto.github.io/antoninleroux/), [Luciano Maino](https://lucianomaino.github.io/Luciano-Maino.github.io/), [Frederik Vercauteren](https://www.esat.kuleuven.be/cosic/people/person/?u=u0031924), and [Benjamin Wesolowski](https://www.bweso.com/).*\
 *To appear in the Journal of Cryptology.*\
@@ -63,10 +67,6 @@ title: Academic Papers
 ([DOI](https://doi.org/10.1007/978-3-031-15982-4_10){:target="_blank"}) ([ePrint](https://eprint.iacr.org/2021/1488.pdf){:target="_blank"}) ([Blogpost](https://mariascrs.github.io/2021/11/16/supersolver.html){:target="_blank"}) ([Talk](https://www.youtube.com/watch?v=XzdcRcb65UM&t=1s){:target="_blank"})
 
 #  Preprints
-* **A computational framework for principally polarized abelian varieties and applications** \
-*Joint work with [Etienne Piasecki](https://ray3314.github.io/piasecki.github.io/), and [Benjamin Wesolowski](https://www.bweso.com/).*\
-*In submission.*\
-([ePrint](https://eprint.iacr.org/2026/1142){:target="_blank"})
 * **Isogeny-based Signatures with Randomizable Keys** \
 *Joint work with [Andrea Basso](https://andreabasso.com/), [Giacomo Borin](https://giacomoborin.github.io/), [Pierrick Dartois](https://www.pierrickdartois.fr/homepage/), [Riccardo Invernizzi](https://r98inver.github.io/), [Luciano Maino](https://lucianomaino.github.io/Luciano-Maino.github.io/), [Robi Pedersen](https://robi-pedersen.com/), and [Michel Seck](https://scholar.google.com/citations?user=tXE_rj8AAAAJ&hl=en).*\
 *In submission.*\
