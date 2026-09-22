@@ -4,14 +4,9 @@ title: Publications
 mathjax: true
 ---
 
-{% if site.data.preprints and site.data.preprints.size > 0 %}
-<section class="year-group">
-  <h2 class="year-label">Preprints</h2>
-  <ul class="pub-list">
-    {% for p in site.data.preprints %}{% include publication.html pub=p %}{% endfor %}
-  </ul>
-</section>
-{% endif %}
+{%- comment -%}
+  Three sections, each grouped by year: publications, preprints, thesis.
+{%- endcomment -%}
 
 {% assign years = site.data.publications | group_by: "year" %}
 {% for y in years %}
@@ -23,11 +18,26 @@ mathjax: true
 </section>
 {% endfor %}
 
+{% if site.data.preprints and site.data.preprints.size > 0 %}
+<h2 class="section-title" id="preprints">Preprints</h2>
+{% assign pyears = site.data.preprints | group_by: "year" %}
+{% for y in pyears %}
 <section class="year-group">
-  <h2 class="year-label">Thesis</h2>
+  <h3 class="year-label">{{ y.name }}</h3>
+  <ul class="pub-list">
+    {% for p in y.items %}{% include publication.html pub=p %}{% endfor %}
+  </ul>
+</section>
+{% endfor %}
+{% endif %}
+
+<h2 class="section-title" id="thesis">Thesis</h2>
+<section class="year-group">
+  <h3 class="year-label">2024</h3>
   <ul class="pub-list">
     <li class="pub">
       <h3 class="pub-title">The design, concrete security and efficiency of isogeny-based cryptography</h3>
+      <p class="pub-authors">Supervised by <a href="https://philipp.jovanovic.io/">Philipp Jovanovic</a> and <a href="https://smeiklej.com/">Sarah Meiklejohn</a></p>
       <p class="pub-venue"><em>PhD thesis, University College London</em></p>
       <p class="pub-links"><a href="{{ '/files/thesis.pdf' | relative_url }}">PDF</a></p>
     </li>

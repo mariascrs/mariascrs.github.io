@@ -330,6 +330,14 @@ a:hover { color: var(--link); }
 }
 .page-intro { margin: 16px 0 0; font-size: 18px; color: var(--ink-2); }
 
+.section-title {
+  margin: 88px 0 48px;
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(40px, 5vw, 54px);
+  line-height: 1.05;
+}
+
 .year-group {
   display: grid;
   grid-template-columns: 200px minmax(0, 1fr);
