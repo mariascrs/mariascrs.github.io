@@ -1,8 +1,12 @@
+{%- comment -%}
+  Each value in `social:` (in _config.yml) can be either a full URL or just a
+  username/handle. Empty values are hidden.
+{%- endcomment -%}
 {%- assign s = site.social -%}
 <ul class="social" aria-label="Contact and profiles">
-  {%- if s.email != "" and s.email %}<li><a href="mailto:{{ s.email }}" aria-label="Email" title="Email">{% include icon.html name="email" %}</a></li>{% endif %}
-  {%- if s.scholar != "" and s.scholar %}<li><a href="{{ s.scholar }}" aria-label="Google Scholar" title="Google Scholar">{% include icon.html name="scholar" %}</a></li>{% endif %}
-  {%- if s.github != "" and s.github %}<li><a href="https://github.com/{{ s.github }}" aria-label="GitHub" title="GitHub">{% include icon.html name="github" %}</a></li>{% endif %}
-  {%- if s.linkedin != "" and s.linkedin %}<li><a href="https://www.linkedin.com/in/{{ s.linkedin }}" aria-label="LinkedIn" title="LinkedIn">{% include icon.html name="linkedin" %}</a></li>{% endif %}
-  {%- if s.bluesky != "" and s.bluesky %}<li><a href="https://bsky.app/profile/{{ s.bluesky }}" aria-label="Bluesky" title="Bluesky">{% include icon.html name="bluesky" %}</a></li>{% endif %}
+  {%- if s.email and s.email != "" %}<li><a href="mailto:{{ s.email }}" aria-label="Email" title="Email">{% include icon.html name="email" %}</a></li>{% endif %}
+  {%- if s.scholar and s.scholar != "" %}<li><a href="{{ s.scholar }}" aria-label="Google Scholar" title="Google Scholar">{% include icon.html name="scholar" %}</a></li>{% endif %}
+  {%- if s.github and s.github != "" %}{% if s.github contains "://" %}{% assign u = s.github %}{% else %}{% assign u = "https://github.com/" | append: s.github %}{% endif %}<li><a href="{{ u }}" aria-label="GitHub" title="GitHub">{% include icon.html name="github" %}</a></li>{% endif %}
+  {%- if s.linkedin and s.linkedin != "" %}{% if s.linkedin contains "://" %}{% assign u = s.linkedin %}{% else %}{% assign u = "https://www.linkedin.com/in/" | append: s.linkedin %}{% endif %}<li><a href="{{ u }}" aria-label="LinkedIn" title="LinkedIn">{% include icon.html name="linkedin" %}</a></li>{% endif %}
+  {%- if s.bluesky and s.bluesky != "" %}{% if s.bluesky contains "://" %}{% assign u = s.bluesky %}{% else %}{% assign u = "https://bsky.app/profile/" | append: s.bluesky %}{% endif %}<li><a href="{{ u }}" aria-label="Bluesky" title="Bluesky">{% include icon.html name="bluesky" %}</a></li>{% endif %}
 </ul>
