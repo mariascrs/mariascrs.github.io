@@ -16,10 +16,10 @@ author:
 # Icons shown under your photo. Leave a value empty ("") to hide that icon.
 social:
   email: maria.corte_real_santos@ens-lyon.fr
-  scholar: ""        # full Google Scholar profile URL
+  scholar: "https://scholar.google.com/citations?user=sYGBJeIAAAAJ&hl=en&oi=ao"        # full Google Scholar profile URL
   github: mariascrs
   linkedin: maria-corte-real-santos-805a5a14a
-  bluesky: ""        # handle, e.g. mariascrs.bsky.social
+  bluesky: "https://bsky.app/profile/maria.isogeny.club"        # handle, e.g. mariascrs.bsky.social
 
 # Top navigation, in order.
 navigation:
