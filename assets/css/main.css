@@ -576,6 +576,21 @@ mjx-container[display="true"] { overflow-x: auto; overflow-y: hidden; padding: 4
 .post-nav a[rel="next"], .post-nav a:last-child { text-align: right; margin-left: auto; }
 .post-nav span { font-size: 13px; font-weight: 400; color: var(--muted); }
 
+/* Images with transparent backgrounds (diagrams, slides) sit on a white
+   panel in dark mode so their dark lines stay visible. */
+:root[data-theme="dark"] .post-body img {
+  background: #FFFFFF;
+  padding: 10px;
+  border-radius: 4px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .post-body img {
+    background: #FFFFFF;
+    padding: 10px;
+    border-radius: 4px;
+  }
+}
+
 /* ==========================================================================
    Small screens
    ========================================================================== */

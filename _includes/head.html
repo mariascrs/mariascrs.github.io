@@ -6,10 +6,12 @@
 <script>
   /* Apply a saved light/dark choice before the page paints. */
   (function () {
-    try {
-      var t = localStorage.getItem("theme");
-      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
-    } catch (e) {}
+    var t = null;
+    try { t = localStorage.getItem("theme"); } catch (e) {}
+    if (t !== "light" && t !== "dark") {
+      t = {% if page.collection == "posts" %}"light"{% else %}null{% endif %}; /* blog posts open in light mode unless the visitor chose otherwise */
+    }
+    if (t) document.documentElement.setAttribute("data-theme", t);
   })();
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
