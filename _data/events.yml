@@ -1,0 +1,10 @@
+# Upcoming events shown on the homepage (the first three that haven't ended).
+# Events whose `end` date has passed disappear automatically the next time
+# the site is rebuilt (i.e. the next time you push a change).
+#   dates: how the date is displayed
+#   end:   last day of the event, YYYY-MM-DD (used to hide past events)
+#   text:  Markdown allowed
+
+- dates: 16–20 Nov 2026
+  end: 2026-11-20
+  text: "Speaker at [Isogenies of Abelian Varieties: Applications to Post-Quantum Cryptography](https://bernoulli-isogeny.github.io/index.html), Bernoulli Center"

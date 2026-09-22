@@ -5,6 +5,8 @@ tags: maths isogeny cryptography post-quantum paper
 mathjax: true
 aside:
   toc: true
+with: Craig Costello and Jia Shi
+paper: https://eprint.iacr.org/2021/1488
 ---
 
 This blogpost aims to give a general overview of our new paper *"SuperSolver: accelerating the Delfs-Galbraith algorithm with fast subfield root detection"* ([link](https://eprint.iacr.org/2021/1488)). This is joint work with my amazing coauthors Craig Costello and Jia Shi.

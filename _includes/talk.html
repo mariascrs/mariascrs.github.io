@@ -1,0 +1,10 @@
+{%- assign t = include.talk -%}
+<li class="talk">
+  <p class="talk-date">{{ t.date }}</p>
+  <div class="talk-body">
+    <h3 class="talk-title">{{ t.title }}</h3>
+    {%- if t.event %}<p class="talk-event">{{ t.event | markdownify | remove: "<p>" | remove: "</p>" | strip }}</p>{% endif %}
+    {%- if t.place %}<p class="talk-place">{{ t.place }}</p>{% endif %}
+    {%- if t.links and t.links.size > 0 %}<p class="pub-links">{% for l in t.links %}<a href="{{ l.url }}">{{ l.name }}</a>{% endfor %}</p>{% endif %}
+  </div>
+</li>

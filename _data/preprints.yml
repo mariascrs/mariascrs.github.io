@@ -1,0 +1,9 @@
+# Preprints / papers in submission. Same fields as publications.yml.
+
+- title: Isogeny-based Signatures with Randomizable Keys
+  authors: [Andrea Basso, Giacomo Borin, Pierrick Dartois, Riccardo Invernizzi, Luciano Maino, Robi Pedersen, Michel Seck]
+  venue: In submission
+  year: 2026
+  links:
+  - name: ePrint
+    url: "https://eprint.iacr.org/2026/1169"

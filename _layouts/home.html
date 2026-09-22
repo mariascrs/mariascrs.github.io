@@ -1,42 +1,65 @@
 ---
-layout: articles
-titles:
-  # @start locale config
-  en      : &EN       Home
-  en-GB   : *EN
-  en-US   : *EN
-  en-CA   : *EN
-  en-AU   : *EN
-  zh-Hans : &ZH_HANS  主页
-  zh      : *ZH_HANS
-  zh-CN   : *ZH_HANS
-  zh-SG   : *ZH_HANS
-  zh-Hant : &ZH_HANT  主頁
-  zh-TW   : *ZH_HANT
-  zh-HK   : *ZH_HANT
-  ko      : &KO       홈
-  ko-KR   : *KO
-  fr      : &FR       Accueil
-  fr-BE   : *FR
-  fr-CA   : *FR
-  fr-CH   : *FR
-  fr-FR   : *FR
-  fr-LU   : *FR
-  # @end locale config
-show_title: false
-articles:
-  data_source: paginator.posts
-  article_type: BlogPosting
-  show_cover: false
-  show_excerpt: true
-  show_readmore: true
-  show_info: true
+layout: default
 ---
-<div class="layout--home">
-  {%- include paginator.html -%}
-</div>
-<script>
-  {%- include scripts/home.js -%}
-</script>
+<section class="hero">
+  <div class="hero-text">
+    <h1 class="hero-title">{{ page.heading }}</h1>
+    <p class="hero-lead">{{ page.lead | markdownify | remove: "<p>" | remove: "</p>" | strip }}</p>
+    <div class="prose hero-about">
+      {{ content }}
+    </div>
+  </div>
+  <div class="hero-side">
+    <img class="portrait" src="{{ '/images/profile-680.jpg' | relative_url }}" srcset="{{ '/images/profile-680.jpg' | relative_url }} 680w, {{ '/images/profile.jpg' | relative_url }} 853w" sizes="340px" width="340" height="510" alt="Portrait of {{ site.author.name }}">
+    {% include social.html %}
+  </div>
+</section>
 
-{{ content }}
+{%- assign now = site.time | date: "%s" | plus: 0 -%}
+{%- assign shown = 0 -%}
+{%- capture events -%}
+  {%- for e in site.data.events -%}
+    {%- assign ends = e.end | date: "%s" | plus: 86400 -%}
+    {%- if ends >= now and shown < 3 -%}
+      {%- assign shown = shown | plus: 1 -%}
+      <li><span class="event-date">{{ e.dates }}</span><span class="event-text">{{ e.text | markdownify | remove: "<p>" | remove: "</p>" | strip }}</span></li>
+    {%- endif -%}
+  {%- endfor -%}
+{%- endcapture -%}
+{%- if shown > 0 %}
+<section class="events" aria-labelledby="events-heading">
+  <h2 id="events-heading" class="strip-label">Upcoming events</h2>
+  <ul class="events-list">{{ events }}</ul>
+</section>
+{%- endif %}
+
+<section class="block" aria-labelledby="papers-heading">
+  <div class="block-head">
+    <h2 id="papers-heading">Selected papers</h2>
+    <a class="more" href="{{ '/publications.html' | relative_url }}">All publications</a>
+  </div>
+  <ul class="rows">
+    {%- assign selected = site.data.publications | where_exp: "p", "p.selected == true" -%}
+    {%- for p in selected limit: 3 -%}
+    {%- assign link = p.links | first -%}
+    <li>
+      <a class="row" href="{% if link %}{{ link.url }}{% else %}{{ '/publications.html' | relative_url }}{% endif %}">
+        <span class="row-title">{{ p.title }}</span>
+        <span class="row-meta">{{ p.venue }}{% if p.award %}<br><strong>{{ p.award }}</strong>{% endif %}</span>
+      </a>
+    </li>
+    {%- endfor -%}
+  </ul>
+</section>
+
+<section class="block" aria-labelledby="writing-heading">
+  <div class="block-head">
+    <h2 id="writing-heading">Writing</h2>
+    <a class="more" href="{{ '/posts.html' | relative_url }}">All posts</a>
+  </div>
+  <ul class="cards">
+    {%- for post in site.posts limit: 3 -%}
+    <li><a href="{{ post.url | relative_url }}"><span class="card-year">{{ post.date | date: "%Y" }}</span><span class="card-title">{{ post.title }}</span></a></li>
+    {%- endfor -%}
+  </ul>
+</section>

@@ -5,6 +5,8 @@ tags: maths isogeny sqisign cryptography post-quantum paper
 mathjax: true
 aside:
   toc: true
+with: Giacomo Bruno, Craig Costello, Jonathan Komada Eriksen, Michael Meyer, Michael Naehrig and Bruno Sterner
+paper: https://eprint.iacr.org/2022/1439
 ---
 
 This blogpost aims to give a general overview of our new paper *"Cryptographic Smooth Neighbors"* ([link](https://eprint.iacr.org/2022/1439)). This is joint work with Giacomo Bruno, Craig Costello, Jonathan Komada Eriksen, Michael Naehrig, Michael Meyer, and Bruno Sterner.

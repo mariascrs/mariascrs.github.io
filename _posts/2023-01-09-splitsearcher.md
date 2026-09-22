@@ -5,6 +5,8 @@ tags: maths isogeny genus2 cryptography post-quantum paper
 mathjax: true
 aside:
   toc: true
+with: Craig Costello and Sam Frengley
+paper: https://eprint.iacr.org/2022/1736
 ---
 
 In this blogpost, I'll give an overview of our new paper *An algorithm for efficient detection of $(N,N)$-splittings and its application to the isogeny problem in dimension 2* ([link](https://eprint.iacr.org/2022/1736)), with associated code available [here](https://github.com/mariascrs/SplitSearcher). This is joint work with Craig Costello and Sam Frengley.

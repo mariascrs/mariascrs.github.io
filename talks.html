@@ -1,0 +1,24 @@
+---
+list: true
+title: Talks
+intro: Invited and contributed talks. Talks given at conferences for accepted papers are listed with the paper on the [publications](/publications.html) page.
+---
+{%- assign talks = site.data.talks | where_exp: "t", "t.category != 'outreach'" -%}
+{%- assign academic = talks | where: "category", "academic" -%}
+{%- assign industry = talks | where: "category", "industry" -%}
+
+<section class="talk-group">
+  <h2>Academic</h2>
+  <ul class="talk-list">
+    {%- for t in academic %}{% include talk.html talk=t %}{% endfor %}
+  </ul>
+</section>
+
+{% if industry.size > 0 %}
+<section class="talk-group">
+  <h2>Industry</h2>
+  <ul class="talk-list">
+    {%- for t in industry %}{% include talk.html talk=t %}{% endfor %}
+  </ul>
+</section>
+{% endif %}

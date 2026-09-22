@@ -1,0 +1,8 @@
+{%- assign s = site.social -%}
+<ul class="social" aria-label="Contact and profiles">
+  {%- if s.email != "" and s.email %}<li><a href="mailto:{{ s.email }}" aria-label="Email" title="Email">{% include icon.html name="email" %}</a></li>{% endif %}
+  {%- if s.scholar != "" and s.scholar %}<li><a href="{{ s.scholar }}" aria-label="Google Scholar" title="Google Scholar">{% include icon.html name="scholar" %}</a></li>{% endif %}
+  {%- if s.github != "" and s.github %}<li><a href="https://github.com/{{ s.github }}" aria-label="GitHub" title="GitHub">{% include icon.html name="github" %}</a></li>{% endif %}
+  {%- if s.linkedin != "" and s.linkedin %}<li><a href="https://www.linkedin.com/in/{{ s.linkedin }}" aria-label="LinkedIn" title="LinkedIn">{% include icon.html name="linkedin" %}</a></li>{% endif %}
+  {%- if s.bluesky != "" and s.bluesky %}<li><a href="https://bsky.app/profile/{{ s.bluesky }}" aria-label="Bluesky" title="Bluesky">{% include icon.html name="bluesky" %}</a></li>{% endif %}
+</ul>

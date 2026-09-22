@@ -1,0 +1,18 @@
+{%- assign p = include.pub -%}
+<li class="pub">
+  <h3 class="pub-title">{{ p.title }}</h3>
+  {%- if p.authors and p.authors.size > 0 %}
+  <p class="pub-authors">Joint work with
+    {%- for a in p.authors -%}
+      {%- unless forloop.first -%}{%- if forloop.last -%}{%- if forloop.length > 2 -%},{%- endif %} and {% else -%}, {% endif -%}{%- else %} {% endunless -%}
+      {%- assign url = site.data.people[a] -%}
+      {%- if url -%}<a href="{{ url }}">{{ a }}</a>{%- else -%}{{ a }}{%- endif -%}
+    {%- endfor -%}
+  </p>
+  {%- endif %}
+  <p class="pub-venue"><em>{{ p.venue }}</em>{% if p.award %} <strong class="award">{{ p.award }}</strong>{% endif %}</p>
+  {%- if p.note %}<p class="pub-note">{{ p.note }}</p>{% endif %}
+  {%- if p.links and p.links.size > 0 %}
+  <p class="pub-links">{% for l in p.links %}<a href="{{ l.url }}">{{ l.name }}</a>{% endfor %}</p>
+  {%- endif %}
+</li>

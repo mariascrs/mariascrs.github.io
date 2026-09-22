@@ -1,0 +1,164 @@
+# Talks, newest first.
+#   category: academic | industry | outreach
+#     (academic + industry appear on the Talks page, outreach on the Service page)
+#   event: short description, Markdown allowed
+#   links: optional (Slides, Recording, ...)
+
+- date: July 2026
+  title: Computing isogenies of odd degree in any dimension
+  event: "Invited speaker at Computational Number Theory workshop at [FoCM](https://focm2026.univie.ac.at/)."
+  place: Vienna, Austria
+  links:
+  - name: Slides
+    url: "https://ucloud.univie.ac.at/index.php/s/nQPEEDDXwRsZDPZ"
+  category: academic
+
+- {date: January 2026, title: Expansion properties of the superspecial isogeny graph, event: Contributed talk at Atelier Melodia., place: 'Laval, France', category: academic}
+
+- date: December 2025
+  title: Digital signature schemes from isogeny-based cryptography
+  event: "Invited talk at [Portugal Crypto Day](https://cryptoday.pt/)"
+  place: ISEP, Porto, Portugal
+  category: academic
+
+- {date: October 2025, title: An introduction to post-quantum cryptography, event: Invited lecture-style talk at the Information Security Seminar at UCL., place: University College London, category: academic}
+
+- date: September 2025
+  title: Detecting splittings and endomorphisms using Humbert surfaces
+  event: "Invited talk at the [Leuven Isogeny Days 6](https://www.esat.kuleuven.be/cosic/projects/isocrypt/lid6/), a workshop on isogeny-based cryptography."
+  place: KU Leuven
+  links:
+  - name: Slides
+    url: "https://www.esat.kuleuven.be/cosic/projects/isocrypt/wp-content/uploads/sites/4/2025/11/detectingRM.pdf"
+  category: academic
+
+- date: April 2025
+  title: Computing two-dimensional isogenies for SQIsign
+  event: "Talk at the [SQIparty](https://www.cig.udl.cat/SQIparty2025_home), a workshop on isogeny-based cryptography."
+  place: Universitat de Lleida
+  category: academic
+
+- date: April 2025
+  title: The dimension two isogeny problem for cryptography
+  event: "Invited talk at the [Séminaire d'arithmétique à Lyon](https://indico.math.cnrs.fr/category/164/)."
+  place: ENS de Lyon
+  category: academic
+
+- date: March 2025
+  title: Cycles of pairing-friendly abelian varieties
+  event: "Invited talk at the [Séminaire de Cryptographie de Rennes](https://www.creachlabs.fr/en/event-sessions-archive?event=41)."
+  place: "Centre Inria de l'Université de Rennes"
+  category: academic
+
+- date: February 2025
+  title: Finding Practical Parameters for Isogeny-based Cryptography
+  event: "Invited talk at the [TII CRC Seminar Series](https://www.tii.ae/seminar/crc-seminar-series-maria-corte-real-santos)."
+  place: Online
+  category: academic
+
+- date: November 2024
+  title: Post-quantum secure signature schemes from isogenies
+  event: "Invited talk at the [London Crypto Day 2024](https://sites.google.com/view/london-crypto-day/lcd-2024?authuser=0)."
+  place: Alan Turing Institute, London
+  category: academic
+
+- {date: July 2024, title: Post-quantum secure signature schemes from isogenies, event: Invited talk at the Cryptography And Information Security Seminar at MIT., place: Massachusetts Institute of Technology, category: academic}
+
+- date: June 2024
+  title: SQIsign Verification in higher dimension
+  event: Invited talk at the Séminaire de Théorie Algorithmique des Nombres.
+  place: Institut de Mathématiques de Bordeaux
+  links:
+  - {name: Slides, url: /files/Bordeaux-Seminar.pdf}
+  category: academic
+
+- date: March 2024
+  title: "SQIsign and ApresSQI: towards practical post-quantum secure signatures from isogenies"
+  event: Invited talk at Project-team GRACE Seminar.
+  place: INRIA Scalary and École polytechnique
+  category: academic
+
+- date: January 2024
+  title: "SQIsign and AprèsSQI: post-quantum secure signatures from isogenies"
+  event: Invited talk at the Radboud Digital Security group Lunch Talk.
+  place: Radboud Universiteit
+  category: academic
+
+- {date: November 2023, title: Post-quantum secure signature schemes from isogenies, event: Invited talk at the UCL Information Security Seminar., place: University College London, category: academic}
+
+- {date: November 2022, title: The General Isogeny Problem in Dimension 2, event: Invited talk at the Junior Number Theory Seminar at the University of Warwick., place: The University of Warwick, category: academic}
+
+- date: October 2022
+  title: Attacking the General Isogeny Problem
+  event: Invited talk at The Isogeny Club on attacking the general isogeny problem in dimension 1 and 2 (based on joint work with Craig Costello, Sam Frengley and Jia Shi).
+  place: Virtual
+  links:
+  - name: Recording
+    url: "https://youtu.be/rwEtpYlD9FU"
+  category: academic
+
+- {date: September 2022, title: Classical Attacks on the General Isogeny Problem, event: 'Invited talk at the Quantum Cryptanalysis Workshop, University of Bristol on classical attacks against the general isogeny problem (based on joint work with Craig Costello and Jia Shi).', place: University of Bristol, category: academic}
+
+- date: September 2022
+  title: Efficiently Detecting (N,N)-splittings
+  event: "Talk at the [Leuven Isogeny Days 3](https://www.esat.kuleuven.be/cosic/projects/isocrypt/lid3/) on detecting (N,N)-splittings and applications to genus 2 isogeny-based cryptography (joint work with Craig Costello and Sam Frengley)."
+  place: KU Leuven
+  links:
+  - {name: Slides, url: /files/leuventalk.pdf}
+  - name: Recording
+    url: "https://www.youtube.com/watch?v=-R5Q1nkfqrc&list=PLiHaXFHjrqYdAWotOM-7yeb0D8qdqdrUL&index=9"
+  category: academic
+
+- {date: June 2022, title: Post-Quantum Cryptography from Isogenies, event: Talk at the Joint Cybersecurity CDTs Summer School 2022 on obtaining quantum secure cryptography from isogenies., place: University College London, category: academic}
+
+- date: March 2022
+  title: Isogeny-based cryptography workshop
+  event: Invited talk on accelerating the Delfs-Galbraith algorithm (joint work with Craig Costello and Jia Shi).
+  place: University of Birmingham
+  links:
+  - {name: Slides, url: /files/isogenyworkshop-birmingham.pdf}
+  category: academic
+
+- {date: December 2021, title: 'London Hopper Colloquium, Research Spotlight competition', event: 'Gave a presentation about isogeny-based cryptography, winner of the Speaker Prize.', place: Virtual, category: academic}
+
+- date: July 2022
+  title: Microsoft Research Seminar
+  event: Invited talk on accelerating the Delfs-Galbraith algorithm (joint work with Craig Costello and Jia Shi).
+  place: Microsoft Research, Redmond
+  links:
+  - name: Recording
+    url: "https://www.microsoft.com/en-us/research/publication/supersolver-accelerating-the-delfs-galbraith-algorithm-with-fast-subfield-root-detection/"
+  category: industry
+
+- {date: June 2022, title: CGI Break and Learn, event: Talk on post-quantum cryptography and isogenies as a solution., place: CGI Reading Offices, category: industry}
+
+- {date: June 2022, title: 'Year 12 Girls Day, SUMS Enrichment Event - University College London', event: One of two speakers at the Early Career Showcase and mentor during the morning session., place: 'Institute of Education, University College London', category: outreach}
+
+- {date: March 2022, title: 'Year 12 Girls Day, SUMS Enrichment Event - University of Cambridge', event: One of two speakers at the Early Career Showcase and mentor throughout the day., place: 'Centre for Mathematical Sciences, University of Cambridge', category: outreach}
+
+- date: June 2021
+  title: Year 11 Women in STEM - Pembroke College, Cambridge
+  event: Delivered a Maths Taster Lecture on Cryptography to Year 11 students.
+  place: Virtual
+  links:
+  - name: Slides
+    url: "https://docs.google.com/presentation/d/1zQ4DeP92EbOGP0jrzs4C9zfBw-xLbrR4HIpYEEItwFQ/edit?usp=sharing"
+  category: outreach
+
+- date: April 2021
+  title: Year 12 Taster Lecture - Pembroke College, Cambridge
+  event: Delivered a Maths Taster Lecture on Cryptography to Year 12 students.
+  place: Virtual
+  links:
+  - name: Slides
+    url: "https://docs.google.com/presentation/d/1zQ4DeP92EbOGP0jrzs4C9zfBw-xLbrR4HIpYEEItwFQ/edit?usp=sharing"
+  category: outreach
+
+- date: February 2021
+  title: Women in STEM - Selwyn College, Cambridge
+  event: Delivered a lecture on Cryptography to hundreds of Year 10 students in a taster day for Women in STEM.
+  place: Virtual
+  links:
+  - name: Slides
+    url: "https://docs.google.com/presentation/d/1IXgY7_xpQinM_ZPfvubV5d6tQVn2XnNI6V6CuPp7Sfc/edit?usp=sharing"
+  category: outreach
