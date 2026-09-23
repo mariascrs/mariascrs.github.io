@@ -35,12 +35,12 @@ layout: default
 
 <section class="block" aria-labelledby="papers-heading">
   <div class="block-head">
-    <h2 id="papers-heading">Selected papers</h2>
+    <h2 id="papers-heading">Recent papers</h2>
     <a class="more" href="{{ '/publications.html' | relative_url }}">All publications</a>
   </div>
   <ul class="rows">
-    {%- assign selected = site.data.publications | where_exp: "p", "p.selected == true" -%}
-    {%- for p in selected limit: 3 -%}
+    {%- comment -%} The three newest entries in _data/publications.yml. {%- endcomment -%}
+    {%- for p in site.data.publications limit: 3 -%}
     {%- assign link = p.links | first -%}
     <li>
       <a class="row" href="{% if link %}{{ link.url }}{% else %}{{ '/publications.html' | relative_url }}{% endif %}">

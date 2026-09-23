@@ -24,8 +24,8 @@ GitHub Pages. Pushing to the default branch rebuilds the site automatically.
 
 **Add a paper.** Copy an entry in `_data/publications.yml` to the top and edit
 it. List co-authors by name; anyone in `_data/people.yml` gets linked
-automatically. Add `selected: true` to show it on the homepage (the first three
-selected papers are shown). Use `$...$` for maths in titles.
+automatically. The three entries at the top of the file are the ones shown
+under "Recent papers" on the homepage. Use `$...$` for maths in titles.
 
 **Add a talk.** Add an entry at the top of `_data/talks.yml` with
 `category: academic`, `industry` or `outreach`.

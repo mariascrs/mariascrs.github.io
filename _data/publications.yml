@@ -4,7 +4,6 @@
 #   venue:    where it appeared
 #   note:     optional extra line
 #   award:    optional, e.g. "Best Paper Award"
-#   selected: true to show it under "Selected papers" on the homepage
 #   links:    buttons shown under the paper (ePrint, DOI, Slides, ...)
 
 - title: Algorithms for solving the isogeny problem with oriented elliptic curves
@@ -45,7 +44,6 @@
   authors: [Giacomo Borin, Jonathan Komada Eriksen, Riccardo Invernizzi, Marzio Mula, Sina Schaeffler, Frederik Vercauteren]
   venue: Asiacrypt 2025
   year: 2025
-  selected: true
   links:
   - name: DOI
     url: "https://doi.org/10.1007/978-981-95-5113-2_6"
@@ -79,7 +77,6 @@
   venue: PKC 2025
   year: 2025
   award: Best Paper Award
-  selected: true
   links:
   - name: DOI
     url: "https://doi.org/10.1007/978-3-031-91826-1_10"
@@ -135,7 +132,6 @@
   venue: Eurocrypt 2024
   year: 2024
   award: Best Early-Career Paper Award
-  selected: true
   links:
   - name: DOI
     url: "https://doi.org/10.1007/978-3-031-58716-0_3"
