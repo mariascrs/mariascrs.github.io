@@ -1,4 +1,7 @@
 <footer class="site-footer">
-  <span>© {{ site.time | date: "%Y" }} {{ site.author.name }}</span>
-  <a href="{{ '/feed.xml' | relative_url }}">RSS feed</a>
+  <span class="footer-copy">© {{ site.time | date: "%Y" }} {{ site.author.name }}</span>
+  {%- unless page.layout == "home" %}
+  <div class="footer-social">{% include social.html %}</div>
+  {%- endunless %}
+  <a class="footer-rss" href="{{ '/feed.xml' | relative_url }}">RSS feed</a>
 </footer>
