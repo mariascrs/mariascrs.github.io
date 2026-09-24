@@ -24,9 +24,11 @@
 
 - title: "PRISM with a pinch of salt: Simple, Efficient and Strongly Unforgeable Signatures from Isogenies"
   authors: [Andrea Basso, Giacomo Borin, Wouter Castryck, Riccardo Invernizzi, Antonin Leroux, Luciano Maino, Frederik Vercauteren, Benjamin Wesolowski]
-  venue: To appear in the Journal of Cryptology
+  venue: Journal of Cryptology, Volume 39, 2026.
   year: 2026
   links:
+  - name: DOI
+    url: "https://doi.org/10.1007/s00145-026-09585-6"
   - name: ePrint
     url: "https://eprint.iacr.org/2026/443"
 
