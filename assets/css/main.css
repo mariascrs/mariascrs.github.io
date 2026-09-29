@@ -349,6 +349,27 @@ a:hover { color: var(--link); }
   line-height: 1.05;
 }
 
+/* Optional photo beside a page's content (see `image:` in the front matter). */
+.page-with-image {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  column-gap: 72px;
+}
+.page-with-image .page-head { grid-column: 1; }
+.page-with-image .page-body { grid-column: 1; }
+.page-figure {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: start;
+  margin: 8px 0 0;
+}
+.page-figure img { display: block; width: 340px; height: auto; }
+.page-figure figcaption {
+  margin-top: 10px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
 .year-group {
   display: grid;
   grid-template-columns: 200px minmax(0, 1fr);
@@ -612,6 +633,9 @@ mjx-container[display="true"] { overflow-x: auto; overflow-y: hidden; padding: 4
   .portrait { width: 220px; height: 330px; }
   .social { justify-content: flex-start; }
   .events, .year-group, .talk { grid-template-columns: 1fr; }
+  .page-with-image { grid-template-columns: 1fr; }
+  .page-figure { grid-column: 1; grid-row: auto; margin: 0 0 32px; }
+  .page-figure img { width: 240px; }
   .events-list, .cards { grid-template-columns: 1fr; gap: 20px; }
   .post { grid-template-columns: 1fr; gap: 32px; padding-top: 48px; }
   .post-aside { position: static; max-height: none; order: 1; }

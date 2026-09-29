@@ -1,6 +1,9 @@
 ---
 title: Service
 intro: Organisation, reviewing, teaching and outreach.
+image: /images/service-talk.jpg
+image_alt: Maria Corte-Real Santos drawing an elliptic curve at a whiteboard
+image_credit: "Credits: Annamaria Iezzi"
 ---
 ## Organisation
 
