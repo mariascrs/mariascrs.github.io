@@ -1,5 +1,13 @@
 # Preprints / papers in submission. Same fields as publications.yml.
 
+- title: Supersingularity and Superspeciality Verification of Abelian Surfaces
+  authors: [Gioella Lorenzon, Krijn Reijnders]
+  venue: In submission
+  year: 2026
+  links:
+  - name: ePrint
+    url: "https://eprint.iacr.org/2026/2259"
+
 - title: Isogeny-based Signatures with Randomizable Keys
   authors: [Andrea Basso, Giacomo Borin, Pierrick Dartois, Riccardo Invernizzi, Luciano Maino, Robi Pedersen, Michel Seck]
   venue: In submission
