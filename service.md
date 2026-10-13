@@ -9,7 +9,7 @@ image_credit: "Credits: Annamaria Iezzi"
 
 ### Seminars
 * [The Isogeny Club](https://isogeny.club/), co-organise an online seminar series on isogeny-based cryptography.
-* [UCL Information Security Seminars](https://sec.cs.ucl.ac.uk/seminars/), co-organised the UCL Information Security seminar series (2020-2024).
+* [UCL Information Security Seminars](https://sec.cs.ucl.ac.uk/seminars/), co-organised the UCL Information Security seminar series (2021-2023).
 
 ### Conferences and Workshops
 * [Women & Allies in Cryptography Workshop](https://wainc-ec2026.sciencesconf.org/), co-organising as an affiliate event at Eurocrypt 2026 in Rome, Italy.

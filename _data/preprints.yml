@@ -1,5 +1,13 @@
 # Preprints / papers in submission. Same fields as publications.yml.
 
+- title: Rapid mixing in superspecial isogeny graphs
+  authors: [Harun Kır, Olivier Taïbi, Benjamin Wesolowski]
+  venue: In submission
+  year: 2026
+  links:
+  - name: ePrint
+    url: "https://eprint.iacr.org/2026/2429"
+
 - title: Supersingularity and Superspeciality Verification of Abelian Surfaces
   authors: [Gioella Lorenzon, Krijn Reijnders]
   venue: In submission
