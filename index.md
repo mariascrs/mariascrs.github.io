@@ -13,6 +13,6 @@ Previously, I completed my PhD at University College London, in the [CDT for Cyb
 
 I co-organise [The Isogeny Club](https://isogeny.club/) with [Alessandro Sferlazza](https://sferl.github.io/). I enjoy communicating mathematics and cryptography, through [blog posts](/posts.html) on isogenies and outreach [talks](/service.html#outreach-talks) for STEM students. 
 
-I actively promote events dedicated to recognising and empowering women in computer science and mathematics, such as those organised by [Women in Cryptography](https://www.womenincryptography.com/), and I am always happy to collaborate on organising such events.
+I am passionate about diversity in cryptography, and actively support events dedicated to recognising and empowering women in computer science and mathematics, such as those organised by [Women in Cryptography](https://www.womenincryptography.com/). I am always happy to collaborate on organising such events.
 
 My thesis is available [here](/files/thesis.pdf).
