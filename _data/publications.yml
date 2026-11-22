@@ -8,9 +8,11 @@
 
 - title: Algorithms for solving the isogeny problem with oriented elliptic curves
   authors: [Arthur Herlédan Le Merdy, Joseph Macula, Michael Meyer, Travis Morrison, Eli Orvis]
-  venue: To appear in IACR Communications in Cryptology
+  venue: IACR Communications in Cryptology, Volume 3, Issue 3, 2026
   year: 2026
   links:
+  - name: DOI
+    url: "https://doi.org/10.62056/aesgsgsfg"
   - name: ePrint
     url: "https://eprint.iacr.org/2026/1219"
 
