@@ -6,6 +6,14 @@
 #   award:    optional, e.g. "Best Paper Award"
 #   links:    buttons shown under the paper (ePrint, DOI, Slides, ...)
 
+- title: A computational framework for principally polarized abelian varieties and applications
+  authors: [Etienne Piasecki, Benjamin Wesolowski]
+  venue: To appear at Asiacrypt 2026
+  year: 2026
+  links:
+  - name: ePrint
+    url: "https://eprint.iacr.org/2026/1142"
+
 - title: Algorithms for solving the isogeny problem with oriented elliptic curves
   authors: [Arthur Herlédan Le Merdy, Joseph Macula, Michael Meyer, Travis Morrison, Eli Orvis]
   venue: IACR Communications in Cryptology, Volume 3, Issue 3, 2026
@@ -15,14 +23,6 @@
     url: "https://doi.org/10.62056/aesgsgsfg"
   - name: ePrint
     url: "https://eprint.iacr.org/2026/1219"
-
-- title: A computational framework for principally polarized abelian varieties and applications
-  authors: [Etienne Piasecki, Benjamin Wesolowski]
-  venue: To appear at Asiacrypt 2026
-  year: 2026
-  links:
-  - name: ePrint
-    url: "https://eprint.iacr.org/2026/1142"
 
 - title: "PRISM with a pinch of salt: Simple, Efficient and Strongly Unforgeable Signatures from Isogenies"
   authors: [Andrea Basso, Giacomo Borin, Wouter Castryck, Riccardo Invernizzi, Antonin Leroux, Luciano Maino, Frederik Vercauteren, Benjamin Wesolowski]
