@@ -8,8 +8,6 @@ aside:
 paper: https://eprint.iacr.org/2026/2808
 ---
 
-In this blogpost, I'll give an overview of my new paper *An improved algorithm to solve the isogeny problem in dimension 2 with precomputation* ([link](https://eprint.iacr.org/2026/2808)).
-
 The isogeny problem for supersingular elliptic curves underlies the security of (almost) all of isogeny-based cryptography. The growing interest in higher-dimensional isogeny-based cryptography has brought with it interest in the higher-dimensional isogeny problem, and in this blogpost we focus on dimension 2.
 
 The objective of this blogpost is to describe the main ideas of the paper. The proofs require some technical objects (such as Kani's refined Humbert invariant), but the ideas themselves are quite natural. In this post, we'll take a tour of the various algorithms for solving the isogeny problem in dimension 2: the Costello–Smith algorithm and its recent rigorous variant, SplitSearcher, and finally the new algorithm. 
