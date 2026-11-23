@@ -1,6 +1,6 @@
 ---
 layout: article
-title: An improved algorithm to solve the isogeny problem in dimension 2 with precomputation
+title: Algorithms to solve the isogeny problem in dimension 2
 tags: isogeny cryptography post-quantum dimension-2 paper
 mathjax: true
 aside:
